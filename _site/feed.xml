@@ -1,4 +1,344 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-GB" /><updated>2023-02-14T20:24:26+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>Prajwal shetty&apos;s test site is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately</subtitle><author><name>PrajwalShetty</name></author><entry><title type="html">Description of an test</title><link href="http://localhost:4000/general/external%20sources/2016/08/27/example-post-one/" rel="alternate" type="text/html" title="Description of an test" /><published>2016-08-27T00:00:00+00:00</published><updated>2016-08-27T00:00:00+00:00</updated><id>http://localhost:4000/general/external%20sources/2016/08/27/example-post-one</id><content type="html" xml:base="http://localhost:4000/general/external%20sources/2016/08/27/example-post-one/">&lt;p&gt;The complete distilling apparatus consists of three parts: the “cucurbit” (Arabic ḳarʿa, Greek βίκος), the still pot containing the liquid to be distilled, which is heated by a flame; the “head” or “cap” (Arabic anbiḳ, Greek ἄμβιξ) which fits over the mouth of the cucurbit to receive the vapors, with an attached downward-sloping “tube” (Greek σωλήν), leading to the “receiver” (Arabic ḳābila, Greek ἄγγος or φιάλη) container.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-GB" /><updated>2023-02-15T09:04:45+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>Prajwal shetty&apos;s test site is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately</subtitle><author><name>PrajwalShetty</name></author><entry><title type="html">Description of an test</title><link href="http://localhost:4000/general/external%20sources/2023/02/15/deploying-unity-game-server/" rel="alternate" type="text/html" title="Description of an test" /><published>2023-02-15T00:00:00+00:00</published><updated>2023-02-15T00:00:00+00:00</updated><id>http://localhost:4000/general/external%20sources/2023/02/15/deploying-unity-game-server</id><content type="html" xml:base="http://localhost:4000/general/external%20sources/2023/02/15/deploying-unity-game-server/">&lt;!-- Output copied to clipboard! --&gt;
+
+&lt;!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 1
+* WARNINGs: 0
+* ALERTS: 21
+
+Conversion time: 4.451 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β34
+* Tue Feb 14 2023 23:04:10 GMT-0800 (PST)
+* Source doc: Deploying Unity Game Server Into Playfab Cloud
+
+ERROR:
+undefined internal link to this URL: &quot;#heading=h.17dp8vu&quot;.link text: these steps
+?Did you generate a TOC with blue links?
+
+* This document has images: check for &gt;&gt;&gt;&gt;&gt;  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+-----&gt;
+
+&lt;!-- Output copied to clipboard! --&gt;
+
+&lt;!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 1
+* WARNINGs: 0
+* ALERTS: 21 --&gt;
+
+&lt;h2 id=&quot;deploying-unity-game-server-into-playfab-cloud&quot;&gt;Deploying Unity Game Server Into Playfab Cloud&lt;/h2&gt;
+
+&lt;h4 id=&quot;initial-setup&quot;&gt;Initial setup:&lt;/h4&gt;
+
+&lt;h5 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Supports both Mirror and Fishnet&lt;/li&gt;
+  &lt;li&gt;Server is set up in a Linux container.&lt;/li&gt;
+  &lt;li&gt;Dev machine: Windows 10/11&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;machine-and-project-setup-windows-1011&quot;&gt;Machine and Project Setup: (Windows 10/11)&lt;/h5&gt;
+
+&lt;p&gt;lorem epseum testing the font size looks big to me tbh, lorem epseum testing the font size looks big to me tbhlorem epseum testing the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enable WSL2 and install Ubuntu distro&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;More info:  [Set up your Windows development device - PlayFab&lt;/td&gt;
+          &lt;td&gt;Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install and setup Docker for wsl2 and make sure it’s running &lt;a href=&quot;https://docs.docker.com/desktop/windows/#switch-between-windows-and-linux-containers&quot;&gt;Linux Containers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Add Linux Build support module to your Unity Engine Installation&lt;/li&gt;
+  &lt;li&gt;Access to the game’s &lt;a href=&quot;https://developer.playfab.com/&quot;&gt;PlayFab developer account&lt;/a&gt; and its docker _“Azure container registry”** **_credentials for a new build.&lt;/li&gt;
+  &lt;li&gt;Make sure your project has &lt;a href=&quot;https://github.com/PlayFab/UnitySDK&quot;&gt;Unity C# SDKs for PlayFab&lt;/a&gt; and &lt;a href=&quot;https://github.com/PlayFab/gsdk/tree/main/UnityGsdk&quot;&gt;UnityGsdk&lt;/a&gt; (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample &lt;a href=&quot;https://github.com/PlayFab/MpsSamples/blob/main/UnityMirror/UnityServer/Assets/Server/Scripts/AgentListener.cs&quot;&gt;server script&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/natepac/playfabmirrorgameexample/blob/master/Assets/Scripts/ClientStartUp.cs&quot;&gt;client script&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Setup either &lt;a href=&quot;https://assetstore.unity.com/packages/tools/network/mirror-129321&quot;&gt;mirror&lt;/a&gt; or &lt;a href=&quot;https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815&quot;&gt;fishnet&lt;/a&gt; in the project, and add their network managers into the scene&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;network-manager-setup-for-mirror&quot;&gt;Network Manager Setup for Mirror:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a new custom network manager as a inherited child class of mirrors network manager and add the KCP transport component into the same gameobject, which inturn uses UDP protocol&lt;/li&gt;
+  &lt;li&gt;Add a simple switch in the custom network manager like in the below image and set up all other necessary events like OnClientJoined etc in the script.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image1.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add server and client listener scripts as child of the network manager gameobject&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;network-manager-setup-for-fishnet&quot;&gt;Network Manager Setup for Fishnet:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a new custom network manager script, similar to the above mirror one.&lt;/li&gt;
+  &lt;li&gt;Add fishnet’s network manager as the child of the above gameobject along with it’s tugboat transport component&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image2.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image3.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image4.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add server and client listener scripts for playfab as child of custom network manager gameobject&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;build-and-deploy&quot;&gt;Build and Deploy:&lt;/h4&gt;
+
+&lt;h5 id=&quot;building-the-headless-server&quot;&gt;Building the headless server:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Switch to &lt;strong&gt;Dedicated-Server&lt;/strong&gt; Build mode and Select** Linux** as Target Platform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image5.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Custom networkManager, switch Build type to &lt;strong&gt;REMOTE_SERVER&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;(which in turn enables the agent-listener script)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image6.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Build **the game and once build complete, create **docker file&lt;/strong&gt; in the build’s **parent **directory&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;[Create a Dockerfile - PlayFab&lt;/td&gt;
+          &lt;td&gt;Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#create-a-dockerfile)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;Directory and file should look something like the below image and the parent directory shouldn’t have any other files/directories except the dockerfile and game directory&lt;/p&gt;
+
+    &lt;p&gt;(Note: Exclude the “_ServerX_BurstDebugInformation_DoNotShip” _Directory before creating the docker image of build folder.)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image7.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image8.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;creating-and-deploying-the-docker-image&quot;&gt;Creating and Deploying the Docker Image:&lt;/h5&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Copy the Docker Creds from [PlayFab developer account](https://developer.playfab.com/)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image9.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image10.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* In your windows machine, open the ubuntu terminal (not windows cmd), 
+* move to the directory which contains the previously created Dockerfile, 
+
+_example: cd mnt/c/Code/Kevuru/battle-axes/Builds/server5/_
+
+* run the login command 
+
+_example: docker login -u &amp;amp;lt;username_here&amp;gt; -p &amp;amp;lt;password_here&amp;gt; &amp;amp;lt;url_here&amp;gt;_
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;run the build docker image command&lt;/p&gt;
+
+    &lt;p&gt;_example: docker build -t &amp;lt;url_here&amp;gt;/battleaxes_server:v1 .  _&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;(Note: there is a “.” in the end of above command which means all files in the directory)&lt;/em&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;(Note: increment v1 (vX) based on previously uploaded version)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now &lt;strong&gt;before pushing&lt;/strong&gt; this image to the cloud, &lt;strong&gt;test it locally&lt;/strong&gt; by following &lt;a href=&quot;#heading=h.17dp8vu&quot;&gt;these steps&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;run the push docker build to cloud command&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;example: docker push &amp;lt;url_here&amp;gt;/battleaxes_server:v1&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;testing-the-headless-server&quot;&gt;Testing the headless server:&lt;/h4&gt;
+
+&lt;h5 id=&quot;testing-locally-using-playfabs-mpslocalagent&quot;&gt;Testing locally using playfab’s MpsLocalAgent:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download the localAgent that’s required for testing playfab builds locally&lt;/p&gt;
+
+    &lt;p&gt;url: &lt;a href=&quot;https://github.com/PlayFab/MpsAgent/releases&quot;&gt;Releases · PlayFab/MpsAgent · GitHub&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setup the **MultiplayerSettings.json **file in the downloaded directory&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;more_info: [Debug Container-based game servers using LocalMultiplayerAgent&lt;/td&gt;
+          &lt;td&gt;Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/localmultiplayeragent/run-container-gameserver#configure-multiplayersettingsjson)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;**	**The file should look like something this in the end:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image11.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now open windows terminal in the downloaded directory and run command:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  .\LocalMultiplayerAgent.exe -lcow
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;em&gt;(Note: lcow stands for Linux Containers On Windows)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once the local server goes to “active”, connect a local client with &lt;strong&gt;ip: 127.0.0.1 and port 56100&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;using-ssh-into-running-cloud-server&quot;&gt;Using SSH into running cloud server:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click on “Connect to Virtual Machine” in builds of playfab developer console&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open your windows terminal and Run the ssh command&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;example: ssh &amp;lt;id_here&amp;gt;@&amp;lt;ip_here&amp;gt; -p &amp;lt;port_here&amp;gt;&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the Docker ps to get current running container info&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;example: sudo docker ps -a&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get current server logs by cmd:&lt;/p&gt;
+
+    &lt;p&gt;sudo docker logs &amp;lt;docker_container_id&amp;gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;testing-locally-using-parrelsync-and-three-unity-editor-instances&quot;&gt;Testing locally using ParrelSync and three Unity editor instances:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setup ParrelSync in the project&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/VeriorPies/ParrelSync&quot;&gt;GitHub - VeriorPies/ParrelSync: (Unity3D) Test multiplayer without building&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Have three editor instance running, one will be playfab_server and the other two will be playfab_clients (not local clients),&lt;/li&gt;
+  &lt;li&gt;Join the server from other clients using the default local host ip address (0.0.0.0) and default local port.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;common-issues&quot;&gt;Common issues:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you get an error called:_ “You must set PlayFabSettings.TitleId before making API Calls.”_ you can get the title id from playfab developer console.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image12.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you get this error “network playfab not found”
+&lt;img src=&quot;images/image13.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;
+ &lt;br /&gt;
+Open “&lt;strong&gt;SetupLinuxContainersOnWindows.ps1&lt;/strong&gt;” in LocalMultiplayerAgentPublish you just downloaded and run this “docker network create playfab –driver bridge”  in your linux distribution .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;connecting-to-our-playfab-game-server-as-client&quot;&gt;Connecting to our playfab game server as client:&lt;/h4&gt;
+
+&lt;h5 id=&quot;client-build-setup&quot;&gt;Client Build Setup:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Switch back to whatever target platform you were previously in from the dedicated server platform.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Custom networkManager, switch Build type to &lt;strong&gt;PLAYFAB_CLIENT&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;(which in turn enables the client-startup script)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image14.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In the playfab dashboard, click on the “request server”, when you have standby servers, and then Get the &lt;strong&gt;ip address&lt;/strong&gt;, &lt;strong&gt;port&lt;/strong&gt; and &lt;strong&gt;build id&lt;/strong&gt; from the playfab console on the website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image15.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image16.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure you have the right &lt;strong&gt;build-id, ipaddress, port **and **region&lt;/strong&gt; set in the custom network manager or the network manager script and save scene for all clients&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image17.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now with server already running, Click on &lt;strong&gt;Start game&lt;/strong&gt; from &lt;strong&gt;clients in UnityEditor&lt;/strong&gt;, and this should connect them all together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image18.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now open a second client and click on “&lt;strong&gt;Join Game&lt;/strong&gt;” button, enter the configuration you received above&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image19.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;multiple-instances&quot;&gt;Multiple instances:&lt;/h4&gt;
+
+&lt;h5 id=&quot;inspecting-multiple-instances-in-same-vm&quot;&gt;Inspecting multiple instances in same VM:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Containers use “playfab” network plugins, to inspect the instances in the machine run:&lt;/p&gt;
+
+    &lt;p&gt;docker inspect network playfab&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;More details: [Connecting clients to game servers - PlayFab&lt;/td&gt;
+          &lt;td&gt;Microsoft Learn](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/connecting-clients-to-game-servers)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/image20.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot; /&gt;&lt;/p&gt;</content><author><name>PrajwalShetty</name></author><category term="General" /><category term="External sources" /><summary type="html">Deploying Unity Game Server Into Playfab Cloud Initial setup: Prerequisites: Supports both Mirror and Fishnet Server is set up in a Linux container. Dev machine: Windows 10/11 Machine and Project Setup: (Windows 10/11) lorem epseum testing the font size looks big to me tbh, lorem epseum testing the font size looks big to me tbhlorem epseum testing the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. the font size looks big to me tbh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Enable WSL2 and install Ubuntu distro More info: [Set up your Windows development device - PlayFab Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device) Install and setup Docker for wsl2 and make sure it’s running Linux Containers Add Linux Build support module to your Unity Engine Installation Access to the game’s PlayFab developer account and its docker _“Azure container registry”** **_credentials for a new build. Make sure your project has Unity C# SDKs for PlayFab and UnityGsdk (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample server script &amp;amp; client script) Setup either mirror or fishnet in the project, and add their network managers into the scene Network Manager Setup for Mirror: Create a new custom network manager as a inherited child class of mirrors network manager and add the KCP transport component into the same gameobject, which inturn uses UDP protocol Add a simple switch in the custom network manager like in the below image and set up all other necessary events like OnClientJoined etc in the script. Add server and client listener scripts as child of the network manager gameobject Network Manager Setup for Fishnet: Create a new custom network manager script, similar to the above mirror one. Add fishnet’s network manager as the child of the above gameobject along with it’s tugboat transport component Add server and client listener scripts for playfab as child of custom network manager gameobject Build and Deploy: Building the headless server: Switch to Dedicated-Server Build mode and Select** Linux** as Target Platform In Custom networkManager, switch Build type to REMOTE_SERVER (which in turn enables the agent-listener script) Build **the game and once build complete, create **docker file in the build’s **parent **directory [Create a Dockerfile - PlayFab Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#create-a-dockerfile) Directory and file should look something like the below image and the parent directory shouldn’t have any other files/directories except the dockerfile and game directory (Note: Exclude the “_ServerX_BurstDebugInformation_DoNotShip” _Directory before creating the docker image of build folder.) Creating and Deploying the Docker Image: * Copy the Docker Creds from [PlayFab developer account](https://developer.playfab.com/) * In your windows machine, open the ubuntu terminal (not windows cmd), * move to the directory which contains the previously created Dockerfile, _example: cd mnt/c/Code/Kevuru/battle-axes/Builds/server5/_ * run the login command _example: docker login -u &amp;amp;lt;username_here&amp;gt; -p &amp;amp;lt;password_here&amp;gt; &amp;amp;lt;url_here&amp;gt;_ run the build docker image command _example: docker build -t &amp;lt;url_here&amp;gt;/battleaxes_server:v1 . _ (Note: there is a “.” in the end of above command which means all files in the directory) (Note: increment v1 (vX) based on previously uploaded version) Now before pushing this image to the cloud, test it locally by following these steps. run the push docker build to cloud command example: docker push &amp;lt;url_here&amp;gt;/battleaxes_server:v1 Testing the headless server: Testing locally using playfab’s MpsLocalAgent: Download the localAgent that’s required for testing playfab builds locally url: Releases · PlayFab/MpsAgent · GitHub Setup the **MultiplayerSettings.json **file in the downloaded directory more_info: [Debug Container-based game servers using LocalMultiplayerAgent Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/localmultiplayeragent/run-container-gameserver#configure-multiplayersettingsjson) ** **The file should look like something this in the end: Now open windows terminal in the downloaded directory and run command: .\LocalMultiplayerAgent.exe -lcow (Note: lcow stands for Linux Containers On Windows) Once the local server goes to “active”, connect a local client with ip: 127.0.0.1 and port 56100 Using SSH into running cloud server: Click on “Connect to Virtual Machine” in builds of playfab developer console Open your windows terminal and Run the ssh command example: ssh &amp;lt;id_here&amp;gt;@&amp;lt;ip_here&amp;gt; -p &amp;lt;port_here&amp;gt; Run the Docker ps to get current running container info example: sudo docker ps -a Get current server logs by cmd: sudo docker logs &amp;lt;docker_container_id&amp;gt; Testing locally using ParrelSync and three Unity editor instances: Setup ParrelSync in the project GitHub - VeriorPies/ParrelSync: (Unity3D) Test multiplayer without building Have three editor instance running, one will be playfab_server and the other two will be playfab_clients (not local clients), Join the server from other clients using the default local host ip address (0.0.0.0) and default local port. Common issues: If you get an error called:_ “You must set PlayFabSettings.TitleId before making API Calls.”_ you can get the title id from playfab developer console. If you get this error “network playfab not found” Open “SetupLinuxContainersOnWindows.ps1” in LocalMultiplayerAgentPublish you just downloaded and run this “docker network create playfab –driver bridge” in your linux distribution . Connecting to our playfab game server as client: Client Build Setup: Switch back to whatever target platform you were previously in from the dedicated server platform. In Custom networkManager, switch Build type to PLAYFAB_CLIENT (which in turn enables the client-startup script) In the playfab dashboard, click on the “request server”, when you have standby servers, and then Get the ip address, port and build id from the playfab console on the website. Make sure you have the right build-id, ipaddress, port **and **region set in the custom network manager or the network manager script and save scene for all clients Now with server already running, Click on Start game from clients in UnityEditor, and this should connect them all together. Now open a second client and click on “Join Game” button, enter the configuration you received above Multiple instances: Inspecting multiple instances in same VM: Containers use “playfab” network plugins, to inspect the instances in the machine run: docker inspect network playfab More details: [Connecting clients to game servers - PlayFab Microsoft Learn](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/connecting-clients-to-game-servers)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/default-social-image.png" /><media:content medium="image" url="http://localhost:4000/assets/default-social-image.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Description of an test</title><link href="http://localhost:4000/general/external%20sources/2016/08/27/example-post-one/" rel="alternate" type="text/html" title="Description of an test" /><published>2016-08-27T00:00:00+00:00</published><updated>2016-08-27T00:00:00+00:00</updated><id>http://localhost:4000/general/external%20sources/2016/08/27/example-post-one</id><content type="html" xml:base="http://localhost:4000/general/external%20sources/2016/08/27/example-post-one/">&lt;p&gt;The complete distilling apparatus consists of three parts: the “cucurbit” (Arabic ḳarʿa, Greek βίκος), the still pot containing the liquid to be distilled, which is heated by a flame; the “head” or “cap” (Arabic anbiḳ, Greek ἄμβιξ) which fits over the mouth of the cucurbit to receive the vapors, with an attached downward-sloping “tube” (Greek σωλήν), leading to the “receiver” (Arabic ḳābila, Greek ἄγγος or φιάλη) container.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
