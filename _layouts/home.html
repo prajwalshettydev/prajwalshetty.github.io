@@ -4,6 +4,16 @@ layout: archive
 
 {{ content }}
 
+<!-- {% for collection in site.collections %}
+  <h2>Items from {{ collection.label }}</h2>
+  <ul>
+    {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+-->
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
