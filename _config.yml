@@ -315,7 +315,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
@@ -329,6 +329,14 @@ defaults:
   - scope:
       path: ""
       type: ue5
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: unity
     values:
       layout: single
       author_profile: true

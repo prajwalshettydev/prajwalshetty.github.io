@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Deploying Unity Game Server Into Playfab Cloud -</title>
-<meta name="description" content="Initial setup:">
+<meta name="description" content="Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.">
 
 
   <meta name="author" content="Prajwal shetty">
@@ -26,19 +26,23 @@
 <meta property="og:url" content="http://localhost:4000/Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/">
 
 
-  <meta property="og:description" content="Initial setup:">
+  <meta property="og:description" content="Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.">
 
 
+
+  <meta property="og:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png">
 
 
 
   <meta name="twitter:site" content="@shettyprajwal_">
   <meta name="twitter:title" content="Deploying Unity Game Server Into Playfab Cloud">
-  <meta name="twitter:description" content="Initial setup:">
+  <meta name="twitter:description" content="Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.">
   <meta name="twitter:url" content="http://localhost:4000/Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/">
 
   
     <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png">
     
   
 
@@ -46,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-02-20T17:59:14+05:30">
+  <meta property="article:published_time" content="2023-02-20T20:03:15+05:30">
 
 
 
@@ -187,7 +191,8 @@
     
       
       
-        <li class="current">Deploying Unity Game Server Into Playfab Cloud</li>
+        <!-- <li class="current">Deploying Unity Game Server Into Playfab Cloud</li> -->
+        <li class="current">Current</li>
       
     
   </ol>
@@ -324,8 +329,8 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Deploying Unity Game Server Into Playfab Cloud">
-    <meta itemprop="description" content="Initial setup:">
-    <meta itemprop="datePublished" content="2023-02-20T17:59:14+05:30">
+    <meta itemprop="description" content="Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.">
+    <meta itemprop="datePublished" content="2023-02-20T20:03:15+05:30">
     
 
     <div class="page__inner-wrap">
@@ -343,61 +348,27 @@
 
       <section class="page__content e-content" itemprop="text">
         
-          <aside class="sidebar__right ">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#initial-setup">Initial setup:</a><ul><li><a href="#prerequisites">Prerequisites:</a></li><li><a href="#machine-and-project-setup-windows-1011">Machine and Project Setup: (Windows 10/11)</a></li><li><a href="#network-manager-setup-for-mirror">Network Manager Setup for Mirror:</a></li><li><a href="#network-manager-setup-for-fishnet">Network Manager Setup for Fishnet:</a></li></ul></li><li><a href="#build-and-deploy">Build and Deploy:</a><ul><li><a href="#building-the-headless-server">Building the headless server:</a></li><li><a href="#creating-and-deploying-the-docker-image">Creating and Deploying the Docker Image:</a></li></ul></li><li><a href="#testing-the-headless-server">Testing the headless server:</a><ul><li><a href="#testing-locally-using-playfabs-mpslocalagent">Testing locally using playfab’s MpsLocalAgent:</a></li><li><a href="#using-ssh-into-running-cloud-server">Using SSH into running cloud server:</a></li><li><a href="#testing-locally-using-parrelsync-and-three-unity-editor-instances">Testing locally using ParrelSync and three Unity editor instances:</a></li><li><a href="#common-issues">Common issues:</a></li></ul></li><li><a href="#connecting-to-our-playfab-game-server-as-client">Connecting to our playfab game server as client:</a><ul><li><a href="#client-build-setup">Client Build Setup:</a></li></ul></li><li><a href="#multiple-instances">Multiple instances:</a><ul><li><a href="#inspecting-multiple-instances-in-same-vm">Inspecting multiple instances in same VM:</a></li></ul></li></ul>
+        <p>Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, I will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.</p>
 
-            </nav>
-          </aside>
-        
-        <h3 id="initial-setup">Initial setup:</h3>
-
-<h4 id="prerequisites">Prerequisites:</h4>
+<h3 id="prerequisites">Prerequisites:</h3>
 
 <ul>
-  <li>
-    <p>Supports both Mirror and Fishnet</p>
-  </li>
-  <li>
-    <p>Server is set up in a Linux container.</p>
-  </li>
-  <li>
-    <p>Dev machine: Windows 10/11</p>
-  </li>
+  <li>Supports both Mirror and Fishnet</li>
+  <li>Server is set up in a Linux container.</li>
+  <li>Dev machine: Windows 10/11</li>
+  <li>Needs a <a href="https://developer.playfab.com/en-US/sign-up">PlayFab Account</a> with payments setup (you wont be charged)</li>
 </ul>
 
+<h3 id="initial-setup">Initial setup:</h3>
 <h4 id="machine-and-project-setup-windows-1011">Machine and Project Setup: (Windows 10/11)</h4>
 
 <ul>
-  <li>Enable WSL2 and install Ubuntu distro</li>
-</ul>
-
-<table>
-  <tbody>
-    <tr>
-      <td>More info:  [Set up your Windows development device - PlayFab</td>
-      <td>Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device)</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li>
-    <p>Install and setup Docker for wsl2 and make sure it’s running <a href="https://docs.docker.com/desktop/windows/#switch-between-windows-and-linux-containers">Linux Containers</a></p>
-  </li>
-  <li>
-    <p>Add Linux Build support module to your Unity Engine Installation</p>
-  </li>
-  <li>
-    <p>Access to the game’s <a href="https://developer.playfab.com/">PlayFab developer account</a> and its docker <em>“Azure container registry”</em>** **credentials for a new build.</p>
-  </li>
-  <li>
-    <p>Make sure your project has <a href="https://github.com/PlayFab/UnitySDK">Unity C# SDKs for PlayFab</a> and <a href="https://github.com/PlayFab/gsdk/tree/main/UnityGsdk">UnityGsdk</a> (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample <a href="https://github.com/PlayFab/MpsSamples/blob/main/UnityMirror/UnityServer/Assets/Server/Scripts/AgentListener.cs">server script</a> &amp; <a href="https://github.com/natepac/playfabmirrorgameexample/blob/master/Assets/Scripts/ClientStartUp.cs">client script</a>)</p>
-  </li>
-  <li>
-    <p>Setup either <a href="https://assetstore.unity.com/packages/tools/network/mirror-129321">mirror</a> or <a href="https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815">fishnet</a> in the project, and add their network managers into the scene</p>
-  </li>
+  <li>Enable WSL2 and install Ubuntu distro. More info: <a href="https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device">Set up your Windows development device - PlayFab | Microsoft Docs</a></li>
+  <li>Install and setup Docker for wsl2 and make sure it’s running <a href="https://docs.docker.com/desktop/windows/#switch-between-windows-and-linux-containers">Linux Containers</a></li>
+  <li>Add Linux Build support module to your Unity Engine Installation</li>
+  <li>Access to the game’s <a href="https://developer.playfab.com/">PlayFab developer account</a> and its docker <strong>“Azure container registry”</strong> credentials for a new build.</li>
+  <li>Make sure your project has <a href="https://github.com/PlayFab/UnitySDK">Unity C# SDKs for PlayFab</a> and <a href="https://github.com/PlayFab/gsdk/tree/main/UnityGsdk">UnityGsdk</a> (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample <a href="https://github.com/PlayFab/MpsSamples/blob/main/UnityMirror/UnityServer/Assets/Server/Scripts/AgentListener.cs">server script</a> &amp; <a href="https://github.com/natepac/playfabmirrorgameexample/blob/master/Assets/Scripts/ClientStartUp.cs">client script</a>)</li>
+  <li>Setup either <a href="https://assetstore.unity.com/packages/tools/network/mirror-129321">mirror</a> or <a href="https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815">fishnet</a> in the project, and add their network managers into the scene</li>
 </ul>
 
 <h4 id="network-manager-setup-for-mirror">Network Manager Setup for Mirror:</h4>
@@ -428,177 +399,118 @@
   </li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878048/Blogsite1/unity/deployingtocloud/image_1_co4xmc.png" alt="image alt text" /><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878048/Blogsite1/unity/deployingtocloud/image_2_mhaehy.png" alt="image alt text" /><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878047/Blogsite1/unity/deployingtocloud/image_3_d6mwtl.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_240/v1676878048/Blogsite1/unity/deployingtocloud/image_1_co4xmc.png" alt="image alt text" /> <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_240/v1676878048/Blogsite1/unity/deployingtocloud/image_2_mhaehy.png" alt="image alt text" /> <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_240/v1676878047/Blogsite1/unity/deployingtocloud/image_3_d6mwtl.png" alt="image alt text" class="text-nowrap" /></p>
 
 <ul>
   <li>Add server and client listener scripts for playfab as child of custom network manager gameobject</li>
 </ul>
 
 <h3 id="build-and-deploy">Build and Deploy:</h3>
-
 <h4 id="building-the-headless-server">Building the headless server:</h4>
-
 <ul>
-  <li>Switch to <strong>Dedicated-Server</strong> Build mode and Select** Linux** as Target Platform</li>
+  <li>Switch to <code class="language-plaintext highlighter-rouge">Dedicated-Server</code> Build mode and Select <code class="language-plaintext highlighter-rouge">Linux</code> as Target Platform
+<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878048/Blogsite1/unity/deployingtocloud/image_4_z8g7w9.png" alt="image alt text" class="align-center text-nowrap" /></li>
+  <li>In Custom networkManager, switch Build type to <strong>REMOTE_SERVER</strong>
+<em>(which in turn enables the agent-listener script)</em>
+<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878048/Blogsite1/unity/deployingtocloud/image_5_lqulud.png" alt="image alt text" class="align-center" /></li>
+  <li><strong>Build</strong> the game and once build complete, create <strong>docker file</strong> in the build’s <strong>parent</strong> directory 
+<a href="https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#create-a-dockerfile">Create a Dockerfile - PlayFab | Microsoft Docs</a>
+Directory and file should look something like the below image and the parent directory shouldn’t have any other files/directories except the dockerfile and game directory 
+(Note: Exclude the <em>“ServerX_BurstDebugInformation_DoNotShip”</em> Directory before creating the docker image of build folder.)</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878048/Blogsite1/unity/deployingtocloud/image_4_z8g7w9.png" alt="image alt text" class="align-center text-nowrap" /></p>
-
-<ul>
-  <li>In Custom networkManager, switch Build type to <strong>REMOTE_SERVER</strong></li>
-</ul>
-
-<p><em>(which in turn enables the agent-listener script)</em></p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878048/Blogsite1/unity/deployingtocloud/image_5_lqulud.png" alt="image alt text" class="align-center text-nowrap" /></p>
-
-<ul>
-  <li><strong>Build **the game and once build complete, create **docker file</strong> in the build’s **parent **directory</li>
-</ul>
-
-<table>
-  <tbody>
-    <tr>
-      <td>[Create a Dockerfile - PlayFab</td>
-      <td>Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#create-a-dockerfile)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Directory and file should look something like the below image and the parent directory shouldn’t have any other files/directories except the dockerfile and game directory</p>
-
-<p>(Note: Exclude the “*ServerX_BurstDebugInformation_DoNotShip” *Directory before creating the docker image of build folder.)</p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878049/Blogsite1/unity/deployingtocloud/image_6_ca0unr.png" alt="image alt text" /><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878049/Blogsite1/unity/deployingtocloud/image_7_ptlqzo.png" alt="image alt text" class="align-center text-nowrap" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_200/v1676878049/Blogsite1/unity/deployingtocloud/image_6_ca0unr.png" alt="image alt text" />  <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878049/Blogsite1/unity/deployingtocloud/image_7_ptlqzo.png" alt="image alt text" /></p>
 
 <h4 id="creating-and-deploying-the-docker-image">Creating and Deploying the Docker Image:</h4>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Copy the Docker Creds from [PlayFab developer account](https://developer.playfab.com/)
-
-        ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878047/Blogsite1/unity/deployingtocloud/image_8_zzs3sd.png)![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1676878049/Blogsite1/unity/deployingtocloud/image_9_jbrowe.png)
-
-* In your windows machine, open the ubuntu terminal (not windows cmd), 
-
-* move to the directory which contains the previously created Dockerfile, 
-</code></pre></div></div>
-
-<p><em>example: **cd mnt/c/Code/Kevuru/battle-axes/Builds/server5/</em></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* run the login command 
-</code></pre></div></div>
-
-<p>*example: **docker login -u <username_here> -p <password_here> <url_here>*</url_here></password_here></username_here></p>
-
 <ul>
-  <li>run the build docker image command</li>
-</ul>
-
-<p>*example: **docker build -t <url_here>/battleaxes_server:v1 . ** *</url_here></p>
-
-<p><em>(Note: there is a “.” in the end of above command which means all files in the directory)</em></p>
-
-<p><em>(Note: increment v1 (vX) based on previously uploaded version)</em></p>
-
-<ul>
-  <li>
-    <p>Now <strong>before pushing</strong> this image to the cloud, <strong>test it locally</strong> by following <a href="#heading=h.17dp8vu">these steps</a>.</p>
+  <li>Copy the Docker Creds from <a href="https://developer.playfab.com/">PlayFab developer account</a>
+<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_350/v1676878047/Blogsite1/unity/deployingtocloud/image_8_zzs3sd.png" alt="image alt text" /> <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_350/v1676878049/Blogsite1/unity/deployingtocloud/image_9_jbrowe.png" alt="image alt text" /></li>
+  <li>In your windows machine, open the ubuntu terminal (not windows cmd),</li>
+  <li>move to the directory which contains the previously created Dockerfile,
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>mnt/c/Code/Kevuru/battle-axes/Builds/server5/
+</code></pre></div>    </div>
   </li>
-  <li>
-    <p>run the push docker build to cloud command</p>
+  <li>run the login command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker login <span class="nt">-u</span> &lt;username_here&gt; <span class="nt">-p</span> &lt;password_here&gt; &lt;url_here&gt;<span class="k">*</span>
+</code></pre></div>    </div>
+  </li>
+  <li>run the build docker image command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> &lt;url_here&gt;/battleaxes_server:v1 <span class="nb">.</span>
+</code></pre></div>    </div>
   </li>
 </ul>
 
-<p>*example: **docker push <url_here>/battleaxes_server:v1*</url_here></p>
+<p class="notice--warning"><strong>Note:</strong> there is a <code class="language-plaintext highlighter-rouge">.</code> in the end of above command which means all files in the directory and increment <code class="language-plaintext highlighter-rouge">v1</code> (vX) based on previously uploaded version)*</p>
+
+<ul>
+  <li>Now <strong>before pushing</strong> this image to the cloud, <strong>test it locally</strong> by following <a href="#testing-locally-using-playfabs-mpslocalagent">these steps</a>.</li>
+  <li>run the <code class="language-plaintext highlighter-rouge">push</code> docker build to cloud command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker push &lt;url_here&gt;/battleaxes_server:v1
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h3 id="testing-the-headless-server">Testing the headless server:</h3>
 
 <h4 id="testing-locally-using-playfabs-mpslocalagent">Testing locally using playfab’s MpsLocalAgent:</h4>
 
 <ul>
-  <li>Download the localAgent that’s required for testing playfab builds locally</li>
+  <li>Download the localAgent that’s required for testing playfab builds locally.
+Url: <a href="https://github.com/PlayFab/MpsAgent/releases">Releases · PlayFab/MpsAgent · GitHub</a></li>
+  <li>Setup the **MultiplayerSettings.json **file in the downloaded directory.
+more_info: <a href="https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/localmultiplayeragent/run-container-gameserver#configure-multiplayersettingsjson">Debug Container-based game servers using LocalMultiplayerAgent | Microsoft Docs</a></li>
 </ul>
 
-<p>url: <a href="https://github.com/PlayFab/MpsAgent/releases">Releases · PlayFab/MpsAgent · GitHub</a></p>
+<p>The file should look something like this in the end:</p>
+
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878048/Blogsite1/unity/deployingtocloud/image_10_nylant.png" alt="image alt text" class="align-center" /></p>
 
 <ul>
-  <li>Setup the **MultiplayerSettings.json **file in the downloaded directory</li>
+  <li>Now open windows terminal in the downloaded directory and run command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.<span class="se">\L</span>ocalMultiplayerAgent.exe <span class="nt">-lcow</span>
+</code></pre></div>    </div>
+  </li>
 </ul>
 
-<table>
-  <tbody>
-    <tr>
-      <td>more_info: [Debug Container-based game servers using LocalMultiplayerAgent</td>
-      <td>Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/localmultiplayeragent/run-container-gameserver#configure-multiplayersettingsjson)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The file should look like something this in the end:</p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878048/Blogsite1/unity/deployingtocloud/image_10_nylant.png" alt="image alt text" /></p>
+<p class="notice--info">Note: <code class="language-plaintext highlighter-rouge">lcow</code> stands for Linux Containers On Windows</p>
 
 <ul>
-  <li>Now open windows terminal in the downloaded directory and run command:</li>
-</ul>
-
-<p>.\LocalMultiplayerAgent.exe -lcow</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*(Note: lcow stands for Linux Containers On Windows)*
-</code></pre></div></div>
-
-<ul>
-  <li>Once the local server goes to “active”, connect a local client with <strong>ip: 127.0.0.1 and port 56100</strong></li>
+  <li>Once the local server goes to “active”, connect a local client with <code class="language-plaintext highlighter-rouge">ip: 127.0.0.1 and port 56100</code></li>
 </ul>
 
 <h4 id="using-ssh-into-running-cloud-server">Using SSH into running cloud server:</h4>
 
 <ul>
-  <li>
-    <p>Click on “Connect to Virtual Machine” in builds of playfab developer console</p>
+  <li>Click on “Connect to Virtual Machine” in builds of playfab developer console</li>
+  <li>Open your windows terminal and Run the ssh command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;id_here&gt;@&lt;ip_here&gt; <span class="nt">-p</span> &lt;port_here&gt;
+</code></pre></div>    </div>
   </li>
-  <li>
-    <p>Open your windows terminal and Run the ssh command</p>
+  <li>Run the Docker ps to get current running container info
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker ps <span class="nt">-a</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Get current server logs by cmd:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker logs &lt;docker_container_id&gt;
+</code></pre></div>    </div>
   </li>
 </ul>
-
-<p>*example: **ssh <id_here>@<ip_here> -p <port_here>*</port_here></ip_here></id_here></p>
-
-<ul>
-  <li>Run the Docker ps to get current running container info</li>
-</ul>
-
-<p><em>example: **sudo docker ps -a</em></p>
-
-<ul>
-  <li>Get current server logs by cmd:</li>
-</ul>
-
-<p>sudo docker logs <docker_container_id></docker_container_id></p>
 
 <h4 id="testing-locally-using-parrelsync-and-three-unity-editor-instances">Testing locally using ParrelSync and three Unity editor instances:</h4>
-
 <ul>
-  <li>Setup ParrelSync in the project</li>
-</ul>
-
-<p><a href="https://github.com/VeriorPies/ParrelSync">GitHub - VeriorPies/ParrelSync: (Unity3D) Test multiplayer without building</a></p>
-
-<ul>
-  <li>
-    <p>Have three editor instance running, one will be playfab_server and the other two will be playfab_clients (not local clients),</p>
-  </li>
-  <li>
-    <p>Join the server from other clients using the default local host ip address (0.0.0.0) and default local port.</p>
-  </li>
+  <li>Setup ParrelSync in the project
+<a href="https://github.com/VeriorPies/ParrelSync">GitHub - VeriorPies/ParrelSync: (Unity3D) Test multiplayer without building</a></li>
+  <li>Have three editor instance running, one will be playfab_server and the other two will be playfab_clients (not local clients),</li>
+  <li>Join the server from other clients using the default local host ip address (0.0.0.0) and default local port.</li>
 </ul>
 
 <h4 id="common-issues">Common issues:</h4>
 
 <ul>
-  <li>If you get an error called:* “You must set PlayFabSettings.TitleId before making API Calls.”* you can get the title id from playfab developer console.</li>
+  <li>If you get an error called: “You must set <code class="language-plaintext highlighter-rouge">PlayFabSettings.TitleId</code> before making API Calls.” you can get the title id from playfab developer console.</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878046/Blogsite1/unity/deployingtocloud/image_11_mfdk0m.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878046/Blogsite1/unity/deployingtocloud/image_11_mfdk0m.png" alt="image alt text" class="align-center" /></p>
 
 <ul>
   <li>If you get this error “network playfab not found”<img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_12_mpbdwj.png" alt="image alt text" />
@@ -606,70 +518,51 @@ Open “<strong>SetupLinuxContainersOnWindows.ps1</strong>” in LocalMultiplaye
 </ul>
 
 <h3 id="connecting-to-our-playfab-game-server-as-client">Connecting to our playfab game server as client:</h3>
-
 <h4 id="client-build-setup">Client Build Setup:</h4>
-
 <ul>
-  <li>
-    <p>Switch back to whatever target platform you were previously in from the dedicated server platform.</p>
-  </li>
-  <li>
-    <p>In Custom networkManager, switch Build type to <strong>PLAYFAB_CLIENT</strong></p>
-  </li>
+  <li>Switch back to whatever target platform you were previously in from the dedicated server platform.</li>
+  <li>In Custom networkManager, switch Build type to <code class="language-plaintext highlighter-rouge">PLAYFAB_CLIENT</code>
+<em>(which in turn enables the client-startup script)</em></li>
 </ul>
 
-<p><em>(which in turn enables the client-startup script)</em></p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878047/Blogsite1/unity/deployingtocloud/image_13_mtxtp3.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878047/Blogsite1/unity/deployingtocloud/image_13_mtxtp3.png" alt="image alt text" class="align-center" /></p>
 
 <ul>
   <li>In the playfab dashboard, click on the “request server”, when you have standby servers, and then Get the <strong>ip address</strong>, <strong>port</strong> and <strong>build id</strong> from the playfab console on the website.</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_14_wxur4r.png" alt="image alt text" /><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_15_imu4ew.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878049/Blogsite1/unity/deployingtocloud/image_14_wxur4r.png" alt="image alt text" /><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878049/Blogsite1/unity/deployingtocloud/image_15_imu4ew.png" alt="image alt text" /></p>
 
 <ul>
   <li>Make sure you have the right <strong>build-id, ipaddress, port **and **region</strong> set in the custom network manager or the network manager script and save scene for all clients</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_16_fblvj2.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878049/Blogsite1/unity/deployingtocloud/image_16_fblvj2.png" alt="image alt text" class="align-center" /></p>
 
 <ul>
   <li>Now with server already running, Click on <strong>Start game</strong> from <strong>clients in UnityEditor</strong>, and this should connect them all together.</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878047/Blogsite1/unity/deployingtocloud/image_17_ddjguf.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878047/Blogsite1/unity/deployingtocloud/image_17_ddjguf.png" alt="image alt text" class="align-center" /></p>
 
 <ul>
   <li>Now open a second client and click on “<strong>Join Game</strong>” button, enter the configuration you received above</li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878047/Blogsite1/unity/deployingtocloud/image_18_kc8i3q.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878047/Blogsite1/unity/deployingtocloud/image_18_kc8i3q.png" alt="image alt text" class="align-center" /></p>
 
 <h3 id="multiple-instances">Multiple instances:</h3>
 
 <h4 id="inspecting-multiple-instances-in-same-vm">Inspecting multiple instances in same VM:</h4>
-
 <ul>
-  <li>Containers use “playfab” network plugins, to inspect the instances in the machine run:</li>
-</ul>
-
-<p>docker inspect network playfab</p>
-
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>More details: [Connecting clients to game servers - PlayFab</td>
-          <td>Microsoft Learn](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/connecting-clients-to-game-servers)</td>
-        </tr>
-      </tbody>
-    </table>
+  <li>Containers use “playfab” network plugins, to inspect the instances in the machine run:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker inspect network playfab
+</code></pre></div>    </div>
   </li>
+  <li>More details: <a href="https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/connecting-clients-to-game-servers">Connecting clients to game servers - PlayFab | Microsoft Learn</a></li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_19_rxypqg.png" alt="image alt text" /></p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676878049/Blogsite1/unity/deployingtocloud/image_19_rxypqg.png" alt="image alt text" class="align-center" /></p>
 
         
       </section>
@@ -681,7 +574,7 @@ Open “<strong>SetupLinuxContainersOnWindows.ps1</strong>” in LocalMultiplaye
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-02-20T17:59:14+05:30">February 20, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-02-20T20:03:15+05:30">February 20, 2023</time></p>
 
       </footer>
 
@@ -797,6 +690,7 @@ Open “<strong>SetupLinuxContainersOnWindows.ps1</strong>” in LocalMultiplaye
     script.setAttribute('data-repo', 'prajwalshettydev/prajwalshetty.github.io');
     script.setAttribute('data-repo-id', 'R_kgDOI9ppjA');
     script.setAttribute('data-category', 'Announcements');
+    script.setAttribute('data-strict', '0');
     script.setAttribute('data-category-id', 'DIC_kwDOI9ppjM4CUPvp');
     script.setAttribute('data-mapping', 'pathname');
     script.setAttribute('data-reactions-enabled', '1');
