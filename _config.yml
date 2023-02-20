@@ -315,7 +315,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
@@ -334,12 +334,23 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  - scope:
+      path: ""
+      type: unity
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 collections_dir: "collections"
 collections:
   ue5:
     output: true
     permalink: /Unreal Engine 5/:path/
+  unity:
+    output: true
+    permalink: /Unity/:path/
   test1:
     output: true
     permalink: /:collection/:path/
