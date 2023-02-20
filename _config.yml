@@ -340,6 +340,9 @@ collections:
   ue5:
     output: true
     permalink: /Unreal Engine 5/:path/
+  unity:
+    output: true
+    permalink: /Unity/:path/
   test1:
     output: true
     permalink: /:collection/:path/
