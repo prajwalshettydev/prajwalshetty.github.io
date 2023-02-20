@@ -7,6 +7,8 @@ header:
   teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" #this is the thumbnail of the page
 comments: true
 author_profile: true
+tags: game unity server-build
+categories: unity
 #toc: true
 #toc_sticky: true
 #classes: wide

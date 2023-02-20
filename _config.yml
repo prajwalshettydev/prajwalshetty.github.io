@@ -52,11 +52,11 @@ title                    : # "Prajwal Shetty"
 title_separator          : "-"
 subtitle                 : # Version 0.8 # site tagline that appears below site title in masthead
 name                     : "Prajwal Shetty"
-description              : "Personal blog about game development, unreal engine 5, c++, unity 3D, computer graphics, c# and blender 3D"
+description              : "Welcome to my personal blog! My name is Prajwal Shetty, and I'm a game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you'll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!"
 url                      : "https://prajwalshetty.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "prajwalshettydev/prajwalshetty.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "https://res.cloudinary.com/dwfkishzf/image/upload/q_78/v1676536335/Prajwal%20Profile%20Images/unnamed_rc3y1z.webp" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" #"/assets/logos/logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
@@ -92,7 +92,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : true #, false (default)
-search_full_content      : true #, false (default)
+search_full_content      : false #, false (default)
 search_provider          : "lunr" #(default), algolia, google
 lunr:
   search_within_pages    : true #, false (default)
@@ -118,7 +118,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "https://res.cloudinary.com/dwfkishzf/image/upload/q_78/v1676536335/Prajwal%20Profile%20Images/unnamed_rc3y1z.webp" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -138,7 +138,7 @@ analytics:
 author:
   name             : "Prajwal shetty"
   avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/q_78/v1676536335/Prajwal%20Profile%20Images/unnamed_rc3y1z.webp" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I see the world in triangles and pixels, dev from the past 5 years, let's #makesomethingunreal!"
+  bio              : "I see the world in triangles and pixels, dev from the past 5 years, let’s #makesomethingunreal!"
   location         : # "Somewhere"
   email            : mail@prajwalshetty.com
   links:
@@ -254,7 +254,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 6 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /collections/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -348,9 +348,15 @@ collections:
   ue5:
     output: true
     permalink: /Unreal Engine 5/:path/
+    read_time: true
+    author_profile: true
+    layout: single
   unity:
     output: true
     permalink: /Unity/:path/
+    read_time: true
+    author_profile: true
+    layout: single
   test1:
     output: true
     permalink: /:collection/:path/

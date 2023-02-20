@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-20T20:03:15+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>Personal blog about game development, unreal engine 5, c++, unity 3D, computer graphics, c# and blender 3D</subtitle><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-21T01:23:54+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>Welcome to my personal blog! My name is Prajwal Shetty, and I&apos;m a game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you&apos;re a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you&apos;ll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you&apos;ll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!</subtitle><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author><entry><title type="html">About this site</title><link href="http://localhost:4000/About-this-site/" rel="alternate" type="text/html" title="About this site" /><published>2023-02-15T00:00:00+05:30</published><updated>2023-02-15T00:00:00+05:30</updated><id>http://localhost:4000/About%20this%20site</id><content type="html" xml:base="http://localhost:4000/About-this-site/">&lt;p&gt;Welcome to my personal blog! My name is Prajwal Shetty, and I’m a game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API.&lt;/p&gt;
+
+&lt;p&gt;I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts.&lt;/p&gt;
+
+&lt;p&gt;On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you’re a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you’ll find something of interest here.&lt;/p&gt;
+
+&lt;p&gt;As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work.&lt;/p&gt;
+
+&lt;p&gt;I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you’ll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!&lt;/p&gt;
+
+&lt;h3 id=&quot;tech-stack-used-to-build-this-site&quot;&gt;Tech stack used to build this site:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll&lt;/li&gt;
+  &lt;li&gt;Github pages&lt;/li&gt;
+  &lt;li&gt;Cloudinary&lt;/li&gt;
+  &lt;li&gt;Giscus.app&lt;/li&gt;
+  &lt;li&gt;Minimal Mistakes&lt;/li&gt;
+  &lt;li&gt;ChatGpt (Approx 10% of site’s content)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tools-used&quot;&gt;Tools used:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adobe Express&lt;/li&gt;
+  &lt;li&gt;Fotor.com&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;third-party-integrations&quot;&gt;Third party integrations&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Google Analytics&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author><summary type="html">On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you&apos;re a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you&apos;ll find something of interest here.</summary></entry></feed>
