@@ -24,16 +24,16 @@ var store = [{
     "excerpt":" ","url": "http://localhost:4000/categories/"
   },{
     "title": null,
-    "excerpt":" ","url": "http://localhost:4000/about/"
-  },{
-    "title": null,
-    "excerpt":"🌟🌌💻🛸🪂🍺🌍🦕                                                                                                                           Deplyoing Unity Builds To Playfab                                                    With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players.                                                   Read More                                         ","url": "http://localhost:4000/"
+    "excerpt":" ","url": "http://localhost:4000/contact"
   },{
     "title": null,
     "excerpt":"","url": "http://localhost:4000/collections/"
   },{
     "title": "Posts by Tag",
     "excerpt":"","url": "http://localhost:4000/tags/"
+  },{
+    "title": null,
+    "excerpt":"🌟🌌💻🛸🪂🍺🌍🦕                                                                                                                           Deplyoing Unity Builds To Playfab                                                    With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players.                                                   Read More                                         ","url": "http://localhost:4000/"
   },{
     "title": null,
     "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:4000/assets/js/lunr/lunr-en.js"
@@ -47,8 +47,14 @@ var store = [{
     "title": "Looks like you're offline",
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
   },{
+    "title": "Privacy Policy",
+    "excerpt":"Last updated: February 21, 2023 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the...","url": "http://localhost:4000/privacy-policy"
+  },{
     "title": "Posts by Tag",
     "excerpt":"","url": "http://localhost:4000/tags/"
+  },{
+    "title": "Terms and Conditions",
+    "excerpt":"Last updated: February 21, 2023 Please read these terms and conditions carefully before using Our Service. # Interpretation and Definitions ## Interpretation The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they...","url": "http://localhost:4000/terms"
   },{
     "title": "Unreal Engine 5",
     "excerpt":"","url": "http://localhost:4000/ue5/"

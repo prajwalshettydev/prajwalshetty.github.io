@@ -1,4 +1,5 @@
 ---
-permalink: /about/
+permalink: /contact
 breadcrumbs: false
 ---
+
