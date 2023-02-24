@@ -76,7 +76,7 @@ Directory and file should look something like the below image and the parent dir
 * In your windows machine, open the ubuntu terminal (not windows cmd), 
 * move to the directory which contains the previously created Dockerfile, 
 ```bash
-cd mnt/c/Code/Kevuru/battle-axes/Builds/server5/
+cd mnt/c/Code/Test/battle-axes/Builds/server5/
 ```
 * run the login command 
 ```bash
@@ -162,7 +162,7 @@ Open “**SetupLinuxContainersOnWindows.ps1**” in LocalMultiplayerAgentPublish
 
 ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_300/v1676878049/Blogsite1/unity/deployingtocloud/image_14_wxur4r.png)![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878049/Blogsite1/unity/deployingtocloud/image_15_imu4ew.png)
 
-* Make sure you have the right **build-id, ipaddress, port **and **region** set in the custom network manager or the network manager script and save scene for all clients
+* Make sure you have the right **build-id, ipAddress, port **and **region** set in the custom network manager or the network manager script and save scene for all clients
 
 ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1676878049/Blogsite1/unity/deployingtocloud/image_16_fblvj2.png){: .align-center}
 
