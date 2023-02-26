@@ -47,3 +47,15 @@ I love to write and believe that blogging is an excellent way to express my thou
 ### Third party integrations
 
 * [Google Analytics](https://analytics.google.com/analytics/web/){:target="_blank"}
+
+### Dev Environment
+
+- OS:
+  * Windows 11
+  * WSL2
+
+- IDE:
+  * JetBrains Rider
+  * VS Code
+  * Visual Studio 19/22
+
