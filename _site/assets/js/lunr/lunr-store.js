@@ -47,6 +47,9 @@ var store = [{
     "title": "Looks like you're offline",
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
   },{
+    "title": null,
+    "excerpt":"Welcome to my portfolio! I am a Game and Application Developer with 5 years of professional experience in Unity 3D, Blender, and Unreal Engine. Here, you can explore some of my projects and also download my resume. ### Resume You can download my resume [here](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target=\"_blank\"} ## Projects ### Animalia Card...","url": "http://localhost:4000/portfolio"
+  },{
     "title": "Privacy Policy",
     "excerpt":"Last updated: February 21, 2023 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the...","url": "http://localhost:4000/privacy-policy"
   },{

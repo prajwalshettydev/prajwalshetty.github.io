@@ -24,17 +24,17 @@ Microsoft Azure PlayFab service is a great way to host your multiplayer game and
 * Supports both Mirror and Fishnet
 * Server is set up in a Linux container.
 * Dev machine: Windows 10/11
-* Needs a [PlayFab Account](https://developer.playfab.com/en-US/sign-up) with payments setup (you wont be charged)
+* Needs a [PlayFab Account](https://developer.playfab.com/en-US/sign-up){:target="_blank"}  with payments setup (you wont be charged)
 
 ### Initial setup:
 #### Machine and Project Setup: (Windows 10/11)
 
-* Enable WSL2 and install Ubuntu distro. More info: [Set up your Windows development device - PlayFab \| Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device)
-* Install and setup Docker for wsl2 and make sure it’s running [Linux Containers](https://docs.docker.com/desktop/windows/#switch-between-windows-and-linux-containers)
+* Enable WSL2 and install Ubuntu distro. More info: [Set up your Windows development device - PlayFab \| Microsoft Docs](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#set-up-your-windows-development-device){:target="_blank"} 
+* Install and setup Docker for wsl2 and make sure it’s running [Linux Containers](https://docs.docker.com/desktop/windows/#switch-between-windows-and-linux-containers){:target="_blank"} 
 * Add Linux Build support module to your Unity Engine Installation
-* Access to the game’s [PlayFab developer account](https://developer.playfab.com/) and its docker **"Azure container registry"** credentials for a new build. 
-* Make sure your project has [Unity C# SDKs for PlayFab](https://github.com/PlayFab/UnitySDK) and [UnityGsdk](https://github.com/PlayFab/gsdk/tree/main/UnityGsdk) (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample [server script](https://github.com/PlayFab/MpsSamples/blob/main/UnityMirror/UnityServer/Assets/Server/Scripts/AgentListener.cs) & [client script](https://github.com/natepac/playfabmirrorgameexample/blob/master/Assets/Scripts/ClientStartUp.cs))
-* Setup either [mirror](https://assetstore.unity.com/packages/tools/network/mirror-129321) or [fishnet](https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815) in the project, and add their network managers into the scene
+* Access to the game’s [PlayFab developer account](https://developer.playfab.com/){:target="_blank"}  and its docker **"Azure container registry"** credentials for a new build. 
+* Make sure your project has [Unity C# SDKs for PlayFab](https://github.com/PlayFab/UnitySDK){:target="_blank"}  and [UnityGsdk](https://github.com/PlayFab/gsdk/tree/main/UnityGsdk){:target="_blank"}  (Playfab game server SDK for unity) setup and the api’s have already been integrated. (Sample [server script](https://github.com/PlayFab/MpsSamples/blob/main/UnityMirror/UnityServer/Assets/Server/Scripts/AgentListener.cs){:target="_blank"}  & [client script](https://github.com/natepac/playfabmirrorgameexample/blob/master/Assets/Scripts/ClientStartUp.cs){:target="_blank"}) 
+* Setup either [mirror](https://assetstore.unity.com/packages/tools/network/mirror-129321){:target="_blank"}  or [fishnet](https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815){:target="_blank"}  in the project, and add their network managers into the scene
 
 #### Network Manager Setup for Mirror:
 
