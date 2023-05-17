@@ -1,0 +1,8 @@
+//to build:
+bundle exec jekyll serve
+
+//set env
+jekyll build JEKYLL_ENV=production
+
+//default local:
+http://127.0.0.1:4000

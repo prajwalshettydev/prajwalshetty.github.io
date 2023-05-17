@@ -34,7 +34,7 @@ I love to write and believe that blogging is an excellent way to express my thou
 * [Cloudinary](https://cloudinary.com/){:target="_blank"}
 * [Giscus.app](https://giscus.app/){:target="_blank"}
 * [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes){:target="_blank"}
-* [ChatGpt](https://openai.com/blog/chatgpt/){:target="_blank"} (Approx 10% of site's content)
+* [ChatGpt](https://openai.com/blog/chatgpt/){:target="_blank"} 
 * [Google Domains](https://domains.google/){:target="_blank"}
 
 ### Tools used:
@@ -42,7 +42,7 @@ I love to write and believe that blogging is an excellent way to express my thou
 * [Adobe Express](https://www.adobe.com/express/){:target="_blank"}
 * [Fotor.com](https://www.fotor.com/){:target="_blank"}
 * [Realfavicongenerator.net](https://realfavicongenerator.net/){:target="_blank"}
-* [Privacypolicies.com](https://www.privacypolicies.com/)
+* [Privacypolicies.com](https://www.privacypolicies.com/){:target="_blank"}
   
 ### Third party integrations
 
@@ -58,4 +58,7 @@ I love to write and believe that blogging is an excellent way to express my thou
   * JetBrains Rider
   * VS Code
   * Visual Studio 19/22
+
+
+You can download my resume [here](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"} 
 
