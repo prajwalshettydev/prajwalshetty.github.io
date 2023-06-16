@@ -1,5 +1,5 @@
 ---
-#title: Prajwal Shetty's Portfolio
+title: Prajwal Shetty's Portfolio
 feature_image: "https://picsum.photos/2560/600?image=872"
 share: false
 comments: false
@@ -9,7 +9,7 @@ show_date: false
 breadcrumbs: false
 permalink: portfolio
 #layout: splash
-layout: single
+layout: single-no-title
 gallery:
   - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/q_76/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png
@@ -48,7 +48,7 @@ gallery:
 
 Welcome to my portfolio! I am a Game and Application Developer with 5 years of professional experience in Unity 3D, Blender, and Unreal Engine. Here, you can explore some of my projects.
 
-You can download my resume [here](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"} 
+[Resume](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"} \| [Github](https://github.com/prajwalshettydev){:target="_blank"} \| [Linkedin](https://www.linkedin.com/in/shettyprajwal/){:target="_blank"}
 
 ### Animalia Card Game - Kevuru Games
 Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures.
@@ -80,3 +80,31 @@ Desktop app (Mac/Windows UWP store) early example:
 {% include video id="d3Yhc_uIZuo?start=63" provider="youtube" %}
 Spacejoy website:
 {% include video id="hgLDJfuLUg8" provider="youtube" %}
+
+### Blender Add-on
+
+#### Spacejoy Client plugin:
+Fetches 100+ `".blend"` or `"gltf"` files of independent furniture 3D models from the cloud and merges and places them together to make one full design. Sets up lighting camera, render settings and other things, all in one click for the 3D artist.
+Also had Auth, 3D object processing tools like quality check etc.
+
+![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png)    ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png)
+
+
+![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg)    ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg)
+
+#### Backend:
+- Setup in the cloud as docker instance, this plugin was built to automate cycles render output for designs, or batch generating furniture thumbnails, room lighting check etc. So a design ID goes in as input, comes out realistic design images.
+- Both these plugins worked and supported designs that created in both Spacejoy's Unity app and blender.
+- Company also had a 3D catalogue of 70 thousand furnitures, and their thumbnails were generated using my plugin.
+
+Some outputs from the backend plugin:
+![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904903/Spacejoy/60b656a971906f001c9913bc_compressed_uj0m0j.png)  
+![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904885/Spacejoy/600808173393b6001c84b345_compressed_wcw0vu.png)
+
+![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904880/Spacejoy/RoomGridSample_tapcfv.jpg) 
+
+Automated design outputs, using Cycles:
+![Render Output 1](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904929/Spacejoy/60f6b5765a1980002abfca92_1626782377197_sjor9i.jpg) 
+![Render Output 1](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904922/Spacejoy/60ec589e5a1980002abfb759_1626103385488_tt7k74.jpg) 
+![Render Output 1](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904947/Spacejoy/image_bbc8wh.png) 
+![Render Output 1](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg) 

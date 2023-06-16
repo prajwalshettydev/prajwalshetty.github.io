@@ -1,7 +1,7 @@
 ---
 title: Deploying Unity Game Server Into Playfab Cloud
 excerpt : "Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost."
-layout: single
+layout: single-no-title
 share: true
 header:
   teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" #this is the thumbnail of the page
@@ -16,6 +16,7 @@ search: true #To enable site-wide search add
 #permalink: /:collection/unity-game-server
 ---
 
+# Deploying Unity Game Server Into Playfab Cloud
 
 Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, I will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.
 

@@ -12,7 +12,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/q_78/v1676536335/Prajwal%20Profile%20Images/unnamed_rc3y1z.webp"
       },{
         "title": "Deploying Unity Game Server Into Playfab Cloud",
-        "excerpt":"Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, I will take you through the steps involved...","categories": ["unity"],
+        "excerpt":"Deploying Unity Game Server Into Playfab Cloud Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, I...","categories": ["unity"],
         "tags": ["game","unity","server-build"],
         "url": "/Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/",
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png"
@@ -47,8 +47,8 @@ var store = [{
     "title": "Looks like you're offline",
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
   },{
-    "title": null,
-    "excerpt":"Welcome to my portfolio! I am a Game and Application Developer with 5 years of professional experience in Unity 3D, Blender, and Unreal Engine. Here, you can explore some of my projects. You can download my resume [here](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target=\"_blank\"} ### Animalia Card Game - Kevuru Games Animalia is an independent f2p...","url": "http://localhost:4000/portfolio"
+    "title": "Prajwal Shetty's Portfolio",
+    "excerpt":"Welcome to my portfolio! I am a Game and Application Developer with 5 years of professional experience in Unity 3D, Blender, and Unreal Engine. Here, you can explore some of my projects. [Resume](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target=\"_blank\"} \\| [Github](https://github.com/prajwalshettydev){:target=\"_blank\"} \\| [Linkedin](https://www.linkedin.com/in/shettyprajwal/){:target=\"_blank\"} ### Animalia Card Game - Kevuru Games Animalia is an independent f2p online...","url": "http://localhost:4000/portfolio"
   },{
     "title": "Privacy Policy",
     "excerpt":"Last updated: February 21, 2023 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the...","url": "http://localhost:4000/privacy-policy"
