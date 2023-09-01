@@ -35,20 +35,22 @@ gallery:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/q_76/v1683142285/Traffic%20Tales/Screenshot_2023-05-04_002644_zsiuzd.png
     alt: ""
     title: ""
-
-# header:
-#   #overlay_color: "#000"
-#   #overlay_filter: "0.5"
-#   image: https://res.cloudinary.com/dwfkishzf/image/upload/v1676920092/Prajwal%20Profile%20Images/IMG_7170_w1vxha.jpg
-# excerpt: "On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here."
-
+gallery2:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png
+    alt: ""
+    title: ""
 ---
 
 <!-- # Prajwal Shetty's Portfolio -->
 
-Welcome to my portfolio! I am a Game and Application Developer with 5 years of professional experience in Unity 3D, Blender, and Unreal Engine. Here, you can explore some of my projects.
+Welcome to my portfolio!
 
-[Resume](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"} \| [Github](https://github.com/prajwalshettydev){:target="_blank"} \| [Linkedin](https://www.linkedin.com/in/shettyprajwal/){:target="_blank"}
+[Resume](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"}
 
 ### Animalia Card Game - Kevuru Games
 Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures.
@@ -66,18 +68,22 @@ I worked on setting up the game connection, player combat, mirror networking and
 
 A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future.
 
-{% include gallery caption="" %}
+{% include gallery layout="third" caption="" %}
 
 
 ### Spacejoy's Design apps
 Desktop and mobile apps built for loading and interacting with 50 thousand+ 3D models all in realtime, 
 
+{% include gallery id="gallery2" layout="third" caption="" %}
 Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated:
-![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg)    ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png)
+
+[//]: # ()
+[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
 
 
-Desktop app (Mac/Windows UWP store) early example: 
-{% include video id="d3Yhc_uIZuo?start=63" provider="youtube" %}
+[//]: # (Desktop app &#40;Mac/Windows UWP store&#41; early example: )
+[//]: # ({% include video id="d3Yhc_uIZuo?start=63" provider="youtube" %})
+
 Spacejoy website:
 {% include video id="hgLDJfuLUg8" provider="youtube" %}
 
