@@ -379,7 +379,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -391,10 +391,43 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h1 id="runtime-mesh-generation-in-unreal-engine-5---with-lods">Runtime mesh generation in Unreal Engine 5 - With LODs</h1>
+        <h1 id="runtime-mesh-generation-in-unreal-engine-5-c---with-lods">Runtime mesh generation in Unreal Engine 5 (C++) - With LODs</h1>
 
 <h2 id="introduction">Introduction</h2>
-<p>There are mainly</p>
+<p>In this blog we will go through to major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.</p>
+
+<h2 id="procedural-mesh-component">Procedural Mesh Component</h2>
+<p>Using Unreal Engine’s inbuilt mesh generation component is the easiest way to generate meshes at runtime. It is a component that can be added to any actor and can be used to generate meshes at runtime. It is also very easy to use. It has a few limitations though. It can only generate meshes with a single material. It also does not support LODs.</p>
+
+<p>The official documentation for the Procedural Mesh Component can be found <a href="https://docs.unrealengine.com/5.2/en-US/API/Plugins/ProceduralMeshComponent/UProceduralMeshComponent/">here</a>. The documentation is very basic and does not cover all the functions. You can also go through the actual source code for more deep dive into the component.</p>
+
+<h3 id="creating-a-procedural-mesh-component">Creating a Procedural Mesh Component</h3>
+
+<p>To use this component, include the “ProceduralMeshComponent” path in the build.cs file of your project:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PublicDependencyModuleNames</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> 
+    <span class="s">"Core"</span><span class="p">,</span> <span class="s">"CoreUObject"</span><span class="p">,</span> <span class="s">"Engine"</span><span class="p">,</span> <span class="s">"InputCore"</span><span class="p">,</span> <span class="s">"ProceduralMeshComponent"</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<p>Also, after 4.27, plugins can now depend on other plugins, so in case you are working on a plugin instead of a project, you will have to add this to your .uplugin file:</p>
+
+<p>Then include the header file in your cpp file:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"Modules"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"Plugins"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ProceduralMeshComponent"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
 
         
       </section>
@@ -413,9 +446,9 @@
     
       <a href="/tags/#game" class="page__taxonomy-item p-category" rel="tag">game</a><span class="sep">, </span>
     
-      <a href="/tags/#server-build" class="page__taxonomy-item p-category" rel="tag">server-build</a><span class="sep">, </span>
+      <a href="/tags/#graphics" class="page__taxonomy-item p-category" rel="tag">graphics</a><span class="sep">, </span>
     
-      <a href="/tags/#unity" class="page__taxonomy-item p-category" rel="tag">unity</a>
+      <a href="/tags/#unreal-engine" class="page__taxonomy-item p-category" rel="tag">unreal-engine</a>
     
     </span>
   </p>
@@ -432,7 +465,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#ue5" class="page__taxonomy-item p-category" rel="tag">ue5</a>
+      <a href="/categories/#ue5" class="page__taxonomy-item p-category" rel="tag">UE5</a>
     
     </span>
   </p>
@@ -464,7 +497,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/ue5/Automating-3D-work-with-blender-plugins/" class="pagination--pager" title="Runtime mesh generation in Unreal Engine 5 - With LODs
+">Next</a>
     
   </nav>
 
@@ -478,6 +512,106 @@
     <div class="page__related">
       <h2 class="page__related-title">Similar articles</h2>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ue5/KTX-and-DRACO-compression-for-runtime-mesh-is-Unity/" rel="permalink">Runtime mesh generation in Unreal Engine 5 - With LODs
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-02T00:00:00+05:30">September 2, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure Pl...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ue5/Automating-3D-work-with-blender-plugins/" rel="permalink">Runtime mesh generation in Unreal Engine 5 - With LODs
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-02T00:00:00+05:30">September 2, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure Pl...</p>
+  </article>
+</div>
+
         
           
 

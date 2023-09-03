@@ -350,7 +350,91 @@ I worked on setting up the game connection, player combat, mirror networking and
     <iframe src="https://www.youtube-nocookie.com/embed/HL8MXwn8RHQ" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
-<h3 id="procedural-runtime-terrain-and-road-system-with-ue5-and-c">Procedural Runtime Terrain and Road system with UE5 and C++</h3>
+<h3 id="blender-add-ons---spacejoy-inc">Blender Add-ons - Spacejoy Inc:</h3>
+<h4 id="backend-blender-cycles-render-automation-plugin">Backend, Blender Cycles Render Automation plugin</h4>
+<ul>
+  <li>Setup in the cloud as docker instance, this plugin was built to automate cycles render output for designs, or batch generating furniture thumbnails, room lighting check etc. So a design ID goes in as input, comes out realistic design images.</li>
+  <li>Both these plugins worked and supported designs that created in both Spacejoy’s Unity app and blender.</li>
+  <li>Company also had a 3D catalogue of 70 thousand furnitures, and their thumbnails were generated using my plugin.</li>
+</ul>
+
+<p>Some outputs from the backend plugin:
+<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904903/Spacejoy/60b656a971906f001c9913bc_compressed_uj0m0j.png" alt="image alt text" /><br />
+<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904885/Spacejoy/600808173393b6001c84b345_compressed_wcw0vu.png" alt="image alt text" /></p>
+
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904880/Spacejoy/RoomGridSample_tapcfv.jpg" alt="image alt text" /></p>
+
+<p>Automated design outputs, using Blender Cycles:</p>
+
+<figure class="half ">
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904929/Spacejoy/60f6b5765a1980002abfca92_1626782377197_sjor9i.jpg" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904929/Spacejoy/60f6b5765a1980002abfca92_1626782377197_sjor9i.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904922/Spacejoy/60ec589e5a1980002abfb759_1626103385488_tt7k74.jpg" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904922/Spacejoy/60ec589e5a1980002abfb759_1626103385488_tt7k74.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904947/Spacejoy/image_bbc8wh.png" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904947/Spacejoy/image_bbc8wh.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>
+</figcaption>
+  
+</figure>
+
+<h4 id="spacejoy-blender-client-plugin">Spacejoy Blender Client plugin:</h4>
+<p>Fetches 100+ <code class="language-plaintext highlighter-rouge">".blend"</code> or <code class="language-plaintext highlighter-rouge">"gltf"</code> files of independent furniture 3D models from the cloud and merges and places them together to make one full design. Sets up lighting camera, render settings and other things, all in one click for the 3D artist.
+Also had Auth, 3D object processing tools like quality check etc.</p>
+
+<figure class="half ">
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg" title="">
+          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>
+</figcaption>
+  
+</figure>
+
+<h3 id="procedural-runtime-terrain-and-road-system-with-ue5-and-c---hobby-project">Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project</h3>
 
 <p>A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future.</p>
 
@@ -398,40 +482,22 @@ I worked on setting up the game connection, player combat, mirror networking and
   
 </figure>
 
+<h3 id="a-work-in-progress-multiplayer-battle-arena---mayaverse-inc">A Work in Progress Multiplayer Battle Arena - Mayaverse Inc</h3>
+
+<p>Built with Unity and fish-networking</p>
+
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_80,w_733/v1693233769/IMG_5376_wt2qp4.jpg" alt="image alt text" /></p>
+
 <h3 id="spacejoys-design-apps">Spacejoy’s Design apps</h3>
 <p>Desktop and mobile apps built for loading and interacting with 50 thousand+ 3D models all in realtime,</p>
 
-<figure class="third ">
-  
-    
-      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg" title="">
-          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_500/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg" alt="" />
-      </a>
-    
-  
-    
-      <a href="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png" title="">
-          <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_220/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png" alt="" />
-      </a>
-    
-  
-  
-    <figcaption>
-</figcaption>
-  
-</figure>
-
 <p>Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated:</p>
 
-<!-- Courtesy of embedresponsively.com -->
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg" alt="image alt text" />    <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png" alt="image alt text" /></p>
 
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/d3Yhc_uIZuo?start=63" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
+<h4 id="spacejoy-website">Spacejoy website:</h4>
 
-<p>)</p>
-
-<p>Spacejoy website:</p>
+<p>A short walkthrough of the website:</p>
 
 <!-- Courtesy of embedresponsively.com -->
 
@@ -439,34 +505,6 @@ I worked on setting up the game connection, player combat, mirror networking and
     <iframe src="https://www.youtube-nocookie.com/embed/hgLDJfuLUg8" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
-<h3 id="blender-add-on">Blender Add-on</h3>
-
-<h4 id="spacejoy-client-plugin">Spacejoy Client plugin:</h4>
-<p>Fetches 100+ <code class="language-plaintext highlighter-rouge">".blend"</code> or <code class="language-plaintext highlighter-rouge">"gltf"</code> files of independent furniture 3D models from the cloud and merges and places them together to make one full design. Sets up lighting camera, render settings and other things, all in one click for the 3D artist.
-Also had Auth, 3D object processing tools like quality check etc.</p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png" alt="image alt text" />    <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png" alt="image alt text" /></p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg" alt="image alt text" />    <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg" alt="image alt text" /></p>
-
-<h4 id="backend">Backend:</h4>
-<ul>
-  <li>Setup in the cloud as docker instance, this plugin was built to automate cycles render output for designs, or batch generating furniture thumbnails, room lighting check etc. So a design ID goes in as input, comes out realistic design images.</li>
-  <li>Both these plugins worked and supported designs that created in both Spacejoy’s Unity app and blender.</li>
-  <li>Company also had a 3D catalogue of 70 thousand furnitures, and their thumbnails were generated using my plugin.</li>
-</ul>
-
-<p>Some outputs from the backend plugin:
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904903/Spacejoy/60b656a971906f001c9913bc_compressed_uj0m0j.png" alt="image alt text" /><br />
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_2020/v1686904885/Spacejoy/600808173393b6001c84b345_compressed_wcw0vu.png" alt="image alt text" /></p>
-
-<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904880/Spacejoy/RoomGridSample_tapcfv.jpg" alt="image alt text" /></p>
-
-<p>Automated design outputs, using Cycles:
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904929/Spacejoy/60f6b5765a1980002abfca92_1626782377197_sjor9i.jpg" alt="Render Output 1" /> 
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904922/Spacejoy/60ec589e5a1980002abfb759_1626103385488_tt7k74.jpg" alt="Render Output 1" /> 
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904947/Spacejoy/image_bbc8wh.png" alt="Render Output 1" /> 
-<img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg" alt="Render Output 1" /></p>
 
         
       </section>
