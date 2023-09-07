@@ -4,7 +4,7 @@ excerpt : "Deploying a Unity Linux game server on the Microsoft Azure PlayFab se
 layout: single-no-title
 share: true
 header:
-  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" #this is the thumbnail of the page
+  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png" #this is the thumbnail of the page
 comments: true
 author_profile: true
 tags: game unreal-engine graphics
@@ -21,10 +21,19 @@ search: true #To enable site-wide search add
 ## Introduction
 In this blog we will go through to major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.
 
-This blog will discuss two ways to generate runtime meshes in Unreal Engine 5. The first one is using the `Procedural Mesh Component`. The second one is using the `Runtime Mesh Component`. 
+![image](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_400/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png){: .align-center}
 
-**NOTE:** Currently both of these methods does not support runtime mesh distance field generation, which in-turn will effect the runtime LUMEN GI.
-{: .notice}
+We will discuss two ways to generate runtime meshes in Unreal Engine 5. The first one is using the `Procedural Mesh Component`. The second one is using the `Runtime Mesh Component`. 
+
+{% capture notice-text %}
+* *ProceduralMeshComponent* does not support LODs
+* Both methods do not support "runtime mesh distance field generation", which in-turn will effect the LUMEN in >=UE5.0
+  {% endcapture %}
+
+<div class="notice">
+  <h4 class="no_toc">Current Limitations:</h4>
+  {{ notice-text | markdownify }}
+</div>
 
 ## Procedural Mesh Component
 Using Unreal Engine's inbuilt mesh generation component is the easiest way to generate meshes at runtime. It is a component that can be added to any actor and can be used to generate meshes at runtime. It is also very easy to use. It has a few limitations though. It can only generate meshes with a single material. It also does not support LODs.
@@ -59,6 +68,7 @@ Then include the header file in your cpp file:
   ]
 }
 ```
+Add the `UProceduralMeshComponent` to your actor's header file, and then initialize it in the constructor, just like any other component.
 
 Now let's assume you have a function setup to generate your runtime mesh's uv, vertices, triangles, normals, tangents, etc. Following is an example for such a function:
 
@@ -124,65 +134,112 @@ void AThTerrain::GenerateMesh(const int LODMultiplier, const TArray<TArray<float
 }
 ```
 
+Similarly, you can also generate the normals and tangents for the mesh. Once you have all the data ready, you can use the following function to create the mesh:
 
+Once the mesh data is generated, you can use the following function from the `UProceduralMeshComponent` to create the mesh:
 ```cpp
-	/**
-	*	Create/replace a section for this procedural mesh component.
-	*	@param	SectionIndex		Index of the section to create or replace.
-	*	@param	Vertices			Vertex buffer of all vertex positions to use for this mesh section.
-	*	@param	Triangles			Index buffer indicating which vertices make up each triangle. Length must be a multiple of 3.
-	*	@param	Normals				Optional array of normal vectors for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	UV0					Optional array of texture co-ordinates for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	VertexColors		Optional array of colors for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	Tangents			Optional array of tangent vector for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	bCreateCollision	Indicates whether collision should be created for this section. This adds significant cost.
-	*/
+void CreateMeshSection
+(
+    int32 SectionIndex,
+    const TArray< FVector > & Vertices,
+    const TArray< int32 > & Triangles,
+    const TArray< FVector > & Normals,
+    const TArray< FVector2D > & UV0,
+    const TArray< FVector2D > & UV1,
+    const TArray< FVector2D > & UV2,
+    const TArray< FVector2D > & UV3,
+    const TArray< FColor > & VertexColors,
+    const TArray< FProcMeshTangent > & Tangents,
+    bool bCreateCollision
+)
+```
+*link to above code's official documentation: [here](https://docs.unrealengine.com/5.3/en-US/API/Plugins/ProceduralMeshComponent/UProceduralMeshComponent/CreateMeshSection/2/)*
+{: .notice--success}
 
-// '''Don't use this function'''. It is deprecated. Use LinearColor version.
-void CreateMeshSection(int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<int32>& Triangles, const TArray<FVector>& Normals, const TArray<FVector2D>& UV0, const TArray<FColor>& VertexColors, const TArray<FProcMeshTangent>& Tangents, bool bCreateCollision);
+## Runtime Mesh Component
+
+<a href="https://github.com/TriAxis-Games/RealtimeMeshComponent" class="btn btn--inverse">Github Link</a>
+
+Runtime mesh component is an external plugin that can be used to generate meshes at runtime. It is a very powerful plugin that can be used to generate meshes with multiple materials and LODs. It is also very easy to use. But currently the documentation is not very good. So you will have to go through the source code to understand how to use it. The source code is very well documented and easy to understand.
+
+The RuntimeMeshComponent or more commonly known as RMC, is a replacement to the ProceduralMeshComponent (aka PMC) found in UE4. The RMC is much more efficient, and carries many more features, while allowing for a much more fine-grained approach for advanced use cases, while being simple to use just like the PMC. It can handle any use case from simply loading models at runtime, to debug views, to modification of existing models all the way up to procedural generation of entire worlds!
+
+The RMC has been around for 6+ years and has an active community of users from individuals, to schools, to Fortune 500 companies, with many released projects. You can also find active support in their Discord server here:  [https://discord.gg/KGvBBTv](https://discord.gg/KGvBBTv){:target="_blank"}
+
+### Creating mesh using Runtime Mesh Component
+
+To use this component, include the "RuntimeMeshComponent" path in the build.cs file of your project: 
+
+```csharp
+PublicDependencyModuleNames.Add("RealtimeMeshComponent");
+```
+Also make sure you add the `#include "RealtimeMeshSimple.h"` header file in your cpp file:
+
+
+
+Let's assume you have a function setup to generate your runtime mesh's uv, vertices, triangles, normals, tangents, etc. similar to the one we used for the PMC. 
+
+Once the mesh data is generated, you can use the following function from the `URuntimeMeshComponent` to create the mesh:
+```cpp
+URealtimeMeshSimple* GeneratedMesh = Chunk.MeshComponent->InitializeRealtimeMesh<URealtimeMeshSimple>();
+
+FRealtimeMeshSimpleMeshData LODMeshData;
+LODMeshData.Positions = VertexBuffer;
+LODMeshData.Triangles = IndexBuffer;
+LODMeshData.Normals = Normals;
+LODMeshData.UV0 = UVs;
+LODMeshData.Tangents = Tangents_vec;
+
+// binary logarithm (log base 2), This will convert 1 to 0, 2 to 1, 4 to 2, 8 to 3, and 16 to 4.
+FRealtimeMeshLODKey LODKey = FRealtimeMeshLODKey(std::log2(LODMultiplier));
+
+Chunk.GeneratedRealtimeMesh->CreateMeshSection(
+    LODKey, FRealtimeMeshSectionConfig(ERealtimeMeshSectionDrawType::Static, 0),
+    LODMeshData, false);
 ```
 
+### Generating LODs for Runtime Mesh Component
+
+The RMC supports LODs. It can generate LODs for the mesh at runtime. It can also generate LODs for the mesh in the editor. The LODs are generated by setting the `FRealtimeMeshLODKey` while setting mesh section data. So if you want to generate LODs for your mesh, you will have to generate the mesh for each LOD. The LODs are generated using the following function:
+
 ```cpp
-void AMyActor::CreateTriangle()
+
+void AThTerrain::CreateMeshChunk(const TArray<TArray<float>>& IslandHeightMap, FThTerrainChunk& Chunk)
 {
-	TArray<FVector> vertices;
-	vertices.Add(FVector(0, 0, 0));
-	vertices.Add(FVector(0, 100, 0));
-	vertices.Add(FVector(0, 0, 100));
-
-	TArray<int32> Triangles;
-	Triangles.Add(0);
-	Triangles.Add(1);
-	Triangles.Add(2);
-
-	TArray<FVector> normals;
-	normals.Add(FVector(1, 0, 0));
-	normals.Add(FVector(1, 0, 0));
-	normals.Add(FVector(1, 0, 0));
-
-	TArray<FVector2D> UV0;
-	UV0.Add(FVector2D(0, 0));
-	UV0.Add(FVector2D(10, 0));
-	UV0.Add(FVector2D(0, 10));
+	URealtimeMeshSimple* GeneratedMesh = Chunk
+	        .MeshComponent->InitializeRealtimeMesh<URealtimeMeshSimple>();
+	Chunk.GeneratedRealtimeMesh = GeneratedMesh;
 	
+	Chunk.Stats.LODs.Empty();
 
-	TArray<FProcMeshTangent> tangents;
-	tangents.Add(FProcMeshTangent(0, 1, 0));
-	tangents.Add(FProcMeshTangent(0, 1, 0));
-	tangents.Add(FProcMeshTangent(0, 1, 0));
+	FIntPoint Length;
+	Length.X = (Chunk.Length.X % 2 == 0) ? Chunk.Length.X : Chunk.Length.X - 1;
+	Length.Y = (Chunk.Length.Y % 2 == 0) ? Chunk.Length.Y : Chunk.Length.Y - 1;
+	
+	const float IslandX = Chunk.Range.Min.X * IslandCellSize - Length.X / 2;
+	const float IslandY = Chunk.Range.Min.Y * IslandCellSize - Length.Y / 2;
 
-	TArray<FLinearColor> vertexColors;
-	vertexColors.Add(FLinearColor(0.75, 0.75, 0.75, 1.0));
-	vertexColors.Add(FLinearColor(0.75, 0.75, 0.75, 1.0));
-	vertexColors.Add(FLinearColor(0.75, 0.75, 0.75, 1.0));
+	Chunk.MeshComponent->SetRelativeLocation(
+	        FVector(IslandX - IslandLocation.X, IslandY - IslandLocation.Y, 0));
 
-	mesh->CreateMeshSection_LinearColor(0, vertices, Triangles, normals, UV0, vertexColors, tangents, true);
-        
-        // Enable collision data
-	mesh->ContainsPhysicsTriMeshData(true);
+	GeneratedMesh->UpdateLODConfig(FRealtimeMeshLODKey(0), FRealtimeMeshLODConfig(1));
+	CreateLOD(1, IslandHeightMap, Chunk);
+
+	GeneratedMesh->AddLOD(FRealtimeMeshLODConfig(0.9));
+	CreateLOD(2, IslandHeightMap, Chunk);
+	
+	GeneratedMesh->AddLOD(FRealtimeMeshLODConfig(0.4));
+	CreateLOD(4, IslandHeightMap, Chunk);
+	
+	//CreateLOD(8, IslandHeightMap, Chunk);
 }
 ```
 
+Here, `FRealtimeMeshLODConfig` set's the desired screensize for the LOD. The range of the variable is usually 0 to 1, for 1 being entire screen
+Since LOD 0 already exists, we use `UpdateLODConfig` to set it's screen size (although optional, as it's visible by default), for rest of the LODs we use `AddLOD` to add them to the mesh.
 
+Each RealtimeMeshComponent can have 1-8 Levels of Detail or LODs, each of which can have any number of section groups, each of which can have any number of sections. Each LOD is separate from the others, and so can have different numbers of sections and different materials bound to those sections.
+
+Each LOD has a ScreenSize associated to it. This is the percent of the screen the bounding volume has to cover before this LOD is rendered.
 
 

@@ -78,7 +78,9 @@ gallery4:
 
 Welcome to my portfolio!
 
-[Resume](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+
+[//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 
 ### Animalia Card Game - Kevuru Games
 Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures.

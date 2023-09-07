@@ -30,7 +30,7 @@
 
 
 
-  <meta property="og:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png">
+  <meta property="og:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png">
 
 
 
@@ -42,7 +42,7 @@
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png">
+      <meta name="twitter:image" content="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png">
     
   
 
@@ -143,14 +143,11 @@
 <!--          Prajwal Shetty-->
 <!--          -->
 <!--        </a>-->
-        <ul class="visible-links">
-<li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/portfolio">Portfolio</a>
-            </li>
-<li class="masthead__menu-item">
+            </li><li class="masthead__menu-item">
               <a href="/About-this-site/">About</a>
-            </li>
-</ul>
+            </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -188,7 +185,7 @@
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
 
-          <meta itemprop="position" content="1">
+          <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
       
@@ -196,7 +193,7 @@
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="/categories/#ue5" itemprop="item"><span itemprop="name">Ue5</span></a>
-          <meta itemprop="position" content="2">
+          <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
       
@@ -281,7 +278,7 @@
       
         <li>
           <a href="mailto:mail@prajwalshetty.com" rel="me" class="u-email">
-            <meta itemprop="email" content="mail@prajwalshetty.com">
+            <meta itemprop="email" content="mail@prajwalshetty.com" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
@@ -382,7 +379,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          4 minute read
+          7 minute read
         
       </span>
     
@@ -399,9 +396,20 @@
 <h2 id="introduction">Introduction</h2>
 <p>In this blog we will go through to major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.</p>
 
-<p>This blog will discuss two ways to generate runtime meshes in Unreal Engine 5. The first one is using the <code class="language-plaintext highlighter-rouge">Procedural Mesh Component</code>. The second one is using the <code class="language-plaintext highlighter-rouge">Runtime Mesh Component</code>.</p>
+<p><img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_400/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png" alt="image" class="align-center" /></p>
 
-<p class="notice"><strong>NOTE:</strong> Currently both of these methods does not support runtime mesh distance field generation, which in-turn will effect the runtime LUMEN GI.</p>
+<p>We will discuss two ways to generate runtime meshes in Unreal Engine 5. The first one is using the <code class="language-plaintext highlighter-rouge">Procedural Mesh Component</code>. The second one is using the <code class="language-plaintext highlighter-rouge">Runtime Mesh Component</code>.</p>
+
+<div class="notice">
+  <h4 class="no_toc">Current Limitations:</h4>
+  
+<ul>
+  <li><em>ProceduralMeshComponent</em> does not support LODs</li>
+  <li>Both methods do not support “runtime mesh distance field generation”, which in-turn will effect the LUMEN in &gt;=UE5.0</li>
+</ul>
+
+
+</div>
 
 <h2 id="procedural-mesh-component">Procedural Mesh Component</h2>
 <p>Using Unreal Engine’s inbuilt mesh generation component is the easiest way to generate meshes at runtime. It is a component that can be added to any actor and can be used to generate meshes at runtime. It is also very easy to use. It has a few limitations though. It can only generate meshes with a single material. It also does not support LODs.</p>
@@ -434,6 +442,7 @@
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+<p>Add the <code class="language-plaintext highlighter-rouge">UProceduralMeshComponent</code> to your actor’s header file, and then initialize it in the constructor, just like any other component.</p>
 
 <p>Now let’s assume you have a function setup to generate your runtime mesh’s uv, vertices, triangles, normals, tangents, etc. Following is an example for such a function:</p>
 
@@ -498,61 +507,106 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="cm">/**
-	*	Create/replace a section for this procedural mesh component.
-	*	@param	SectionIndex		Index of the section to create or replace.
-	*	@param	Vertices			Vertex buffer of all vertex positions to use for this mesh section.
-	*	@param	Triangles			Index buffer indicating which vertices make up each triangle. Length must be a multiple of 3.
-	*	@param	Normals				Optional array of normal vectors for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	UV0					Optional array of texture co-ordinates for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	VertexColors		Optional array of colors for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	Tangents			Optional array of tangent vector for each vertex. If supplied, must be same length as Vertices array.
-	*	@param	bCreateCollision	Indicates whether collision should be created for this section. This adds significant cost.
-	*/</span>
+<p>Similarly, you can also generate the normals and tangents for the mesh. Once you have all the data ready, you can use the following function to create the mesh:</p>
 
-<span class="c1">// '''Don't use this function'''. It is deprecated. Use LinearColor version.</span>
-<span class="kt">void</span> <span class="nf">CreateMeshSection</span><span class="p">(</span><span class="n">int32</span> <span class="n">SectionIndex</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector</span><span class="o">&gt;&amp;</span> <span class="n">Vertices</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">int32</span><span class="o">&gt;&amp;</span> <span class="n">Triangles</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector</span><span class="o">&gt;&amp;</span> <span class="n">Normals</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector2D</span><span class="o">&gt;&amp;</span> <span class="n">UV0</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FColor</span><span class="o">&gt;&amp;</span> <span class="n">VertexColors</span><span class="p">,</span> <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FProcMeshTangent</span><span class="o">&gt;&amp;</span> <span class="n">Tangents</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bCreateCollision</span><span class="p">);</span>
+<p>Once the mesh data is generated, you can use the following function from the <code class="language-plaintext highlighter-rouge">UProceduralMeshComponent</code> to create the mesh:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">CreateMeshSection</span>
+<span class="p">(</span>
+    <span class="n">int32</span> <span class="n">SectionIndex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">Vertices</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">int32</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">Triangles</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">Normals</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector2D</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">UV0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector2D</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">UV1</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector2D</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">UV2</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FVector2D</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">UV3</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FColor</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">VertexColors</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span> <span class="n">FProcMeshTangent</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">Tangents</span><span class="p">,</span>
+    <span class="kt">bool</span> <span class="n">bCreateCollision</span>
+<span class="p">)</span>
+</code></pre></div></div>
+<p class="notice--success"><em>link to above code’s official documentation: <a href="https://docs.unrealengine.com/5.3/en-US/API/Plugins/ProceduralMeshComponent/UProceduralMeshComponent/CreateMeshSection/2/">here</a></em></p>
+
+<h2 id="runtime-mesh-component">Runtime Mesh Component</h2>
+
+<p><a href="https://github.com/TriAxis-Games/RealtimeMeshComponent" class="btn btn--inverse">Github Link</a></p>
+
+<p>Runtime mesh component is an external plugin that can be used to generate meshes at runtime. It is a very powerful plugin that can be used to generate meshes with multiple materials and LODs. It is also very easy to use. But currently the documentation is not very good. So you will have to go through the source code to understand how to use it. The source code is very well documented and easy to understand.</p>
+
+<p>The RuntimeMeshComponent or more commonly known as RMC, is a replacement to the ProceduralMeshComponent (aka PMC) found in UE4. The RMC is much more efficient, and carries many more features, while allowing for a much more fine-grained approach for advanced use cases, while being simple to use just like the PMC. It can handle any use case from simply loading models at runtime, to debug views, to modification of existing models all the way up to procedural generation of entire worlds!</p>
+
+<p>The RMC has been around for 6+ years and has an active community of users from individuals, to schools, to Fortune 500 companies, with many released projects. You can also find active support in their Discord server here:  <a href="https://discord.gg/KGvBBTv" target="_blank">https://discord.gg/KGvBBTv</a></p>
+
+<h3 id="creating-mesh-using-runtime-mesh-component">Creating mesh using Runtime Mesh Component</h3>
+
+<p>To use this component, include the “RuntimeMeshComponent” path in the build.cs file of your project:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PublicDependencyModuleNames</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="s">"RealtimeMeshComponent"</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Also make sure you add the <code class="language-plaintext highlighter-rouge">#include "RealtimeMeshSimple.h"</code> header file in your cpp file:</p>
+
+<p>Let’s assume you have a function setup to generate your runtime mesh’s uv, vertices, triangles, normals, tangents, etc. similar to the one we used for the PMC.</p>
+
+<p>Once the mesh data is generated, you can use the following function from the <code class="language-plaintext highlighter-rouge">URuntimeMeshComponent</code> to create the mesh:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">URealtimeMeshSimple</span><span class="o">*</span> <span class="n">GeneratedMesh</span> <span class="o">=</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">MeshComponent</span><span class="o">-&gt;</span><span class="n">InitializeRealtimeMesh</span><span class="o">&lt;</span><span class="n">URealtimeMeshSimple</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="n">FRealtimeMeshSimpleMeshData</span> <span class="n">LODMeshData</span><span class="p">;</span>
+<span class="n">LODMeshData</span><span class="p">.</span><span class="n">Positions</span> <span class="o">=</span> <span class="n">VertexBuffer</span><span class="p">;</span>
+<span class="n">LODMeshData</span><span class="p">.</span><span class="n">Triangles</span> <span class="o">=</span> <span class="n">IndexBuffer</span><span class="p">;</span>
+<span class="n">LODMeshData</span><span class="p">.</span><span class="n">Normals</span> <span class="o">=</span> <span class="n">Normals</span><span class="p">;</span>
+<span class="n">LODMeshData</span><span class="p">.</span><span class="n">UV0</span> <span class="o">=</span> <span class="n">UVs</span><span class="p">;</span>
+<span class="n">LODMeshData</span><span class="p">.</span><span class="n">Tangents</span> <span class="o">=</span> <span class="n">Tangents_vec</span><span class="p">;</span>
+
+<span class="c1">// binary logarithm (log base 2), This will convert 1 to 0, 2 to 1, 4 to 2, 8 to 3, and 16 to 4.</span>
+<span class="n">FRealtimeMeshLODKey</span> <span class="n">LODKey</span> <span class="o">=</span> <span class="n">FRealtimeMeshLODKey</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">log2</span><span class="p">(</span><span class="n">LODMultiplier</span><span class="p">));</span>
+
+<span class="n">Chunk</span><span class="p">.</span><span class="n">GeneratedRealtimeMesh</span><span class="o">-&gt;</span><span class="n">CreateMeshSection</span><span class="p">(</span>
+    <span class="n">LODKey</span><span class="p">,</span> <span class="n">FRealtimeMeshSectionConfig</span><span class="p">(</span><span class="n">ERealtimeMeshSectionDrawType</span><span class="o">::</span><span class="n">Static</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">LODMeshData</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
 </code></pre></div></div>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">AMyActor</span><span class="o">::</span><span class="n">CreateTriangle</span><span class="p">()</span>
+<h3 id="generating-lods-for-runtime-mesh-component">Generating LODs for Runtime Mesh Component</h3>
+
+<p>The RMC supports LODs. It can generate LODs for the mesh at runtime. It can also generate LODs for the mesh in the editor. The LODs are generated by setting the <code class="language-plaintext highlighter-rouge">FRealtimeMeshLODKey</code> while setting mesh section data. So if you want to generate LODs for your mesh, you will have to generate the mesh for each LOD. The LODs are generated using the following function:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kt">void</span> <span class="n">AThTerrain</span><span class="o">::</span><span class="n">CreateMeshChunk</span><span class="p">(</span><span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&gt;&amp;</span> <span class="n">IslandHeightMap</span><span class="p">,</span> <span class="n">FThTerrainChunk</span><span class="o">&amp;</span> <span class="n">Chunk</span><span class="p">)</span>
 <span class="p">{</span>
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector</span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">;</span>
-	<span class="n">vertices</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">vertices</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">vertices</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">));</span>
-
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">int32</span><span class="o">&gt;</span> <span class="n">Triangles</span><span class="p">;</span>
-	<span class="n">Triangles</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-	<span class="n">Triangles</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-	<span class="n">Triangles</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector</span><span class="o">&gt;</span> <span class="n">normals</span><span class="p">;</span>
-	<span class="n">normals</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">normals</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">normals</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector2D</span><span class="o">&gt;</span> <span class="n">UV0</span><span class="p">;</span>
-	<span class="n">UV0</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">UV0</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector2D</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">UV0</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FVector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
+	<span class="n">URealtimeMeshSimple</span><span class="o">*</span> <span class="n">GeneratedMesh</span> <span class="o">=</span> <span class="n">Chunk</span>
+	        <span class="p">.</span><span class="n">MeshComponent</span><span class="o">-&gt;</span><span class="n">InitializeRealtimeMesh</span><span class="o">&lt;</span><span class="n">URealtimeMeshSimple</span><span class="o">&gt;</span><span class="p">();</span>
+	<span class="n">Chunk</span><span class="p">.</span><span class="n">GeneratedRealtimeMesh</span> <span class="o">=</span> <span class="n">GeneratedMesh</span><span class="p">;</span>
 	
+	<span class="n">Chunk</span><span class="p">.</span><span class="n">Stats</span><span class="p">.</span><span class="n">LODs</span><span class="p">.</span><span class="n">Empty</span><span class="p">();</span>
 
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FProcMeshTangent</span><span class="o">&gt;</span> <span class="n">tangents</span><span class="p">;</span>
-	<span class="n">tangents</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FProcMeshTangent</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">tangents</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FProcMeshTangent</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-	<span class="n">tangents</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FProcMeshTangent</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+	<span class="n">FIntPoint</span> <span class="n">Length</span><span class="p">;</span>
+	<span class="n">Length</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">X</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">X</span> <span class="o">:</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">X</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="n">Length</span><span class="p">.</span><span class="n">Y</span> <span class="o">=</span> <span class="p">(</span><span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">Y</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">Y</span> <span class="o">:</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+	
+	<span class="k">const</span> <span class="kt">float</span> <span class="n">IslandX</span> <span class="o">=</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">X</span> <span class="o">*</span> <span class="n">IslandCellSize</span> <span class="o">-</span> <span class="n">Length</span><span class="p">.</span><span class="n">X</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+	<span class="k">const</span> <span class="kt">float</span> <span class="n">IslandY</span> <span class="o">=</span> <span class="n">Chunk</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">Y</span> <span class="o">*</span> <span class="n">IslandCellSize</span> <span class="o">-</span> <span class="n">Length</span><span class="p">.</span><span class="n">Y</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
 
-	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FLinearColor</span><span class="o">&gt;</span> <span class="n">vertexColors</span><span class="p">;</span>
-	<span class="n">vertexColors</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FLinearColor</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">));</span>
-	<span class="n">vertexColors</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FLinearColor</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">));</span>
-	<span class="n">vertexColors</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">FLinearColor</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">));</span>
+	<span class="n">Chunk</span><span class="p">.</span><span class="n">MeshComponent</span><span class="o">-&gt;</span><span class="n">SetRelativeLocation</span><span class="p">(</span>
+	        <span class="n">FVector</span><span class="p">(</span><span class="n">IslandX</span> <span class="o">-</span> <span class="n">IslandLocation</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">IslandY</span> <span class="o">-</span> <span class="n">IslandLocation</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
 
-	<span class="n">mesh</span><span class="o">-&gt;</span><span class="n">CreateMeshSection_LinearColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">vertices</span><span class="p">,</span> <span class="n">Triangles</span><span class="p">,</span> <span class="n">normals</span><span class="p">,</span> <span class="n">UV0</span><span class="p">,</span> <span class="n">vertexColors</span><span class="p">,</span> <span class="n">tangents</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
-        
-        <span class="c1">// Enable collision data</span>
-	<span class="n">mesh</span><span class="o">-&gt;</span><span class="n">ContainsPhysicsTriMeshData</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+	<span class="n">GeneratedMesh</span><span class="o">-&gt;</span><span class="n">UpdateLODConfig</span><span class="p">(</span><span class="n">FRealtimeMeshLODKey</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">FRealtimeMeshLODConfig</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+	<span class="n">CreateLOD</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">IslandHeightMap</span><span class="p">,</span> <span class="n">Chunk</span><span class="p">);</span>
+
+	<span class="n">GeneratedMesh</span><span class="o">-&gt;</span><span class="n">AddLOD</span><span class="p">(</span><span class="n">FRealtimeMeshLODConfig</span><span class="p">(</span><span class="mf">0.9</span><span class="p">));</span>
+	<span class="n">CreateLOD</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">IslandHeightMap</span><span class="p">,</span> <span class="n">Chunk</span><span class="p">);</span>
+	
+	<span class="n">GeneratedMesh</span><span class="o">-&gt;</span><span class="n">AddLOD</span><span class="p">(</span><span class="n">FRealtimeMeshLODConfig</span><span class="p">(</span><span class="mf">0.4</span><span class="p">));</span>
+	<span class="n">CreateLOD</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">IslandHeightMap</span><span class="p">,</span> <span class="n">Chunk</span><span class="p">);</span>
+	
+	<span class="c1">//CreateLOD(8, IslandHeightMap, Chunk);</span>
 <span class="p">}</span>
 </code></pre></div></div>
+
+<p>Here, <code class="language-plaintext highlighter-rouge">FRealtimeMeshLODConfig</code> set’s the desired screensize for the LOD. The range of the variable is usually 0 to 1, for 1 being entire screen
+Since LOD 0 already exists, we use <code class="language-plaintext highlighter-rouge">UpdateLODConfig</code> to set it’s screen size (although optional, as it’s visible by default), for rest of the LODs we use <code class="language-plaintext highlighter-rouge">AddLOD</code> to add them to the mesh.</p>
+
+<p>Each RealtimeMeshComponent can have 1-8 Levels of Detail or LODs, each of which can have any number of section groups, each of which can have any number of sections. Each LOD is separate from the others, and so can have different numbers of sections and different materials bound to those sections.</p>
+
+<p>Each LOD has a ScreenSize associated to it. This is the percent of the screen the bounding volume has to cover before this LOD is rendered.</p>
 
 
         
@@ -608,11 +662,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=shettyprajwal_&amp;text=Runtime+mesh+generation+in+Unreal+Engine+5+-+With+LODs%20http%3A%2F%2Flocalhost%3A4000%2Fue5%2FGenerating-Runtime-Mesh-In-Unreal-Engine%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=shettyprajwal_&text=Runtime+mesh+generation+in+Unreal+Engine+5+-+With+LODs%20http%3A%2F%2Flocalhost%3A4000%2Fue5%2FGenerating-Runtime-Mesh-In-Unreal-Engine%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fue5%2FGenerating-Runtime-Mesh-In-Unreal-Engine%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fue5%2FGenerating-Runtime-Mesh-In-Unreal-Engine%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fue5%2FGenerating-Runtime-Mesh-In-Unreal-Engine%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -623,8 +677,7 @@
 ">Previous</a>
     
     
-      <a href="/ue5/Automating-3D-work-with-blender-plugins/" class="pagination--pager" title="Runtime mesh generation in Unreal Engine 5 - With LODs
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -638,106 +691,6 @@
     <div class="page__related">
       <h2 class="page__related-title">Similar articles</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ue5/KTX-and-DRACO-compression-for-runtime-mesh-is-Unity/" rel="permalink">Runtime mesh generation in Unreal Engine 5 - With LODs
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-09-02T00:00:00+05:30">September 2, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure Pl...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ue5/Automating-3D-work-with-blender-plugins/" rel="permalink">Runtime mesh generation in Unreal Engine 5 - With LODs
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-09-02T00:00:00+05:30">September 2, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure Pl...</p>
-  </article>
-</div>
-
         
           
 
@@ -774,15 +727,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap">
-<form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
       Enter your search term...
     </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
   </form>
-  <div id="results" class="results"></div>
-</div>
+  <div id="results" class="results"></div></div>
 
       </div>
     
@@ -828,7 +779,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2023 Prajwal Shetty |    
+<div class="page__footer-copyright">&copy; 2023 Prajwal Shetty |    
   <a href="http://localhost:4000/privacy-policy">Privacy Policy</a> | <a href="http://localhost:4000/terms">Terms and Conditions</a> | <a href="http://localhost:4000/contact">Contact</a> | <a href="http://localhost:4000//sitemap.xml">Sitemap</a>
    <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, 
   <a href="https://pages.github.com/" rel="nofollow">Github Pages</a> 

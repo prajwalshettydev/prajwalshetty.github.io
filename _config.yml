@@ -338,7 +338,7 @@ defaults:
       author_profile: true
   - scope:
       path: ""
-      type: ue5
+      type: UE5
     values:
       layout: single
       author_profile: true
