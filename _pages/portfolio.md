@@ -133,7 +133,7 @@ A high performance runtime terrain mesh generation system as a hobby project in 
 
 {% include gallery layout="third" caption="" %}
 
-### A Work in Progress Multiplayer Battle Arena - Mayaverse Inc
+### A Multiplayer Battle Arena Vertical Slice (WIP) - Mayaverse Inc
 
 Built with Unity and fish-networking
 
