@@ -572,15 +572,28 @@ a.reversefootnote {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  left: 0;
 
   iframe,
   object,
-  embed {
+  embed { 
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  @include breakpoint($x-large) {
+    padding-bottom: 43.60%; 
+    max-width: 80%;
+    left: 10%;
+  }
+
+  @include breakpoint($large) {
+    padding-bottom: 43.60%;
+    max-width: 80%;
+    left: 10%;
   }
 }
 
