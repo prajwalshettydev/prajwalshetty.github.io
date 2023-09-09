@@ -19,7 +19,7 @@ search: true #To enable site-wide search add
 # Runtime mesh generation in Unreal Engine 5 (C++) - With LODs
 
 ## Introduction
-In this blog we will go through to major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.
+In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.
 
 ![image](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_400/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png){: .align-center}
 

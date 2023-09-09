@@ -72,13 +72,43 @@ gallery4:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg
     alt: ""
     title: ""
+gallery5:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287790/Spacejoy/750x750bb_o9e4jm.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287790/Spacejoy/750x750bb_o9e4jm.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287790/Spacejoy/750x750bb_1_rzgnyv.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287790/Spacejoy/750x750bb_1_rzgnyv.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_3_tmafua.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_3_tmafua.jpg
+    alt: ""
+    title: ""
+gallery6:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_4_kullgh.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_4_kullgh.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_7_ibcrll.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_7_ibcrll.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_5_blq2o5.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_5_blq2o5.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_6_n82drp.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_6_n82drp.jpg
+    alt: ""
+    title: ""
 ---
 
 <!-- # Prajwal Shetty's Portfolio -->
 
 Welcome to my portfolio!
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1694289700/Resumes/Prajwal_Resume_July_1_z86uab.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
 
 [//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 
@@ -141,15 +171,21 @@ Built with Unity and fish-networking
 
 ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_80,w_733/v1693233769/IMG_5376_wt2qp4.jpg)
 
-### Spacejoy's Design apps
-Desktop and mobile apps built for loading and interacting with 50 thousand+ 3D models all in realtime, 
+### Spacejoy's Design app - Unity as library, React-native:
+Built for loading and interacting with 50 thousand+ 3D models all in realtime,
+Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated.
 
-Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated:
+Had various design features like product layout design, group actions, product swaps, wall paint, etc
 
-![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg)    ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png)
+{% include gallery id="gallery5" layout="third" caption="" %}
 
-#### Spacejoy website:
+[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
 
-A short walkthrough of the website:
+An older Unity only design app, targeted to 4 platforms.
 
-{% include video id="hgLDJfuLUg8" provider="youtube" %}
+{% include gallery id="gallery6" layout="half" caption="" %}
+
+[//]: # (#### Spacejoy website:)
+
+[//]: # (A short walkthrough of the website)
+[//]: # (A short walkthrough of the website)

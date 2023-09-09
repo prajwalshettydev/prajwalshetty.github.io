@@ -59,7 +59,3 @@ I love to write and believe that blogging is an excellent way to express my thou
   * JetBrains Rider
   * VS Code
   * Visual Studio 19/22
-
-
-You can download my resume [here](https://res.cloudinary.com/dwfkishzf/image/upload/v1682509226/Prajwal_Shetty_April-23_okwl4k.pdf){:target="_blank"} 
-
