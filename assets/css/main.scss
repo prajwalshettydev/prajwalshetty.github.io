@@ -57,10 +57,10 @@ Defaults for small, medium, large, and x-large screens are:
  */
 
 html {
-  font-size: 14px; // change to whatever
+  font-size: 15px; // change to whatever
 
   @include breakpoint($medium) {
-    font-size: 16px; // change to whatever
+    font-size: 19px; // change to whatever
   }
 
   @include breakpoint($large) {
