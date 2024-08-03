@@ -6,3 +6,19 @@ jekyll build JEKYLL_ENV=production
 
 //default local:
 http://127.0.0.1:4000
+
+
+//SETUP:
+
+//Ruby version 2.7.4
+ruby --version
+https://rubyinstaller.org/downloads/
+
+//Bundler version 2.3.15
+bundle --version
+gem install bundler -v 2.3.15
+
+//gem packages:
+bundle install
+//or 
+bundle update
