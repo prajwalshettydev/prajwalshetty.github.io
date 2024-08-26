@@ -4,12 +4,12 @@ excerpt : "Must-have Unreal Engine links for quick reference. This is a collecti
 layout: single
 share: true
 header:
-  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png" #this is the thumbnail of the page
+  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/v1724631627/Blogsite1/Unreal/5075c831-ad9a-4610-9213-e9bf88250279.png" #this is the thumbnail of the page
 comments: true
 author_profile: true
 tags: game unity unreal
 categories: UE5
-feature_image: "https://picsum.photos/2560/600?image=872"
+#feature_image: "https://picsum.photos/2560/600?image=872"
 #toc: true
 #toc_sticky: true
 #classes: wide
