@@ -141,7 +141,7 @@ analytics:
 # Site Author
 author:
   name             : "Prajwal Shetty"
-  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_thumb,g_center,h_719,q_71,w_711,x_0,y_0/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.png"
+  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,h_394,q_65/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.webp"
   bio              : "I see the world in triangles and pixels, dev from the past 6 years, let’s #makesomethingunreal!"
   location         : "London"
   email            : mail@prajwalshetty.com
