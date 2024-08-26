@@ -108,7 +108,7 @@ gallery6:
 
 Welcome to my portfolio!
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1694289700/Resumes/Prajwal_Resume_July_1_z86uab.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1724630584/Resumes/Prajwal_Resume_September24_dev_z8hadn.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
 
 [//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 

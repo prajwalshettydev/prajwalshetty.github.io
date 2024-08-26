@@ -140,10 +140,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Prajwal shetty"
+  name             : "Prajwal Shetty"
   avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_thumb,g_center,h_719,q_71,w_711,x_0,y_0/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.png"
-  bio              : "I see the world in triangles and pixels, dev from the past 5 years, let’s #makesomethingunreal!"
-  location         : "Earth"
+  bio              : "I see the world in triangles and pixels, dev from the past 6 years, let’s #makesomethingunreal!"
+  location         : "London"
   email            : mail@prajwalshetty.com
   links:
     - label: "Email"
@@ -152,9 +152,6 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://prajwalshetty.com"
-    - label: "X (Twitter)"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/shettyprajwal_"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -163,10 +160,13 @@ author:
       url: "https://github.com/prajwalshettydev"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/prajwalshetty_alt/"
+      # url: "https://instagram.com/prajwalshetty_alt/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/shettyprajwal/"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/shettyprajwal_"
 
 # Site Footer
 footer:
