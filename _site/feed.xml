@@ -1,4 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-03T21:14:25+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>A game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you'll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!</subtitle><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author><entry><title type="html">Runtime mesh generation in Unreal Engine 5 - With LODs</title><link href="http://localhost:4000/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/" rel="alternate" type="text/html" title="Runtime mesh generation in Unreal Engine 5 - With LODs" /><published>2023-08-30T00:00:00+01:00</published><updated>2023-08-30T00:00:00+01:00</updated><id>http://localhost:4000/ue5/Generating%20Runtime%20Mesh%20In%20Unreal%20Engine</id><content type="html" xml:base="http://localhost:4000/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/">&lt;h1 id=&quot;runtime-mesh-generation-in-unreal-engine-5-c---with-lods&quot;&gt;Runtime mesh generation in Unreal Engine 5 (C++) - With LODs&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-26T01:25:38+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Prajwal Shetty</title><subtitle>A game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you'll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!</subtitle><author><name>Prajwal Shetty</name><email>mail@prajwalshetty.com</email></author><entry><title type="html">Compilation of the best Unreal Engine C++ resources for learning threading, networking, and more</title><link href="http://localhost:4000/ue5/Useful-Unreal-Links/" rel="alternate" type="text/html" title="Compilation of the best Unreal Engine C++ resources for learning threading, networking, and more" /><published>2024-08-25T00:00:00+01:00</published><updated>2024-08-25T00:00:00+01:00</updated><id>http://localhost:4000/ue5/Useful-Unreal-Links</id><content type="html" xml:base="http://localhost:4000/ue5/Useful-Unreal-Links/">&lt;p&gt;Here’s a compilation of all the must-have Unreal Engine links for quick reference. This is a collection I’ve curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have saved me countless hours of digging around. Trust me, they’re gold.&lt;/p&gt;
+
+&lt;h2 id=&quot;tom-loomans-unreal-engine-c-complete-guide&quot;&gt;Tom Looman’s Unreal Engine C++ Complete Guide:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724630940/Blogsite1/Unreal/ce4ec66c-dde1-4727-99b2-2ff67fd9f58b.png&quot; alt=&quot;Tom Looman's Unreal Engine C++ Complete Guide&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is a great guide to get you started with Unreal Engine 5 c++. It covers everything from setting up your development environment to creating your first c++ class. 
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;TSet, TMap, TArray, TSharedPtr, TWeakPtr, TSharedRef, TWeakRef&lt;/li&gt;
+  &lt;li&gt;UObject, UClass, UFunction, UProperty, UEnum, UStruct&lt;/li&gt;
+  &lt;li&gt;Delegates, MulticastDelegates, TScriptDelegate, TMulticastScriptDelegate&lt;/li&gt;
+  &lt;li&gt;Interfaces, Asserts, Casting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://www.tomlooman.com/unreal-engine-cpp-guide/&quot; target=&quot;_blank&quot;&gt;Tom Looman’s full cpp guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;multiplayer-network-compendium-by-cedric-neukirchen&quot;&gt;Multiplayer Network Compendium by Cedric Neukirchen:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/t_cropped/v1724631112/Blogsite1/Unreal/f0c3a0c9-310c-40d3-a44e-92162987796c.png&quot; alt=&quot;Multiplayer Network Compendium by Cedric Neukirchen&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;One of the best resources for learning Unreal Engine multiplayer network programming. Nothing else comes close to the depth and quality of this resource.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Replication, Ownership, Authority, Prediction, Replication Graph&lt;/li&gt;
+  &lt;li&gt;Dedicated Server, Listen Server&lt;/li&gt;
+  &lt;li&gt;Networking in Unreal Engine&lt;/li&gt;
+  &lt;li&gt;Gameplay Framework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://cedric-neukirchen.net/docs/category/multiplayer-network-compendium/&quot; target=&quot;_blank&quot;&gt;Multiplayer Network Compendium&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ben-uis-unreal-engine-c-tutorials&quot;&gt;Ben UI’s Unreal Engine C++ Tutorials:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631314/Blogsite1/Unreal/52060a73-daf3-4780-b4f9-788aa0777ac2.png&quot; alt=&quot;Ben UI's Unreal Engine C++ Tutorials&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I mean there can’t be a Unreal Resources list without Ben Ui’s tutorials. It’s one of the best resources for learning Unreal Engine c++ and lot of its quirks.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;UI, UI Animation, Widget Blueprints&lt;/li&gt;
+  &lt;li&gt;Gameplay Abilities, Gameplay Tags, Gameplay Effects&lt;/li&gt;
+  &lt;li&gt;Coding Standards, Best Practices&lt;/li&gt;
+  &lt;li&gt;UProperty, UFunction, UEnum, UStruct&lt;/li&gt;
+  &lt;li&gt;TMaps, TSet, TArray, TSharedPtr, TWeakPtr, TSharedRef, TWeakRef&lt;/li&gt;
+  &lt;li&gt;Delegates, MulticastDelegates, TScriptDelegate&lt;/li&gt;
+  &lt;li&gt;Test Cases, Lambdas, Macros&lt;/li&gt;
+  &lt;li&gt;Metadata Specifiers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://benui.ca/unreal/&quot; target=&quot;_blank&quot;&gt;Ben UI’s Unreal Engine C++ Tutorials&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pointers-in-unreal-engine-by-dawn-arc&quot;&gt;Pointers in Unreal Engine, by Dawn Arc:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631417/Blogsite1/Unreal/7dbff722-d3e1-44f6-bbc8-1569e66a6c17.png&quot; alt=&quot;Pointers in Unreal Engine, by Dawn Arc&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Helpful for understanding how Unreal Engine handles pointers and memory management.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;TSharedPtr, TWeakPtr, TWeakObjectPtr&lt;/li&gt;
+  &lt;li&gt;TUniquePtr, TUniquePtr&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://dawnarc.com/2018/07/ue4-tsharedptr-tweakobjectptr-and-tuniqueptr/&quot; target=&quot;_blank&quot;&gt;Pointers in Unreal Engine&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ari-arnbjörnssons-unreal-engine-c-tips-and-tricks&quot;&gt;Ari Arnbjörnsson’s Unreal Engine C++ Tips and Tricks:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631487/Blogsite1/Unreal/e9a3dfa7-adc3-4445-a186-309e28861797.png&quot; alt=&quot;Ari Arnbjörnsson's Unreal Engine C++ Tips and Tricks&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;One of the best resources for learning Unreal Engine c++ tips and tricks. Also checkout his other related resources in the same link by going to the “@Ari’s Unreal Engine Notes” tab.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Editor Usability, Performance, Reflection&lt;/li&gt;
+  &lt;li&gt;Cooking, Conventions, Debugging&lt;/li&gt;
+  &lt;li&gt;Profiling, Memory&lt;/li&gt;
+  &lt;li&gt;Garbage Collection, Tooling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://flassari.notion.site/UE-Tips-Best-Practices-3ff4c3297b414a66886c969ff741c5ba&quot; target=&quot;_blank&quot;&gt;Ari Arnbjörnsson Tips and Tricks&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;multiplayer-tips-and-tricks-by-wizardcell&quot;&gt;Multiplayer Tips and Tricks by WizardCell:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631517/Blogsite1/Unreal/5c067c03-3ebe-4d8d-950d-e9fcd83eda61.png&quot; alt=&quot;Multiplayer Tips and Tricks by WizardCell&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Another great resource for learning Unreal Engine multiplayer network programming.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;NetRole, NetMode, NetConnection&lt;/li&gt;
+  &lt;li&gt;Client Execution Paths&lt;/li&gt;
+  &lt;li&gt;RPCs tips and tricks&lt;/li&gt;
+  &lt;li&gt;Reliability, Replication, and Prediction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://wizardcell.com/unreal/multiplayer-tips-and-tricks/&quot; target=&quot;_blank&quot;&gt;Multiplayer Tips and Tricks&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;multithreading-and-unreal-by-guneet-sasan&quot;&gt;Multithreading and Unreal by Guneet Sasan:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631546/Blogsite1/Unreal/a2e410e3-61f2-4d59-9e0d-899c01912cd8.png&quot; alt=&quot;Multithreading and Unreal by Guneet Sasan&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Explains different multithreading concepts in Unreal Engine and how to implement them really well.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;FRunnable&lt;/li&gt;
+  &lt;li&gt;Task Graph System&lt;/li&gt;
+  &lt;li&gt;Async Tasks&lt;/li&gt;
+  &lt;li&gt;ParallelFor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://www.guneetsasan.com/home/multithreading-unreal&quot; target=&quot;_blank&quot;&gt;Multithreading and Unreal&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;task-system-in-unreal-engine-by-epic-games&quot;&gt;Task system in Unreal Engine by Epic Games:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631627/Blogsite1/Unreal/5075c831-ad9a-4610-9213-e9bf88250279.png&quot; alt=&quot;Task system in Unreal Engine by Epic Games&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally something from Epic Games themselves. Official documentation on the task system in Unreal Engine.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tasks System&lt;/li&gt;
+  &lt;li&gt;Nested Tasks, Busy-waiting&lt;/li&gt;
+  &lt;li&gt;Pipes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://dev.epicgames.com/documentation/en-us/unreal-engine/tasks-systems-in-unreal-engine&quot; target=&quot;_blank&quot;&gt;Multithreading and Unreal&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;logging-in-unreal-engine-by-chris-mccole&quot;&gt;Logging in Unreal Engine by Chris McCole:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631664/Blogsite1/Unreal/e1595dbc-154a-4506-bfb5-f5fab1dcd849.png&quot; alt=&quot;Logging in Unreal Engine by Chris McCole&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;As the title suggests, this is a great resource for learning how to log in Unreal Engine C++.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;UE_LOG&lt;/li&gt;
+  &lt;li&gt;On Screen Logging&lt;/li&gt;
+  &lt;li&gt;Custom Logs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://www.chrismccole.com/blog/logging-in-ue4-cpp&quot; target=&quot;_blank&quot;&gt;Logging in Unreal Engine&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;unreal-c-speedrun-by-laura&quot;&gt;Unreal C++ speedrun By Laura:&lt;/h2&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/dwfkishzf/image/upload/v1724631713/Blogsite1/Unreal/fb574f21-6239-4513-a2d9-f8279dcafc63.png&quot; alt=&quot;Unreal C++ speedrun By Laura&quot; /&gt;&lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Laura is a game developer who has a knack for creating educational content. This is a great resource for learning Unreal Engine C++ by doing.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Unreal Type System&lt;/li&gt;
+  &lt;li&gt;Functions, Macros, Structs, Classes, Enums, Arrays, Maps, Sets, Pointers&lt;/li&gt;
+  &lt;li&gt;Threading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://landelare.github.io/2023/01/07/cpp-speedrun.html&quot; target=&quot;_blank&quot;&gt;Unreal C++ speedrun&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;instanced-static-meshes-by-suvam&quot;&gt;Instanced Static Meshes by Suvam&lt;/h2&gt;
+&lt;p&gt;The website layout is a bit outdated but the content is very good and relevant.
+Topics covered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Instanced Static Meshes&lt;/li&gt;
+  &lt;li&gt;Hierarchial Instance Static Mesh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://suvam0451.github.io/tutorials/ue4/instanced-static-meshes&quot; target=&quot;_blank&quot;&gt;Instanced Static Meshes&lt;/a&gt;&lt;/p&gt;</content><author><name>Prajwal Shetty</name><email>mail@prajwalshetty.com</email></author><category term="UE5" /><category term="game" /><category term="unity" /><category term="unreal" /><summary type="html">Must-have Unreal Engine links for quick reference. This is a collection I've curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have saved me countless hours of digging around. Trust me, they're gold.</summary></entry><entry><title type="html">Runtime mesh generation in Unreal Engine 5 - With LODs</title><link href="http://localhost:4000/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/" rel="alternate" type="text/html" title="Runtime mesh generation in Unreal Engine 5 - With LODs" /><published>2023-08-30T00:00:00+01:00</published><updated>2023-08-30T00:00:00+01:00</updated><id>http://localhost:4000/ue5/Generating%20Runtime%20Mesh%20In%20Unreal%20Engine</id><content type="html" xml:base="http://localhost:4000/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/">&lt;h1 id=&quot;runtime-mesh-generation-in-unreal-engine-5-c---with-lods&quot;&gt;Runtime mesh generation in Unreal Engine 5 (C++) - With LODs&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful tool to have in your arsenal. It can be used to create procedural levels, terrain, foliage, etc.&lt;/p&gt;
@@ -213,7 +402,7 @@ Since LOD 0 already exists, we use &lt;code class=&quot;language-plaintext highl
 
 &lt;p&gt;Each RealtimeMeshComponent can have 1-8 Levels of Detail or LODs, each of which can have any number of section groups, each of which can have any number of sections. Each LOD is separate from the others, and so can have different numbers of sections and different materials bound to those sections.&lt;/p&gt;
 
-&lt;p&gt;Each LOD has a ScreenSize associated to it. This is the percent of the screen the bounding volume has to cover before this LOD is rendered.&lt;/p&gt;</content><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author><category term="UE5" /><category term="game" /><category term="unreal-engine" /><category term="graphics" /><summary type="html">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.</summary></entry><entry><title type="html">About this site</title><link href="http://localhost:4000/About-this-site/" rel="alternate" type="text/html" title="About this site" /><published>2023-02-15T00:00:00+00:00</published><updated>2023-02-15T00:00:00+00:00</updated><id>http://localhost:4000/About%20this%20site</id><content type="html" xml:base="http://localhost:4000/About-this-site/">&lt;p&gt;Welcome to my personal blog! My name is Prajwal Shetty, and I’m a game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API.&lt;/p&gt;
+&lt;p&gt;Each LOD has a ScreenSize associated to it. This is the percent of the screen the bounding volume has to cover before this LOD is rendered.&lt;/p&gt;</content><author><name>Prajwal Shetty</name><email>mail@prajwalshetty.com</email></author><category term="UE5" /><category term="game" /><category term="unreal-engine" /><category term="graphics" /><summary type="html">Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost.</summary></entry><entry><title type="html">About this site</title><link href="http://localhost:4000/About-this-site/" rel="alternate" type="text/html" title="About this site" /><published>2023-02-15T00:00:00+00:00</published><updated>2023-02-15T00:00:00+00:00</updated><id>http://localhost:4000/About%20this%20site</id><content type="html" xml:base="http://localhost:4000/About-this-site/">&lt;p&gt;Welcome to my personal blog! My name is Prajwal Shetty, and I’m a game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API.&lt;/p&gt;
 
 &lt;p&gt;I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts.&lt;/p&gt;
 
@@ -257,4 +446,4 @@ Since LOD 0 already exists, we use &lt;code class=&quot;language-plaintext highl
   &lt;li&gt;Windows 11&lt;/li&gt;
   &lt;li&gt;JetBrains Rider&lt;/li&gt;
   &lt;li&gt;Github (VC, Copilot, Actions)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Prajwal shetty</name><email>mail@prajwalshetty.com</email></author><summary type="html">On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Prajwal Shetty</name><email>mail@prajwalshetty.com</email></author><summary type="html">On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here.</summary></entry></feed>

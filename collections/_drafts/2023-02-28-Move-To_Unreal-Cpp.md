@@ -1,5 +1,5 @@
 ---
-title: How to switch from a full time unity c# developer to Unreal engine 5 c++ in 2 hours
+title: How to switch from a full time Unity C# developer to Unreal Engine 5 C++ in 4 hours
 excerpt : "Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost."
 layout: single
 share: true
@@ -17,12 +17,12 @@ search: true #To enable site-wide search add
 #permalink: /:collection/unity-game-server
 ---
 
-First of all, whom am I kidding, it obviously takes months of practice to master unreal c++, with all of it's anomalies, coding standards and terminologies. But I strongly believe, our expertise are usually beyond game engines, and a switch like this should never stop a game devloper from exploring whatever tool they want to try, and also whatever kind of game they want to build. So if you already are a rockstar c# Unity developer, who understands the engine in and out, techinically it shouldnt take you much time start coding in Unreal c++ straight away. But keep in mind, coding using an engine vs mastering it are two compeltly different things, the later will obviosuly take more time, but the former can be instant, and it hits right at home when you compile that first character walk script and start building your game using unreal c++.
+First of all, whom am I kidding, it obviously takes months of practice to master unreal c++, with all of it's anomalies, coding standards and terminologies. But I strongly believe, our expertise are usually beyond game engines, and a switch like this should never stop a game developer from exploring whatever tool they want to try, and also whatever kind of game they want to build. So if you already are a rockstar c# Unity developer, who understands the engine in and out, techinically it shouldnt take you much time start coding in Unreal c++ straight away. But keep in mind, coding using an engine vs mastering it are two compeltly different things, the later will obviosuly take more time, but the former can be instant, and it hits right at home when you compile that first character walk script and start building your game using unreal c++.
 
 ##### Prerequisites:
 * Understands Unity/C# in and out
-* Good with unity mirror or fishnet like multiplayer pacakges (optional)
-* Understands basic c# concepts like async, linq, threading, templates, Ienumerators, 
+* Understands basic c# concepts like async, linq, threading, templates, IEnumerators, 
+* Good with Unity Mirror or Fishnet like multiplayer packages (optional)
 * Game code, game terminologies, architecture, oop, game math and other basics
 * UE5 downloaded and installed
 
@@ -32,7 +32,7 @@ First of all, whom am I kidding, it obviously takes months of practice to master
 * explain how AAA games architecure works
 * show you how the amazing Bend studio build that horde mechanism in unreal for Days Gone ❤️‍🔥
 
-##### What this blog will do in 2 hours:
+##### What this blog will do in 4 hours:
 * you will be able to start coding in unreal c++ 🔥
 * you will stop missing unity
 * you will never hate c++ again
