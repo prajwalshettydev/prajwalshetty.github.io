@@ -139,7 +139,7 @@ Link: [Instanced Static Meshes](https://suvam0451.github.io/tutorials/ue4/instan
 
 ## How Unreal Renders a Frame by Kostas Anagnostou
 {% include figure link_url="https://interplayoflight.wordpress.com/2017/10/25/how-unreal-renders-a-frame/" image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732157006/Blogsite1/Unreal/20c3a9ba-140c-4690-8a4a-1a1dabc8b0c2.png" alt="Unreal C++ speedrun By Laura" caption="" %}
-As the name suggests it excellently sums up unreal's rendering architecture and key terminologies. 
+As the name suggests it excellently explains the unreal's rendering passes in the GPU
 Topics covered:
 - Testing for occlusion, Z-Prepass
 - Hi-Z buffer generation, Shadowmap rendering
@@ -149,6 +149,21 @@ Topics covered:
 
 Link: [Interplay of Light](https://interplayoflight.wordpress.com/2017/10/25/how-unreal-renders-a-frame/){:target="_blank"}
 
+## Unreal Engine 4 Rendering by Matt Hoffman
+{% include figure link_url="https://medium.com/@lordned/unreal-engine-4-rendering-overview-part-1-c47f2da65346" image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732157919/Blogsite1/Unreal/936636ef-68ab-4609-96d7-abaad6ef619b.png" alt="Unreal C++ speedrun By Laura" caption="" %}
+Another excellent blog on unreal rendering architecture, this goes even deeper and covers major topics really well.
+Topics covered:
+- HLSL Tools for Visual Studio
+- RenderDoc
+- RHI, Deferred Rendering
+- Shaders and Vertex Factories
+- FGlobalShader, FVertexFactory
+- FPrimitiveSceneProxy
+- FDepthDrawingPolicy
+- Drawing Policy Factory
+- GBuffer, Vertex/Pixel Shaders
+
+Link: [Unreal Engine 4 Rendering](https://medium.com/@lordned/unreal-engine-4-rendering-overview-part-1-c47f2da65346){:target="_blank"}
 
 
 
