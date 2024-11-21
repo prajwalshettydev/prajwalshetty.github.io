@@ -22,3 +22,7 @@ gem install bundler -v 2.3.15
 bundle install
 //or 
 bundle update
+
+
+//theme documentation: 
+https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/

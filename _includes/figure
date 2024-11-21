@@ -1,6 +1,15 @@
 <figure class="{{ include.class }}">
+  {%- if include.link_url and include.link_url != "" -%}
+    <a href="{{ include.link_url | relative_url }}" title="{{ include.caption | strip_html }}" target="_blank" rel="noopener noreferrer">
+  {%- endif -%}
+
   <img src="{{ include.image_path | relative_url }}"
        alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+
+  {%- if include.link_url and include.link_url != "" -%}
+    </a>
+  {%- endif -%}
+
   {%- if include.caption -%}
     <figcaption>
       {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
