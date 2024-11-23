@@ -44,7 +44,7 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0 #daviddarnes/alembic@main
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" #"dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -57,7 +57,8 @@ url                      : "https://prajwalshetty.com" # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "prajwalshettydev/prajwalshetty.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "https://res.cloudinary.com/dwfkishzf/image/upload/q_78/v1676536335/Prajwal%20Profile%20Images/unnamed_rc3y1z.webp" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1693416923/Prajwal%20Profile%20Images/Logo_type_2_-_white_1-cropped_gf7v2n.png" #"https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" #"/assets/logos/logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+#logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1693416923/Prajwal%20Profile%20Images/Logo_type_2_-_white_1-cropped_gf7v2n.png" #"https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" #"/assets/logos/logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -125,7 +126,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://instagram.com/prajwalshetty_alt/"
+    - "https://instagram.com/for.the.stars_/"
     - "https://linkedin.com/in/shettyprajwal/"
     - "https://twitter.com/shettyprajwal_"
     - "https://github.com/prajwalshettydev"
@@ -140,10 +141,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Prajwal Shetty"
-  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,h_394,q_65/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.webp"
-  bio              : "I see the world in triangles and pixels, dev from the past 6 years, let’s #makesomethingunreal!"
-  location         : "London"
+  name             : "Prajwal Shetty Vijaykumar"
+#  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,h_394,q_65/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.webp"
+#  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_71,w_465/v1732304677/Prajwal%20Profile%20Images/32debabd-554d-4e31-ac44-d5b9da9383b9.webp"
+  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_405/v1732305393/Prajwal%20Profile%20Images/43BE9B51-41D5-40E8-BA95-32300FB15BB7_1_2_uczvm9.webp"
+  bio              : "I see the world in triangles and pixels, dev from the past 6+ years, let’s #makesomethingunreal!"
+  location         : "London, 🇬🇧"
   email            : mail@prajwalshetty.com
   links:
     - label: "Email"
@@ -160,7 +163,7 @@ author:
       url: "https://github.com/prajwalshettydev"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/prajwalshetty_alt/"
+      # url: "https://instagram.com/for.the.stars_/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/shettyprajwal/"
@@ -191,7 +194,7 @@ footer:
       url: "https://linkedin.com/in/shettyprajwal/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      #url: "https://instagram.com/prajwalshetty_alt/"
+      #url: "https://instagram.com/for.the.stars_/"
 
 
 # Reading Files
@@ -355,18 +358,21 @@ defaults:
 
 collections_dir: "collections"
 collections:
-  ue5:
+  blog:
     output: true
-    permalink: /Unreal Engine 5/:path/
-    read_time: true
-    author_profile: true
-    layout: single
-  unity:
-    output: true
-    permalink: /Unity/:path/
-    read_time: true
-    author_profile: true
-    layout: single
-  test1:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   ue5:
+#     output: true
+#     permalink: /Unreal Engine 5/:path/
+#     read_time: true
+#     author_profile: true
+#     layout: single
+#   unity:
+#     output: true
+#     permalink: /Unity/:path/
+#     read_time: true
+#     author_profile: true
+#     layout: single
+#   test1:
+#     output: true
+#     permalink: /:collection/:path/

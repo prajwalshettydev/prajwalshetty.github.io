@@ -13,7 +13,7 @@ categories: UE5
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-#permalink: /:collection/unity-game-server
+permalink: /UE5/Generating-Runtime-Mesh-In-Unreal-Engine/
 ---
 
 # Runtime mesh generation in Unreal Engine 5 (C++) - With LODs

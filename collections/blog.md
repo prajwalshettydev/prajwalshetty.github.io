@@ -1,8 +1,8 @@
 ---
-title: Unreal Engine 5
+title: 
 layout: collection
-permalink: /ue5/
-collection: ue5
+permalink: /blog/
+collection: blog
 entries_layout: grid
 classes: wide
 ---

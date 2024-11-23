@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/About-this-site/</loc>
-<lastmod>2023-02-15T00:00:00+00:00</lastmod>
+<loc>http://localhost:4000/Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/</loc>
+<lastmod>2023-09-12T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/</loc>
-<lastmod>2023-08-30T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/ue5/Useful-Unreal-Links/</loc>
+<loc>http://localhost:4000/UE5/Useful-Unreal-Links</loc>
 <lastmod>2024-08-25T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/Unreal%20Engine%205/getting-started-with-cpp/</loc>
-<lastmod>2024-11-21T03:06:44+00:00</lastmod>
+<loc>http://localhost:4000/About-this-site</loc>
 </url>
 <url>
-<loc>http://localhost:4000/Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/</loc>
-<lastmod>2024-11-21T03:06:44+00:00</lastmod>
+<loc>http://localhost:4000/blog/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
@@ -46,11 +40,5 @@
 </url>
 <url>
 <loc>http://localhost:4000/terms</loc>
-</url>
-<url>
-<loc>http://localhost:4000/ue5/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/unity/</loc>
 </url>
 </urlset>

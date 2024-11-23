@@ -8,9 +8,10 @@ related: false
 show_date: false
 breadcrumbs: false
 permalink: portfolio
-toc: false
-toc_sticky: false
-#toc_label: ""
+toc: true
+toc_sticky: true
+toc_label: "Portfolio"
+toc_icon: " "
 #layout: splash
 layout: single-no-title
 gallery:
@@ -108,10 +109,13 @@ gallery6:
 
 Welcome to my portfolio!
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1724630584/Resumes/Prajwal_Resume_September24_dev_z8hadn.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1724630584/Resumes/wiyfuwflyh4oyn17vzfd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
+<a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"}
 
 [//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 
+## Professional Projects:
 ### Animalia Card Game - Kevuru Games
 Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures.
 I worked on both client and server sides, with a .NET backend in the server and unity in the client side. The game had multiple gameplay elements like special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
@@ -124,6 +128,24 @@ I worked on setting up the game connection, player combat, mirror networking and
 
 {% include video id="HL8MXwn8RHQ" provider="youtube" %}
 
+### Spacejoy's Design app - Unity as library, React-native:
+Built for loading and interacting with 50 thousand+ 3D models all in realtime,
+Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated.
+
+Had various design features like product layout design, group actions, product swaps, wall paint, etc
+
+{% include gallery id="gallery5" layout="third" caption="" %}
+
+[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
+
+An older Unity only design app, targeted to 4 platforms.
+
+{% include gallery id="gallery6" layout="half" caption="" %}
+
+[//]: # (#### Spacejoy website:)
+
+[//]: # (A short walkthrough of the website)
+[//]: # (A short walkthrough of the website)
 
 ### Blender Add-ons - Spacejoy Inc:
 #### Backend, Blender Cycles Render Automation plugin 
@@ -158,34 +180,44 @@ Also had Auth, 3D object processing tools like quality check etc.
 
 [//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg&#41;)
 
-
-### Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project
-
-A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future.
-
-{% include gallery layout="third" caption="" %}
-
-### A Multiplayer Battle Arena Vertical Slice (WIP) - Mayaverse Inc
+### A Multiplayer Battle Arena Vertical Slice - Mayaverse Inc
 
 Built with Unity and fish-networking
 
 ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_80,w_733/v1693233769/IMG_5376_wt2qp4.jpg)
 
-### Spacejoy's Design app - Unity as library, React-native:
-Built for loading and interacting with 50 thousand+ 3D models all in realtime,
-Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated.
+## Academics Projects:
 
-Had various design features like product layout design, group actions, product swaps, wall paint, etc
+### Refriger-hater: A UE5 Multiplayer game in C++ - Kingston University
 
-{% include gallery id="gallery5" layout="third" caption="" %}
+Refriger-hater is a team-based, top-down multiplayer game where 2 teams of refrigerators battle against each other to collect as many resources as possible. ​
 
-[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1732310810/Documents/Programmers_Report_-_Refrigerhater_1_hykczp.pdf" class="btn btn--inverse">Project Report</a>{:target="_blank"}
+<a href="https://github.com/prajwalshettydev/Refrigerhater" class="btn btn--inverse">Github</a>{:target="_blank"}
 
-An older Unity only design app, targeted to 4 platforms.
 
-{% include gallery id="gallery6" layout="half" caption="" %}
+{% include figure link_url="https://github.com/prajwalshettydev/Refrigerhater" image_path="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_1198/v1732310973/Documents/Academics/Screenshot_2024-03-26_140720_ycjfsw.webp" alt="a team-based, top-down multiplayer game" caption="" %}
 
-[//]: # (#### Spacejoy website:)
+### AI Generated Game Worlds with deep learning - Kingston University
 
-[//]: # (A short walkthrough of the website)
-[//]: # (A short walkthrough of the website)
+This was a group project with a team of 4, where our goal was to build AI generated dungeons. My teammate has also written a blog on it [here](https://medium.com/@aquillaorie/my-short-walk-with-ai-generated-game-worlds-e133fd46326b){:target="_blank"} for more in detailed overview on our work. 
+
+{% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_649/v1732312670/Documents/Academics/285f5c55-a7b8-4bf4-9783-9d38bca4a83d.webp" alt="AI generated dungeons" caption="" %}
+
+
+{% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732312767/Documents/Academics/2ae56349-e654-4a66-8759-5a102457d37d.webp" alt="AI generated dungeons" caption="" %}
+
+### Starship Simulator - Kingston University
+
+Currently work in progress, Kingston University is an educational partner of Sony through PlayStation First. Through this partnership I had the opportunity to learn how to develop games for the PlayStation 5 as part of the course. So the starship simulator is a prototype project where a player can land the starship on the Martian surface using the DualSense Gamepad. 
+
+{% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_1045/v1732313536/Documents/Academics/IMG_8897_cropped_ww5dob.webp" alt="PS5 Devkit" caption="" %}
+
+## Personal Projects:
+
+### Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project
+
+A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future.
+
+
+{% include gallery layout="third" caption="" %}

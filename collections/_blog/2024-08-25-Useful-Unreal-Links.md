@@ -4,7 +4,7 @@ excerpt : "Must-have Unreal Engine links for quick reference. This is a collecti
 layout: single
 share: false
 header:
-  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/v1724631627/Blogsite1/Unreal/5075c831-ad9a-4610-9213-e9bf88250279.png" #this is the thumbnail of the page
+  teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,q_80,w_314,h_240/v1724631627/Blogsite1/Unreal/5075c831-ad9a-4610-9213-e9bf88250279.webp" #this is the thumbnail of the page
 comments: true
 author_profile: true
 tags: game unity unreal
@@ -14,7 +14,7 @@ categories: UE5
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-#permalink: /:collection/unity-game-server
+permalink: /UE5/Useful-Unreal-Links
 ---
 
 Here's a compilation of all the must-have Unreal Engine links for quick reference. This is a collection I've curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have saved me countless hours of digging around. Trust me, they're gold.

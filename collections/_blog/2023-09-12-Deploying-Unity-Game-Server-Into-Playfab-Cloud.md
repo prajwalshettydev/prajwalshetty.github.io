@@ -13,7 +13,7 @@ categories: unity
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-#permalink: /:collection/unity-game-server
+permalink: /Unity/Deploying-Unity-Game-Server-Into-Playfab-Cloud/
 ---
 
 # Deploying Unity Game Server Into Playfab Cloud
