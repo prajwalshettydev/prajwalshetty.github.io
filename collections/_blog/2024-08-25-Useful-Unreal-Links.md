@@ -8,7 +8,7 @@ header:
 comments: true
 author_profile: true
 tags: game unity unreal
-categories: UE5
+categories: ue5
 #feature_image: "https://picsum.photos/2560/600?image=872"
 #toc: true
 #toc_sticky: true
