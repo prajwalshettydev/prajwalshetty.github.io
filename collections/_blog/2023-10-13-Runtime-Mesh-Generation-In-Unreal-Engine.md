@@ -8,12 +8,12 @@ header:
 comments: true
 author_profile: true
 tags: game unity server-build
-categories: UE5
+categories: ue5
 #toc: true
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-permalink: /UE5/Generating-Runtime-Mesh-In-Unreal-Engine/
+permalink: /ue5/Generating-Runtime-Mesh-In-Unreal-Engine/
 ---
 
 

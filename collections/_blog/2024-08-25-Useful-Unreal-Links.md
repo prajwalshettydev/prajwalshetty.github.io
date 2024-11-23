@@ -8,13 +8,13 @@ header:
 comments: true
 author_profile: true
 tags: game unity unreal
-categories: UE5
+categories: ue5
 #feature_image: "https://picsum.photos/2560/600?image=872"
 #toc: true
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-permalink: /UE5/Useful-Unreal-Links
+permalink: /ue5/Useful-Unreal-Links
 ---
 
 Here's a compilation of all the must-have Unreal Engine links for quick reference. This is a collection I've curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have saved me countless hours of digging around. Trust me, they're gold.
