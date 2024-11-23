@@ -4,14 +4,21 @@ layout: archive-for-home
 
 {{ content }}
 
-{% for collection in site.collections %}
+<!-- {% for collection in site.collections %}
   <h2>Recent Posts</h2>
   <ul>
     {% for item in site[collection.label] %}
       <li><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
-{% endfor %}
+{% endfor %} -->
+
+<h2>Recent Posts</h2>
+<ul>
+  {% for item in site.blog %}
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
 
 
 <!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>

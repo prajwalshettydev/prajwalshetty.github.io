@@ -6,7 +6,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png"
       },{
         "title": "Runtime mesh generation in Unreal Engine 5 - With LODs",
-        "excerpt":"Runtime mesh generation in Unreal Engine 5 (C++) - With LODs Introduction In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful...","categories": ["unity"],
+        "excerpt":"Runtime mesh generation in Unreal Engine 5 (C++) - With LODs Introduction In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful...","categories": ["UE5"],
         "tags": ["game","unity","server-build"],
         "url": "/UE5/Generating-Runtime-Mesh-In-Unreal-Engine/",
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png"
@@ -33,13 +33,13 @@ var store = [{
     "excerpt":" ","url": "http://localhost:4000/contact"
   },{
     "title": null,
-    "excerpt":"","url": "http://localhost:4000/collections/"
+    "excerpt":"🌟🌌💻🛸🪂🍺🌍🦕 Deploying Unity Builds To Playfab With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. Read More Runtime Mesh Generation in Unreal Engine 5 Generating Runtime Mesh In Unreal Engine 5 using C++, generating the mesh buffers,...","url": "http://localhost:4000/"
   },{
     "title": "Posts by Tag",
     "excerpt":"","url": "http://localhost:4000/tags/"
   },{
     "title": null,
-    "excerpt":"🌟🌌💻🛸🪂🍺🌍🦕 Deploying Unity Builds To Playfab With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. Read More Runtime Mesh Generation in Unreal Engine 5 Generating Runtime Mesh In Unreal Engine 5 using C++, generating the mesh buffers,...","url": "http://localhost:4000/"
+    "excerpt":"","url": "http://localhost:4000/collections/"
   },{
     "title": null,
     "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:4000/assets/js/lunr/lunr-en.js"
@@ -49,6 +49,9 @@ var store = [{
   },{
     "title": null,
     "excerpt":"var store = [ {%- for c in site.collections -%} {%- if forloop.last -%} {%- assign l = true -%} {%- endif -%} {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%} {%- for doc in docs -%} {%- if doc.header.teaser -%} {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture...","url": "http://localhost:4000/assets/js/lunr/lunr-store.js"
+  },{
+    "title": null,
+    "excerpt":"              Redirecting...                     If you are not redirected automatically, click here.     ","url": "http://localhost:4000/me/"
   },{
     "title": "Looks like you're offline",
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
