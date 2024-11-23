@@ -3,6 +3,7 @@ title: Prajwal Shetty's Portfolio
 feature_image: "https://picsum.photos/2560/600?image=872"
 share: false
 comments: false
+author_profile: true
 read_time: false
 related: false
 show_date: false

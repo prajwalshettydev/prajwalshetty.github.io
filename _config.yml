@@ -60,7 +60,7 @@ teaser                   : "https://res.cloudinary.com/dwfkishzf/image/upload/q_
 #logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1693416923/Prajwal%20Profile%20Images/Logo_type_2_-_white_1-cropped_gf7v2n.png" #"https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" #"/assets/logos/logo.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 logo                     : "https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -333,28 +333,28 @@ defaults:
       related: true
       show_date: true
       date_format: "%B %-d, %Y" #which will be displayed like “February 24, 2023”
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: UE5
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  - scope:
-      path: ""
-      type: unity
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  # - scope:
+  #     path: ""
+  #     type: UE5
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
+  # - scope:
+  #     path: ""
+  #     type: unity
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
 
 collections_dir: "collections"
 collections:
