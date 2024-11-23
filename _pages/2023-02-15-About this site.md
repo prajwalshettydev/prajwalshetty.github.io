@@ -8,6 +8,7 @@ related: false
 show_date: false
 breadcrumbs: false
 layout: splash
+permalink: About-this-site
 
 header:
   #overlay_color: "#000"

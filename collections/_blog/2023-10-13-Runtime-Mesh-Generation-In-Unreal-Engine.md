@@ -1,20 +1,21 @@
-﻿---
+---
 title: Runtime mesh generation in Unreal Engine 5 - With LODs
-excerpt : "Deploying a Unity Linux game server on the Microsoft Azure PlayFab service is a great way to host your multiplayer game and manage player data. With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. In this guide, we will take you through the steps involved in deploying your Unity Linux game server on the PlayFab service, all at no cost."
+excerpt : "Generating Runtime Mesh In Unreal Engine 5 using C++, generating the mesh buffers, subdividing the mesh into chunks, creating their LODs and collision."
 layout: single-no-title
 share: true
 header:
   teaser: "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png" #this is the thumbnail of the page
 comments: true
 author_profile: true
-tags: game unreal-engine graphics
+tags: game unity server-build
 categories: UE5
 #toc: true
 #toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
-#permalink: /:collection/unity-game-server
+permalink: /UE5/Generating-Runtime-Mesh-In-Unreal-Engine/
 ---
+
 
 # Runtime mesh generation in Unreal Engine 5 (C++) - With LODs
 
