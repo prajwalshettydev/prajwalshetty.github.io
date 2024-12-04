@@ -149,6 +149,9 @@ Except as provided herein, the failure to exercise a right or to require perform
 These Terms and Conditions may have been translated if We have made them available to You on our Service.
 You agree that the original English text shall prevail in the case of a dispute.
 
+# Intellectual Property Rights for Code
+All source code authored by me, including but not limited to code shared on public repositories (e.g., GitHub) or referenced via this Website, is my exclusive property. Unauthorized use, reproduction, or distribution of this code is strictly prohibited without prior written consent. I retain all rights to replicate, modify, distribute, or use the code, whether for commercial or non-commercial purposes. Any infringement of these terms may result in legal action.
+
 # Changes to These Terms and Conditions
 
 We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.

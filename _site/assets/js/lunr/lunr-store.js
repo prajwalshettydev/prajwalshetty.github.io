@@ -6,15 +6,15 @@ var store = [{
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1676878048/Blogsite1/unity/deployingtocloud/image_0_ggiwyx.png"
       },{
         "title": "Runtime mesh generation in Unreal Engine 5 - With LODs",
-        "excerpt":"Runtime mesh generation in Unreal Engine 5 (C++) - With LODs Introduction In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful...","categories": ["UE5"],
+        "excerpt":"Runtime mesh generation in Unreal Engine 5 (C++) - With LODs Introduction In this blog we will go through two major techniques to generate runtime meshes in Unreal Engine 5. We will also look at how to generate LODs for these meshes. Generating meshes at runtime is a very powerful...","categories": ["ue5"],
         "tags": ["game","unity","server-build"],
-        "url": "/UE5/Generating-Runtime-Mesh-In-Unreal-Engine/",
+        "url": "/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/",
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_627/v1683140916/Traffic%20Tales/FvOcMeUWIAA8sSu_pnfhyh.png"
       },{
         "title": "Compilation of the best Unreal Engine C++ resources for learning threading, networking, and more",
-        "excerpt":"Here’s a compilation of all the must-have Unreal Engine links for quick reference. This is a collection I’ve curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have...","categories": ["UE5"],
+        "excerpt":"Here’s a compilation of all the must-have Unreal Engine links for quick reference. This is a collection I’ve curated throughout my Unreal journey, covering those tricky C++ quirks, multiplayer setup, multithreading, performance optimization, and more. The official Unreal docs often fall short on these advanced topics, and these links have...","categories": ["ue5"],
         "tags": ["game","unity","unreal"],
-        "url": "/UE5/Useful-Unreal-Links",
+        "url": "/ue5/Useful-Unreal-Links",
         "teaser": "https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,q_80,w_314,h_240/v1724631627/Blogsite1/Unreal/5075c831-ad9a-4610-9213-e9bf88250279.webp"
       },,{
     "title": "About this site",
@@ -57,7 +57,7 @@ var store = [{
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
   },{
     "title": "Prajwal Shetty's Portfolio",
-    "excerpt":"Welcome to my portfolio! Resume{:target=\"_blank\"} Github{:target=\"_blank\"} Linkedin{:target=\"_blank\"} [//]: # ( Github{:target=\"_blank\"}) ## Professional Projects: ### Animalia Card Game - Kevuru Games Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures. I worked on both client and server sides, with a .NET backend in the server...","url": "http://localhost:4000/portfolio"
+    "excerpt":"Welcome to my portfolio! Resume{:target=\"_blank\"} Github{:target=\"_blank\"} Linkedin{:target=\"_blank\"} [//]: # ( Github{:target=\"_blank\"}) ## Professional Projects: ### Animalia Card Game - Kevuru Games Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET...","url": "http://localhost:4000/portfolio"
   },{
     "title": "Privacy Policy",
     "excerpt":"Last updated: November 22, 2024 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the...","url": "http://localhost:4000/privacy-policy"

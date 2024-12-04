@@ -104,6 +104,23 @@ gallery6:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/v1694287789/Spacejoy/750x750bb_6_n82drp.jpg
     alt: ""
     title: ""
+galleryStarship:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/qbg4dulkj9oudax94cmt
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/qbg4dulkj9oudax94cmt
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/w1d8qzmbrnlsnrej52yn
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/w1d8qzmbrnlsnrej52yn
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/rzcl4hymlcdc1edffts3
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/rzcl4hymlcdc1edffts3
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/vitzda4pdhvspvzbr274
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/vitzda4pdhvspvzbr274
+    alt: ""
+    title: ""
 ---
 
 <!-- # Prajwal Shetty's Portfolio -->
@@ -118,20 +135,15 @@ Welcome to my portfolio!
 
 ## Professional Projects:
 ### Animalia Card Game - Kevuru Games
-Animalia is an independent f2p online NFT trading card game featuring crypto-inspired meme creatures.
-I worked on both client and server sides, with a .NET backend in the server and unity in the client side. The game had multiple gameplay elements like special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
+Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET backend in the server and unity in the client side. The game had multiple gameplay elements like special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
 
 {% include video id="4ENRDmarIb4?start=122" provider="youtube" %}
 
-### MOBA in Unity's HDRP - Kevuru Games
-It's a Multiplayer Online Battle Arena Game built for PCs with unity hdrp, the game is under NDA so I can only show the basic dev reel and early footage.
-I worked on setting up the game connection, player combat, mirror networking and other game mechanics.
-
-{% include video id="HL8MXwn8RHQ" provider="youtube" %}
-
 ### Spacejoy's Design app - Unity as library, React-native:
-Built for loading and interacting with 50 thousand+ 3D models all in realtime,
+Built for loading and interacting with 50 thousand+ 3D models (furniture and decors) all in realtime,
 Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated.
+
+I led the unity team that built this app and at a point we had hit 100k organic downloads on iOS store under a month of launch. 
 
 Had various design features like product layout design, group actions, product swaps, wall paint, etc
 
@@ -139,7 +151,16 @@ Had various design features like product layout design, group actions, product s
 
 [//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
 
-An older Unity only design app, targeted to 4 platforms.
+
+### MOBA in Unity's HDRP - Kevuru Games
+It's a Multiplayer Online Battle Arena Game built for PCs with unity hdrp, the game is under NDA so I can only show the basic dev reel and early footage.
+I worked on setting up the game connection, player combat, mirror networking and other game mechanics.
+
+{% include video id="HL8MXwn8RHQ" provider="youtube" %}
+
+### Spacejoy's Designer Focused Desktop and Tablet app 
+
+This was more focused to interior designers, targted Mac, Windows (UWP), and Tablets (both iOS and Android). Had lot more features than the other mobile design app which was targeted for a fun to play narrative.
 
 {% include gallery id="gallery6" layout="half" caption="" %}
 
@@ -148,7 +169,8 @@ An older Unity only design app, targeted to 4 platforms.
 [//]: # (A short walkthrough of the website)
 [//]: # (A short walkthrough of the website)
 
-### Blender Add-ons - Spacejoy Inc:
+### Blender Add-ons - Spacejoy:
+Few of the services and plugins I built using blender ai for 3D content processing in the background and other parts of the pipeline.
 #### Backend, Blender Cycles Render Automation plugin 
 - Setup in the cloud as docker instance, this plugin was built to automate cycles render output for designs, or batch generating furniture thumbnails, room lighting check etc. So a design ID goes in as input, comes out realistic design images.
 - Both these plugins worked and supported designs that created in both Spacejoy's Unity app and blender.
@@ -183,11 +205,22 @@ Also had Auth, 3D object processing tools like quality check etc.
 
 ### A Multiplayer Battle Arena Vertical Slice - Mayaverse Inc
 
-Built with Unity and fish-networking
+Built with Unity and fish-networking, under NDA, but the initial dev shots looked something like this: 
 
 ![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_80,w_733/v1693233769/IMG_5376_wt2qp4.jpg)
 
 ## Academics Projects:
+
+### Starship Simulator for Playstation 5 - Kingston University
+
+This was an exciting project to work on, as it involved fusing Rocket Physics, Unreal Engine and PlayStation 5 devkit together!! 
+
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1733277233/Projects/SShip/zy1w5qshc4xymfrvw4wv.pdf" class="btn btn--inverse">Project Report</a>{:target="_blank"}
+
+Kingston University is an educational partner of Sony through PlayStation First. So I had the opportunity to develop games for the PlayStation 5 as part of the course. The starship simulator is a Unreal Engine project where a player can land the starship on the Martian surface using the DualSense Controller. This project is a true to scale simulation, which attempts to represent the planet, rocket and their forces in close to real world scale and values. It uses Unreal’s “Large World Coordinates” , which is now a default for v5.2+, where all the 3D math objects are now double-precision floats, and the default WORLD_MAX size in Unreal is now 88 million kilometers (Epic Games Developer, 2024)
+
+{% include gallery id="galleryStarship" layout="half" caption="" %}
+
 
 ### Refriger-hater: A UE5 Multiplayer game in C++ - Kingston University
 
@@ -208,17 +241,11 @@ This was a group project with a team of 4, where our goal was to build AI genera
 
 {% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732312767/Documents/Academics/2ae56349-e654-4a66-8759-5a102457d37d.webp" alt="AI generated dungeons" caption="" %}
 
-### Starship Simulator - Kingston University
-
-Currently work in progress, Kingston University is an educational partner of Sony through PlayStation First. Through this partnership I had the opportunity to learn how to develop games for the PlayStation 5 as part of the course. So the starship simulator is a prototype project where a player can land the starship on the Martian surface using the DualSense Gamepad. 
-
-{% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_1045/v1732313536/Documents/Academics/IMG_8897_cropped_ww5dob.webp" alt="PS5 Devkit" caption="" %}
-
 ## Personal Projects:
 
 ### Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project
 
-A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future.
+A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future. I had also recently made some additions to procedural generation system, will update the images soon. 
 
 
 {% include gallery layout="third" caption="" %}
