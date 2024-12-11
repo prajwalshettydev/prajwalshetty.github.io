@@ -40,21 +40,21 @@ gallery:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/q_76/v1683142285/Traffic%20Tales/Screenshot_2023-05-04_002644_zsiuzd.png
     alt: ""
     title: ""
-gallery2:
+galleryBlenderClient:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,h_0.82,w_1.00/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png
+    alt: ""
+    title: ""
   - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png
     alt: ""
     title: ""
-  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png
-    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png
-    alt: ""
-    title: ""
-  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg
-    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg
-    alt: ""
-    title: ""
   - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,h_0.78,w_1.00/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,h_0.78,w_1.00/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg
     alt: ""
     title: ""
 gallery4:
@@ -121,13 +121,33 @@ galleryStarship:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/SShip/vitzda4pdhvspvzbr274
     alt: ""
     title: ""
+galleryAnimalia:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/AAlia/m6s6kmasd47txrb9ybzw
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/AAlia/m6s6kmasd47txrb9ybzw
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/AAlia/ueixn2woxiiicdlt7kbl
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/AAlia/ueixn2woxiiicdlt7kbl
+    alt: ""
+    title: ""
+galleryMayaverse:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/MVerse/sxw3h8fz9dekgjzgnnuh
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/MVerse/sxw3h8fz9dekgjzgnnuh
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto,c_crop,h_0.90,w_1.00/v1/Projects/MVerse/eo6pge5zobsxv4clewwc
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto,c_crop,h_0.90,w_1.00/v1/Projects/MVerse/eo6pge5zobsxv4clewwc
+    alt: ""
+    title: ""
 ---
+
+
 
 <!-- # Prajwal Shetty's Portfolio -->
 
 Welcome to my portfolio!
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1724630584/Resumes/wiyfuwflyh4oyn17vzfd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1733875908/Resumes/mlltzjv3nmfzzrc7vzqi.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
 <a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
 <a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"}
 
@@ -135,17 +155,25 @@ Welcome to my portfolio!
 
 ## Professional Projects:
 ### Animalia Card Game - Kevuru Games
-Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET backend in the server and unity in the client side. The game had multiple gameplay elements like special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
+Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET backend on the server and Unity in client. The game had multiple gameplay elements like pvp, special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
+Tech stack: .Net backend, gRPC, Stateless and Zenject
 
+<a href="https://x.com/Animalia_games" class="btn btn--inverse">Twitter/X</a>{:target="_blank"} 
+<a href="https://animalia.games/" class="btn btn--inverse">Website</a>{:target="_blank"} 
+
+
+{% include gallery id="galleryAnimalia" layout="half" caption="" %}
 {% include video id="4ENRDmarIb4?start=122" provider="youtube" %}
 
 ### Spacejoy's Design app - Unity as library, React-native:
-Built for loading and interacting with 50 thousand+ 3D models (furniture and decors) all in realtime,
-Unity as a library mobile app (iOS/Android) with React-native and Unity deep integrated.
+Built for loading and interacting with 70 thousand+ 3D models (furniture and decors) all in realtime,
+Unity as a library mobile app (iOS/Android) with React-native.
 
-I led the unity team that built this app and at a point we had hit 100k organic downloads on iOS store under a month of launch. 
+I led the 6 people team that built this app and at a point we had hit 100k organic downloads on iOS store under a 3 months of launch. 
 
 Had various design features like product layout design, group actions, product swaps, wall paint, etc
+
+<a href="https://www.spacejoy.com/" class="btn btn--inverse">Website</a>{:target="_blank"} 
 
 {% include gallery id="gallery5" layout="third" caption="" %}
 
@@ -153,14 +181,14 @@ Had various design features like product layout design, group actions, product s
 
 
 ### MOBA in Unity's HDRP - Kevuru Games
-It's a Multiplayer Online Battle Arena Game built for PCs with unity hdrp, the game is under NDA so I can only show the basic dev reel and early footage.
+It's a Multiplayer Online Battle Arena Game built for PCs with unity HDRP, the game is under NDA so I can only show the basic dev reel and early footage.
 I worked on setting up the game connection, player combat, mirror networking and other game mechanics.
 
 {% include video id="HL8MXwn8RHQ" provider="youtube" %}
 
 ### Spacejoy's Designer Focused Desktop and Tablet app 
 
-This was more focused to interior designers, targted Mac, Windows (UWP), and Tablets (both iOS and Android). Had lot more features than the other mobile design app which was targeted for a fun to play narrative.
+This was more focused to interior designers, shipped to Mac and Windows (UWP) stores in desktop, and Tablets (both iOS and Android) in handheld devices. Had lot more features than the other mobile design app similar to Planner 5D.
 
 {% include gallery id="gallery6" layout="half" caption="" %}
 
@@ -193,21 +221,18 @@ Automated design outputs, using Blender Cycles:
 [//]: # (![Render Output 1]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904947/Spacejoy/image_bbc8wh.png&#41; )
 
 [//]: # (![Render Output 1]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904935/Spacejoy/60f6bcf95a1980002abfcad8_1626783842633_ftefjd.jpg&#41; )
+
 #### Spacejoy Blender Client plugin:
-Fetches 100+ `".blend"` or `"gltf"` files of independent furniture 3D models from the cloud and merges and places them together to make one full design. Sets up lighting camera, render settings and other things, all in one click for the 3D artist.
+Multiple internal team related features for example fetching hundreds of `".blend"` or `"gltf"` files of independent furniture 3D models from the cloud and merging/placing them together to make one full design, setting up lighting camera, render settings and etc, sometimes all in one click for the 3D artist.
 Also had Auth, 3D object processing tools like quality check etc.
 
-{% include gallery id="gallery2" layout="half" caption="" %}
-
-[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686904999/Spacejoy/Screenshot_2023-06-16_120351_trpndg.png&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_800/v1686905099/Spacejoy/Screenshot_2023-06-16_120425_tm4ikc.png&#41;)
-
-[//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_340/v1686904882/Spacejoy/Annotation_2020-04-28_195523_r5fqdh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_450/v1686904880/Spacejoy/Screenshot_2020-10-01_145714_iqhc1p.jpg&#41;)
+{% include gallery id="galleryBlenderClient" layout="half" caption="" %}
 
 ### A Multiplayer Battle Arena Vertical Slice - Mayaverse Inc
 
 Built with Unity and fish-networking, under NDA, but the initial dev shots looked something like this: 
 
-![image alt text](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_80,w_733/v1693233769/IMG_5376_wt2qp4.jpg)
+{% include gallery id="galleryMayaverse" layout="half" caption="" %}
 
 ## Academics Projects:
 
