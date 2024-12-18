@@ -10,8 +10,8 @@ author_profile: true
 tags: game unity unreal
 categories: ue5
 #feature_image: "https://picsum.photos/2560/600?image=872"
-#toc: true
-#toc_sticky: true
+toc: true
+toc_sticky: true
 #classes: wide
 search: true #To enable site-wide search add
 permalink: /ue5/Useful-Unreal-Links
@@ -148,6 +148,19 @@ Topics covered:
 - Transparency, Post processing
 
 Link: [Interplay of Light](https://interplayoflight.wordpress.com/2017/10/25/how-unreal-renders-a-frame/){:target="_blank"}
+
+## Mass Framework for crowds & traffic simulation in Unreal Engine
+{% include figure link_url="https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Blogsite1/Unreal/lxlvxdchijimvzhjtp7s" image_path="https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Blogsite1/Unreal/lxlvxdchijimvzhjtp7s" alt="Unreal Engine Mass Framework" caption="" %}
+An excellent page with everything related to Unreal Mass framework and plugins that is currently missing in the original documentation.
+Topics covered:
+- Mass Architecture Logic
+- Mass Framework Entity Component System (ECS):
+- Fragments, Traits, Processors
+- Default Unreal Mass Traits to use
+- Mass Entity Config Asset
+- Debugging, Tags, Agents, etc
+
+Link: [Unreal Engine Mass Framework](https://vrealmatic.com/unreal-engine/mass)
 
 ## Unreal Engine 4 Rendering by Matt Hoffman
 {% include figure link_url="https://medium.com/@lordned/unreal-engine-4-rendering-overview-part-1-c47f2da65346" image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732157919/Blogsite1/Unreal/936636ef-68ab-4609-96d7-abaad6ef619b.png" alt="Unreal C++ speedrun By Laura" caption="" %}
