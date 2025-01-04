@@ -78,6 +78,15 @@
     filter: alpha(opacity=65);
     box-shadow: none;
     opacity: 0.65;
+
+    // Font color adjustment to match inverse
+    color: mix(#fff, #000, 50%); // Grayed-out white (adjust mix ratio for more/less gray)
+    
+    // Add border similar to inverse buttons
+    border: 1px solid $border-color;
+
+    // Optional: Add background color (if desired for better contrast)
+    background-color: #f0f0f0; // Light gray (or adjust as needed)
   }
 
   /* extra large button */

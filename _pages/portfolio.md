@@ -139,6 +139,23 @@ galleryMayaverse:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto,c_crop,h_0.90,w_1.00/v1/Projects/MVerse/eo6pge5zobsxv4clewwc
     alt: ""
     title: ""
+galleryBHuman:
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/ipsr0efbmmfpgdxsvw4t
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/ipsr0efbmmfpgdxsvw4t
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/gwswvxyebrqfzhsdjro7
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/gwswvxyebrqfzhsdjro7
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/su3iwg7iy7sx68jpct0q
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/su3iwg7iy7sx68jpct0q
+    alt: ""
+    title: ""
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/szbmhga8afdyslqjgoct
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/szbmhga8afdyslqjgoct
+    alt: ""
+    title: ""
 ---
 
 
@@ -154,7 +171,7 @@ Welcome to my portfolio!
 [//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 
 ## Professional Projects:
-### Animalia Card Game - Kevuru Games
+### Animalia Card Game, .Net, Unity C#, Zenject, gRPC - Kevuru Games
 Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET backend on the server and Unity in client. The game had multiple gameplay elements like pvp, special spells, abilities, gemstones etc, it also had per card ability animations and special effects. 
 Tech stack: .Net backend, gRPC, Stateless and Zenject
 
@@ -165,7 +182,7 @@ Tech stack: .Net backend, gRPC, Stateless and Zenject
 {% include gallery id="galleryAnimalia" layout="half" caption="" %}
 {% include video id="4ENRDmarIb4?start=122" provider="youtube" %}
 
-### Spacejoy's Design app - Unity as library, React-native:
+### Spacejoy's Design app - Unity as library, C#, React-native:
 Built for loading and interacting with 70 thousand+ 3D models (furniture and decors) all in realtime,
 Unity as a library mobile app (iOS/Android) with React-native.
 
@@ -180,7 +197,7 @@ Had various design features like product layout design, group actions, product s
 [//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
 
 
-### MOBA in Unity's HDRP - Kevuru Games
+### MOBA in Unity's HDRP, Mirror, C# - Kevuru Games
 It's a Multiplayer Online Battle Arena Game built for PCs with unity HDRP, the game is under NDA so I can only show the basic dev reel and early footage.
 I worked on setting up the game connection, player combat, mirror networking and other game mechanics.
 
@@ -197,7 +214,7 @@ This was more focused to interior designers, shipped to Mac and Windows (UWP) st
 [//]: # (A short walkthrough of the website)
 [//]: # (A short walkthrough of the website)
 
-### Blender Add-ons - Spacejoy:
+### Blender Add-ons, Python, C++, Docker, GLTF, KTX, Draco - Spacejoy:
 Few of the services and plugins I built using blender ai for 3D content processing in the background and other parts of the pipeline.
 #### Backend, Blender Cycles Render Automation plugin 
 - Setup in the cloud as docker instance, this plugin was built to automate cycles render output for designs, or batch generating furniture thumbnails, room lighting check etc. So a design ID goes in as input, comes out realistic design images.
@@ -228,7 +245,7 @@ Also had Auth, 3D object processing tools like quality check etc.
 
 {% include gallery id="galleryBlenderClient" layout="half" caption="" %}
 
-### A Multiplayer Battle Arena Vertical Slice - Mayaverse Inc
+### A Multiplayer Battle Arena Vertical Slice, Unity C#, Fishnet - Mayaverse Inc
 
 Built with Unity and fish-networking, under NDA, but the initial dev shots looked something like this: 
 
@@ -236,7 +253,7 @@ Built with Unity and fish-networking, under NDA, but the initial dev shots looke
 
 ## Academics Projects:
 
-### Starship Simulator for Playstation 5 - Kingston University
+### Starship Simulator for Playstation 5 and Unreal C++ - Kingston University
 
 This was an exciting project to work on, as it involved fusing Rocket Physics, Unreal Engine and PlayStation 5 devkit together!! 
 
@@ -246,6 +263,20 @@ Kingston University is an educational partner of Sony through PlayStation First.
 
 {% include gallery id="galleryStarship" layout="half" caption="" %}
 
+### Become Human: An LLM-Driven MassAI NPC World in UE5 C++ - Kingston University
+
+This project is still in development.
+{: .notice--primary}
+
+<a href="" class="btn btn--disabled">Project Report (Coming Soon)</a>
+<a href="" class="btn btn--disabled">Github (Coming Soon)</a>
+
+Full code and report will be available here soon. In the meantime, check out the interim report and a plugin currently in development for the project. This detective-style RPG uses LLMs for dynamic, real-time narration, where player choices shape the story. With MassAI, I spawned hundreds of NPCs, each with unique roles and backstories.
+
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1735952508/Projects/BHuman/xyvpfhfbixvst52prwib.pdf" class="btn btn--inverse">Interim Report</a>{:target="_blank"}
+<a href="https://github.com/prajwalshettydev/UnrealGenAISupport" class="btn btn--inverse">UnrealGenAISupport Plugin Github</a>{:target="_blank"}
+
+{% include gallery id="galleryBHuman" layout="half" caption="" %}
 
 ### Refriger-hater: A UE5 Multiplayer game in C++ - Kingston University
 
@@ -272,5 +303,8 @@ This was a group project with a team of 4, where our goal was to build AI genera
 
 A high performance runtime terrain mesh generation system as a hobby project in Unreal Engine 5.1 C++. Island also has road network and spline systems, and may be will add a traffic system with point of interests in the future. I had also recently made some additions to procedural generation system, will update the images soon. 
 
+A short blog on the topic:
+
+<a href="https://prajwalshetty.com/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/" class="btn btn--inverse">Runtime Terrain</a>{:target="_blank"}
 
 {% include gallery layout="third" caption="" %}

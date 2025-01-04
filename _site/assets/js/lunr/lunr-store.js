@@ -57,7 +57,7 @@ var store = [{
     "excerpt":"It appears that you've lost your network connection and this document doesn't exist on your device.  Try either returning to the previous page, using the navigation to find your way back, or restore your network connection. ","url": "http://localhost:4000/offline/"
   },{
     "title": "Prajwal Shetty's Portfolio",
-    "excerpt":"Welcome to my portfolio! Resume{:target=\"_blank\"} Github{:target=\"_blank\"} Linkedin{:target=\"_blank\"} [//]: # ( Github{:target=\"_blank\"}) ## Professional Projects: ### Animalia Card Game - Kevuru Games Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and server sides, with a .NET...","url": "http://localhost:4000/portfolio"
+    "excerpt":"Welcome to my portfolio! Resume{:target=\"_blank\"} Github{:target=\"_blank\"} Linkedin{:target=\"_blank\"} [//]: # ( Github{:target=\"_blank\"}) ## Professional Projects: ### Animalia Card Game, .Net, Unity C#, Zenject, gRPC - Kevuru Games Animalia is an independent f2p online card game featuring meme creatures. The project was similar to Blizzard's Hearthstone. I worked on both client and...","url": "http://localhost:4000/portfolio"
   },{
     "title": "Privacy Policy",
     "excerpt":"Last updated: November 22, 2024 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the...","url": "http://localhost:4000/privacy-policy"
