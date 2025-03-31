@@ -1,0 +1,46 @@
+---
+permalink: /movies/
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to My Movie Collection | Prajwal Shetty</title>
+    <meta http-equiv="refresh" content="1; URL='https://www.imdb.com/list/ls593010164'" />
+    <link rel="canonical" href="https://www.imdb.com/list/ls593010164" />
+    <link rel="stylesheet" href="/assets/css/redirect.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" alt="Prajwal Shetty Logo" class="site-logo">
+      </div>
+      <div class="content">
+        <h1>Movies</h1>
+        <p>You're being redirected to the curated list on IMDb.</p>
+        <div class="loader"></div>
+        <div class="countdown">Redirecting in <span id="timer">1</span> seconds...</div>
+        <p>
+          <a href="https://www.imdb.com/list/ls593010164" class="redirect-link">Go to IMDb Now</a>
+        </p>
+      </div>
+    </div>
+    
+    <script>
+      // Countdown timer
+      let timeLeft = 1;
+      const timerElement = document.getElementById('timer');
+      
+      const countdown = setInterval(function() {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        
+        if (timeLeft <= 0) {
+          clearInterval(countdown);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

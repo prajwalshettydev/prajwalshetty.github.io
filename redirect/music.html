@@ -1,0 +1,46 @@
+---
+permalink: /music/
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to My Music Collection | Prajwal Shetty</title>
+    <meta http-equiv="refresh" content="1; URL='https://music.youtube.com/channel/UCvI0VKbNvTUNS-KwsOnmcZg'" />
+    <link rel="canonical" href="https://music.youtube.com/channel/UCvI0VKbNvTUNS-KwsOnmcZg" />
+    <link rel="stylesheet" href="/assets/css/redirect.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="https://res.cloudinary.com/dwfkishzf/image/upload/v1676630889/Prajwal%20Profile%20Images/Logo_type_2-Ready_cfqmy7.png" alt="Prajwal Shetty Logo" class="site-logo">
+      </div>
+      <div class="content">
+        <h1>Music</h1>
+        <p>You're being redirected to my YouTube Music channel.</p>
+        <div class="loader"></div>
+        <div class="countdown">Redirecting in <span id="timer">1</span> seconds...</div>
+        <p>
+          <a href="https://music.youtube.com/channel/UCvI0VKbNvTUNS-KwsOnmcZg" class="redirect-link">Go to YouTube Music Now</a>
+        </p>
+      </div>
+    </div>
+    
+    <script>
+      // Countdown timer
+      let timeLeft = 1;
+      const timerElement = document.getElementById('timer');
+      
+      const countdown = setInterval(function() {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        
+        if (timeLeft <= 0) {
+          clearInterval(countdown);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

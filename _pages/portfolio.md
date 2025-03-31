@@ -156,19 +156,54 @@ galleryBHuman:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/BHuman/szbmhga8afdyslqjgoct
     alt: ""
     title: ""
+galleryProjectGifs:
+  - url: "/portfolio#animalia-card-game-net-unity-c-zenject-grpc---kevuru-games"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743363152/Blogsite1/Portfolio/AnimaliaDemo-MadewithClipchamp-ezgif.com-resize_ogzrqm.gif
+    alt: "Animalia Card Game"
+    title: "Animalia Card Game"
+  - url: "/portfolio#spacejoys-design-app---unity-as-library-c-react-native"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743363146/Blogsite1/Portfolio/DesignYourImaginationwithSpacejoy-ezgif.com-optimize_znjzyd.gif
+    alt: "Spacejoy Design App"
+    title: "Spacejoy Design App"
+  - url: "/portfolio#become-human-an-llm-driven-massai-npc-world-in-ue5-c---kingston-university"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743363509/Blogsite1/Portfolio/BHDemoGif_vqqv7s.gif
+    alt: "Become Human LLM-Driven NPCs"
+    title: "Become Human LLM-Driven NPCs"
+  - url: "/portfolio#starship-simulator-for-playstation-5-and-unreal-c---kingston-university"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743363244/Blogsite1/Portfolio/StarshipSimShort-MadewithClipchamp-ezgif.com-optimize_pltf9d.gif
+    alt: "Starship Simulator PS5"
+    title: "Starship Simulator PS5"
+  - url: "/portfolio#moba-in-unitys-hdrp-mirror-c---kevuru-games"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743375188/Blogsite1/Portfolio/BattleAxesGameplay_Early_Testfootage-ezgif.com-optimize_fwq6wz.gif
+    alt: "MOBA in Unity HDRP"
+    title: "MOBA in Unity HDRP"
+  - url: ""
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743375027/Blogsite1/Portfolio/DemoDSP-MadewithClipchamp-ezgif.com-optimize_2_yaki7y.gif
+    alt: ""
+    title: ""
+  - url: "/portfolio#unreal-mcp---generative-ai-support-plugin"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_gif,fl_lossy/q_50/v1743363291/Blogsite1/Portfolio/UnrealMcpDemo_kt2rf9.gif
+    alt: ""
+    title: ""
+  - url: "/portfolio#spacejoys-designer-focused-desktop-and-tablet-app"
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,h_270,w_480,x_0,y_50/f_gif,fl_lossy/q_50/v1743363448/Blogsite1/Portfolio/SpacejoyApp-ezgif.com-optimize_tyap8n.gif
+    alt: "Spacejoy Designer App"
+    title: "Spacejoy Designer App"
 ---
-
-
 
 <!-- # Prajwal Shetty's Portfolio -->
 
 Welcome to my portfolio!
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1733875908/Resumes/mlltzjv3nmfzzrc7vzqi.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+## Project Highlights 
+
+{% include gallery id="galleryProjectGifs" layout="half" caption="" %}
+
+## External Links:
+
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1743362783/Resumes/PrajwalShetty_SeniorDev_April_CV_ldymwd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
 <a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
 <a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"}
-
-[//]: # (   <a href="https://github.com/prajwalshettydev" class="btn btn--inverse">Github</a>{:target="_blank"})
 
 ## Professional Projects:
 ### Animalia Card Game, .Net, Unity C#, Zenject, gRPC - Kevuru Games
@@ -265,16 +300,12 @@ Kingston University is an educational partner of Sony through PlayStation First.
 
 ### Become Human: An LLM-Driven MassAI NPC World in UE5 C++ - Kingston University
 
-This project is still in development.
-{: .notice--primary}
+This detective-style RPG uses LLMs for dynamic, real-time narration, where player choices shape the story. With MassAI, I spawned hundreds of NPCs, each with unique roles and backstories.
 
-<a href="" class="btn btn--disabled">Project Report (Coming Soon)</a>
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1743379439/Documents/CI7800Report_it8mdj.pdf" class="btn btn--inverse">Project Report</a>{:target="_blank"}
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1735952508/Projects/BHuman/xyvpfhfbixvst52prwib.pdf" class="btn btn--inverse">Interim Report</a>{:target="_blank"}
 <a href="" class="btn btn--disabled">Github (Coming Soon)</a>
 
-Full code and report will be available here soon. In the meantime, check out the interim report and a plugin currently in development for the project. This detective-style RPG uses LLMs for dynamic, real-time narration, where player choices shape the story. With MassAI, I spawned hundreds of NPCs, each with unique roles and backstories.
-
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1735952508/Projects/BHuman/xyvpfhfbixvst52prwib.pdf" class="btn btn--inverse">Interim Report</a>{:target="_blank"}
-<a href="https://github.com/prajwalshettydev/UnrealGenAISupport" class="btn btn--inverse">UnrealGenAISupport Plugin Github</a>{:target="_blank"}
 
 {% include gallery id="galleryBHuman" layout="half" caption="" %}
 
@@ -294,10 +325,20 @@ This was a group project with a team of 4, where our goal was to build AI genera
 
 {% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_649/v1732312670/Documents/Academics/285f5c55-a7b8-4bf4-9783-9d38bca4a83d.webp" alt="AI generated dungeons" caption="" %}
 
-
 {% include figure image_path="https://res.cloudinary.com/dwfkishzf/image/upload/v1732312767/Documents/Academics/2ae56349-e654-4a66-8759-5a102457d37d.webp" alt="AI generated dungeons" caption="" %}
 
+### Project Tuvalu, Sinking Island (UN Climate Change) - Kingston UniversityPermalink
+This project explores a sinking island concept driven by UN climate change themes. The game features a turn-based water rising mechanic where each move advances the water level, challenging players with tactical choices via collectible trinkets.
+![image-center](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_59,w_360/v1743378499/Projects/Screenshot_2025-01-16_183701_xj4j7f.png){: .align-center}
+
 ## Personal Projects:
+
+### Unreal MCP - Generative AI Support Plugin
+Every month, hundreds of new AI models are released. The Unreal MCP project focuses on integrating Model Control Protocol (MCP) with Unreal Engine 5.5 to support cutting-edge LLM/GenAI models and create a long-term support plugin for game development.
+
+<a href="https://github.com/prajwalshettydev/UnrealGenAISupport" class="btn btn--inverse">Github</a>{:target="_blank"}
+
+![image-center](https://res.cloudinary.com/dwfkishzf/image/upload/v1743378698/Projects/aec2e6a5-527d-4ef3-ae94-8d4be5f967dd.png){: .align-center}
 
 ### Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project
 
@@ -308,3 +349,6 @@ A short blog on the topic:
 <a href="https://prajwalshetty.com/ue5/Generating-Runtime-Mesh-In-Unreal-Engine/" class="btn btn--inverse">Runtime Terrain</a>{:target="_blank"}
 
 {% include gallery layout="third" caption="" %}
+
+### Fear of the Rotting Dead
+An early Unreal Engine 4 first-person shooter (built in 2016) featuring non-linear, event-driven gameplay across 9 missions. Multiple AI decision tree approaches optimize zombie horde spawning, with gameplay systems structured via functions, macros, and UE4 blueprints.
