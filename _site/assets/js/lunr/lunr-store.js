@@ -39,7 +39,7 @@ var store = [{
     "excerpt":"","url": "http://localhost:4000/collections/"
   },{
     "title": null,
-    "excerpt":"🌟🌌💻🛸🪂🍺🌍🦕 Deploying Unity Builds To Playfab With Azure PlayFab, game developers can leverage cloud-based infrastructure and services to scale their games and provide an optimal experience for players. Read More Runtime Mesh Generation in Unreal Engine 5 Generating Runtime Mesh In Unreal Engine 5 using C++, generating the mesh buffers,...","url": "http://localhost:4000/"
+    "excerpt":"🦋🌟🚗💻🍺🌌🛸🪂🌍 🦕 Latest Tweets missing Shangarh today...please do visit in summers if you are around. pic.twitter.com/YMuHyzeSUa &mdash; Prajwal Shetty 🕹️🚀 (@shettyprajwal_) October 8, 2024 To build a multiplayer traffic game in JavaScript, you&#39;ll need to understand event handling, physics simulations, and use WebSockets for real-time communication. pic.twitter.com/wkBQbC4QYh &mdash; Prajwal Shetty...","url": "http://localhost:4000/"
   },{
     "title": null,
     "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:4000/assets/js/lunr/lunr-en.js"
