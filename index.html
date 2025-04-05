@@ -102,10 +102,14 @@ feature_row:
   🦕
 </div>
 
-<!-- Twitter Embeds Section - Initially Hidden -->
+
+{% include feature_row %}
+
+
+<!-- Twitter Embeds Section - Initially Hidden with Mobile Responsiveness -->
 <div id="twitter-section" style="margin: 0; height: 0; padding: 0; overflow: hidden; visibility: hidden;">
-  <!-- Twitter Post Grid - Masonry Style Layout -->
-  <div class="twitter-masonry" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto;">
+  <!-- Twitter Post Grid - Responsive Layout -->
+  <div class="twitter-masonry" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
     <!-- Column 1 -->
     <div style="display: flex; flex-direction: column; gap: 20px;">
       <div style="min-height: 200px; width: 100%;">
@@ -194,13 +198,15 @@ feature_row:
   onload="if(typeof twttr !== 'undefined' && twttr.events) { twttr.events.bind('loaded', function() { showTwitterSection(); }); }">
 </script>
 
-{% include feature_row %}
+<div style="text-align: center; font-size: 1rem; margin: 20px 0;">
+  🦕
+</div>
 
-<!-- Instagram Posts - Two Column Layout -->
+<!-- Instagram Posts - Responsive Two Column Layout -->
 <div style="margin: 40px 0;">
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
     <!-- First Instagram Post -->
-    <div style="min-width: 300px;">
+    <div style="min-width: 280px; width: 100%;">
       <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C_LGZ3lgE8y/?img_index=1&utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:100%; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
         <div style="padding:16px;"> 
           <a href="https://www.instagram.com/p/C_LGZ3lgE8y/?img_index=1&utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> 
@@ -248,7 +254,7 @@ feature_row:
     </div>
     
     <!-- Second Instagram Post (New) -->
-    <div style="min-width: 300px;">
+    <div style="min-width: 280px; width: 100%;">
       <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DBFQ-1LtJgw/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:100%; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
         <div style="padding:16px;"> 
           <a href="https://www.instagram.com/p/DBFQ-1LtJgw/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> 
@@ -298,6 +304,17 @@ feature_row:
   
   <!-- Instagram embed script -->
   <script async src="//www.instagram.com/embed.js"></script>
+  
+  <!-- Instagram mobile fix styles -->
+  <style>
+    @media (max-width: 767px) {
+      .instagram-media {
+        max-width: 100% !important;
+        width: 100% !important;
+        min-width: 280px !important;
+      }
+    }
+  </style>
 </div>
 
 <!-- Custom Button Grid Section -->
