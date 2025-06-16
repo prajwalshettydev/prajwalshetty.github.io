@@ -286,6 +286,14 @@ Built with Unity and fish-networking, under NDA, but the initial dev shots looke
 
 {% include gallery id="galleryMayaverse" layout="half" caption="" %}
 
+### Joyverse, By Spacejoy - VR Multiplayer Designing
+
+Joyverse was built for Meta Quest 2, where players can get into a space together to design their dream interiors!
+
+<a href="https://www.meta.com/en-gb/experiences/joyverse/5547974825318365/?srsltid=AfmBOooNMv7IeTT0hFEM-nkMQOZ5Y7zoqEILWWo5L4XAaO5Uc_GbzLw7" class="btn btn--inverse">Meta Quest Store</a>{:target="_blank"} 
+
+{% include video id="4km7E6u7A1g" provider="youtube" %}
+
 ## Academics Projects:
 
 ### Starship Simulator for Playstation 5 and Unreal C++ - Kingston University
