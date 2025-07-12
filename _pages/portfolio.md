@@ -190,20 +190,18 @@ galleryProjectGifs:
     alt: "Spacejoy Designer App"
     title: "Spacejoy Designer App"
 ---
-
 <!-- # Prajwal Shetty's Portfolio -->
-
 Welcome to my portfolio!
 
-## Project Highlights 
+<!-- ## Project Highlights
+{% include gallery id="galleryProjectGifs" layout="half" caption="" %} -->
+[//]: # ()
+[//]: # (## External Links:)
 
-{% include gallery id="galleryProjectGifs" layout="half" caption="" %}
+[//]: # (<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1743362783/Resumes/PrajwalShetty_SeniorDev_April_CV_ldymwd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"})
+[//]: # (<a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"})
 
-## External Links:
-
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1743362783/Resumes/PrajwalShetty_SeniorDev_April_CV_ldymwd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
-<a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
-<a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"}
+[//]: # (<a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"})
 
 ## Professional Projects:
 ### Animalia Card Game, .Net, Unity C#, Zenject, gRPC - Kevuru Games
@@ -342,6 +340,7 @@ This project explores a sinking island concept driven by UN climate change theme
 ## Personal Projects:
 
 ### Unreal MCP - Generative AI Support Plugin
+200+ Stars on Github! 
 Every month, hundreds of new AI models are released. The Unreal MCP project focuses on integrating Model Control Protocol (MCP) with Unreal Engine 5.5 to support cutting-edge LLM/GenAI models and create a long-term support plugin for game development.
 
 <a href="https://github.com/prajwalshettydev/UnrealGenAISupport" class="btn btn--inverse">Github</a>{:target="_blank"}
@@ -360,3 +359,4 @@ A short blog on the topic:
 
 ### Fear of the Rotting Dead
 An early Unreal Engine 4 first-person shooter (built in 2016) featuring non-linear, event-driven gameplay across 9 missions. Multiple AI decision tree approaches optimize zombie horde spawning, with gameplay systems structured via functions, macros, and UE4 blueprints.
+
