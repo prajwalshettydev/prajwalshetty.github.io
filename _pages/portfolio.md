@@ -131,12 +131,12 @@ galleryAnimalia:
     alt: ""
     title: ""
 galleryMayaverse:
-  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/MVerse/sxw3h8fz9dekgjzgnnuh
-    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto/v1/Projects/MVerse/sxw3h8fz9dekgjzgnnuh
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/q_75/v1754826456/Projects/MVerse/cd3ae160f76ae74660ebb18d5b010e0e_cropped_efedbu.webp
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/q_75/v1754826456/Projects/MVerse/cd3ae160f76ae74660ebb18d5b010e0e_cropped_efedbu.webp
     alt: ""
     title: ""
-  - url: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto,c_crop,h_0.90,w_1.00/v1/Projects/MVerse/eo6pge5zobsxv4clewwc
-    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/f_auto,q_auto,c_crop,h_0.90,w_1.00/v1/Projects/MVerse/eo6pge5zobsxv4clewwc
+  - url: https://res.cloudinary.com/dwfkishzf/image/upload/q_75/v1754826760/Projects/MVerse/b657ffeee5263344af856ced56b1575e_cropped_cv5fr8.webp
+    image_path: https://res.cloudinary.com/dwfkishzf/image/upload/q_75/v1754826760/Projects/MVerse/b657ffeee5263344af856ced56b1575e_cropped_cv5fr8.webp
     alt: ""
     title: ""
 galleryBHuman:
@@ -195,13 +195,12 @@ Welcome to my portfolio!
 
 <!-- ## Project Highlights
 {% include gallery id="galleryProjectGifs" layout="half" caption="" %} -->
-[//]: # ()
-[//]: # (## External Links:)
 
-[//]: # (<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1743362783/Resumes/PrajwalShetty_SeniorDev_April_CV_ldymwd.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"})
-[//]: # (<a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"})
+<!-- ## External Links: -->
 
-[//]: # (<a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"})
+<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1754825965/Resumes/PrajwalShetty_CV4_SeniorDev__Aug_UEUN_iuignn.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<!-- <a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
+<a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"} -->
 
 ## Professional Projects:
 ### Animalia Card Game, .Net, Unity C#, Zenject, gRPC - Kevuru Games
@@ -228,6 +227,16 @@ Had various design features like product layout design, group actions, product s
 {% include gallery id="gallery5" layout="third" caption="" %}
 
 [//]: # (![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_570/v1683142837/Spacejoy/1672817599968_fv2ysh.jpg&#41;    ![image alt text]&#40;https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_225/v1683142971/Spacejoy/Screenshot_2023-05-04_011100_skrmpj.png&#41;)
+
+### A Multiplayer Battle Arena Vertical Slice, Unity C#, Fishnet - Mayaverse Inc
+
+Built with Unity and fish-networking, under NDA.
+
+<a href="https://entermaya.com/" class="btn btn--inverse">Website</a>{:target="_blank"} 
+
+{% include gallery id="galleryMayaverse" layout="half" caption="" %}
+
+{% include video id="ywuPOFHYWZ8?start=122" provider="youtube" %}
 
 
 ### MOBA in Unity's HDRP, Mirror, C# - Kevuru Games
@@ -277,12 +286,6 @@ Multiple internal team related features for example fetching hundreds of `".blen
 Also had Auth, 3D object processing tools like quality check etc.
 
 {% include gallery id="galleryBlenderClient" layout="half" caption="" %}
-
-### A Multiplayer Battle Arena Vertical Slice, Unity C#, Fishnet - Mayaverse Inc
-
-Built with Unity and fish-networking, under NDA, but the initial dev shots looked something like this: 
-
-{% include gallery id="galleryMayaverse" layout="half" caption="" %}
 
 ### Joyverse, By Spacejoy - VR Multiplayer Designing
 
