@@ -212,7 +212,8 @@ Tech stack: .Net backend, gRPC, Stateless and Zenject
 
 
 {% include gallery id="galleryAnimalia" layout="half" caption="" %}
-{% include video id="4ENRDmarIb4?start=122" provider="youtube" %}
+{% include video id="4_iqu9xkhgM?start=15" provider="youtube" %}
+
 
 ### Spacejoy's Design app - Unity as library, C#, React-native:
 Built for loading and interacting with 70 thousand+ 3D models (furniture and decors) all in realtime,
@@ -348,7 +349,8 @@ Every month, hundreds of new AI models are released. The Unreal MCP project focu
 
 <a href="https://github.com/prajwalshettydev/UnrealGenAISupport" class="btn btn--inverse">Github</a>{:target="_blank"}
 
-![image-center](https://res.cloudinary.com/dwfkishzf/image/upload/v1743378698/Projects/aec2e6a5-527d-4ef3-ae94-8d4be5f967dd.png){: .align-center}
+![image-center](https://res.cloudinary.com/dwfkishzf/image/upload/v1782134426/Projects/ad961d78-ab56-40b2-9870-015b0299e984.webp){: .align-center}
+
 
 ### Procedural Runtime Terrain and Road system with UE5 and C++ - Hobby Project
 
