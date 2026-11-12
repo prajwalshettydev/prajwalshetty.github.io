@@ -1,4 +1,5 @@
 ---
+published: false   # retired for now (2026-11): /hi/ replaces it, and takes over this address
 title: About this site
 feature_image: "https://picsum.photos/2560/600?image=872"
 share: false

@@ -52,7 +52,7 @@ title                    : "Prajwal Shetty"
 title_separator          : "|"
 subtitle                 : # Version 0.8 # site tagline that appears below site title in masthead
 name                     : "Prajwal Shetty"
-description              : "A game developer with 5 years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you'll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!"
+description              : "A game developer with 8+ years of experience in the industry. I specialize in game programming and 3D math, with expertise in Unity, Unreal Engine 5, and Blender Python API. I have a particular interest in open-world games and virtual worlds, and I love creating immersive experiences that transport players to new and exciting places. In my spare time, I enjoy staying up-to-date with the latest developments in technology and exploring new programming concepts. On this blog, I share my thoughts and insights on game development, programming, and tech. Whether you're a fellow game developer, a tech enthusiast, or just someone looking for a good read, I hope you'll find something of interest here. As well as my professional interests, I also have a passion for travel and exploring new places. You may find the occasional post about my adventures, and how they inspire my work. I love to write and believe that blogging is an excellent way to express my thoughts and ideas. I hope you'll find my writing engaging, informative, and thought-provoking. Thanks for stopping by!"
 url                      : "https://prajwalshetty.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "prajwalshettydev/prajwalshetty.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -127,7 +127,6 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://instagram.com/for.the.stars_/"
-    - "https://linkedin.com/in/shettyprajwal/"
     - "https://twitter.com/shettyprajwal_"
     - "https://github.com/prajwalshettydev"
 
@@ -145,7 +144,7 @@ author:
 #  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,h_394,q_65/v1687258592/Prajwal%20Profile%20Images/PP-cropped_spzc2a.webp"
 #  avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_71,w_465/v1732304677/Prajwal%20Profile%20Images/32debabd-554d-4e31-ac44-d5b9da9383b9.webp"
   avatar           : "https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,w_405/v1732305393/Prajwal%20Profile%20Images/43BE9B51-41D5-40E8-BA95-32300FB15BB7_1_2_uczvm9.webp"
-  bio              : "I see the world in triangles and pixels, dev from the past 6+ years, let’s #makesomethingunreal!"
+  bio              : "I see the world in triangles and pixels, dev from the past 8+ years, let’s #makesomethingunreal!"
   location         : "London, 🇬🇧"
   email            : mail@prajwalshetty.com
   links:
@@ -164,9 +163,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/for.the.stars_/"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/shettyprajwal/"
     - label: "X (Twitter)"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/shettyprajwal_"
@@ -189,9 +185,6 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/shettyprajwal/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://instagram.com/for.the.stars_/"

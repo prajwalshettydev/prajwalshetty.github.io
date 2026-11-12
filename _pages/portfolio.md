@@ -189,6 +189,24 @@ galleryProjectGifs:
     image_path: https://res.cloudinary.com/dwfkishzf/image/upload/c_crop,h_270,w_480,x_0,y_50/f_gif,fl_lossy/q_50/v1743363448/Blogsite1/Portfolio/SpacejoyApp-ezgif.com-optimize_tyap8n.gif
     alt: "Spacejoy Designer App"
     title: "Spacejoy Designer App"
+gallerySpaceClipper:
+  - url: /assets/portfolio/space-clipper-woodland.jpg
+    image_path: /assets/portfolio/space-clipper-woodland.jpg
+    alt: "A woodland landscape rendered in Unreal Engine"
+    title: "Woodlands in Unreal Engine"
+  - url: /assets/portfolio/space-clipper-pylon.jpg
+    image_path: /assets/portfolio/space-clipper-pylon.jpg
+    alt: "An electricity pylon and power lines over farmland, rendered in Unreal Engine"
+    title: "Energy infrastructure in Unreal Engine"
+galleryNKB:
+  - url: /assets/portfolio/nkb-soudha.jpg
+    image_path: /assets/portfolio/nkb-soudha.jpg
+    alt: "Nande Kano Bengaluru: the city in the game"
+    title: "Nande Kano Bengaluru"
+  - url: /assets/portfolio/nkb-street.jpg
+    image_path: /assets/portfolio/nkb-street.jpg
+    alt: "Nande Kano Bengaluru: a street in the game"
+    title: "Nande Kano Bengaluru"
 ---
 <!-- # Prajwal Shetty's Portfolio -->
 Welcome to my portfolio!
@@ -199,6 +217,7 @@ Welcome to my portfolio!
 <!-- ## External Links: -->
 
 <a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1754825965/Resumes/PrajwalShetty_CV4_SeniorDev__Aug_UEUN_iuignn.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal" class="btn btn--primary">Work with me</a>
 <!-- <a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
 <a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"} -->
 
@@ -296,6 +315,12 @@ Joyverse was built for Meta Quest 2, where players can get into a space together
 
 {% include video id="4km7E6u7A1g" provider="youtube" %}
 
+### Unreal Engine product - Space Clipper Industries
+
+Earth Observation (EO), energy, woodlands and Unreal Engine: real places built in the engine, in C++.
+
+{% include gallery id="gallerySpaceClipper" layout="half" caption="" %}
+
 ## Academics Projects:
 
 ### Starship Simulator for Playstation 5 and Unreal C++ - Kingston University
@@ -342,6 +367,16 @@ This project explores a sinking island concept driven by UN climate change theme
 ![image-center](https://res.cloudinary.com/dwfkishzf/image/upload/c_scale,q_59,w_360/v1743378499/Projects/Screenshot_2025-01-16_183701_xj4j7f.png){: .align-center}
 
 ## Personal Projects:
+
+### Nande Kano Bengaluru - Open-world game in UE5 C++ (work in progress)
+
+From the meter to the top. An open-world story game set on the real streets of Bengaluru, coming to PC. It is what I am building right now, and I post the progress as dev logs.
+
+<a href="https://muddyterrain.com/bengaluru" class="btn btn--inverse">Game page</a>{:target="_blank"}
+<a href="https://x.com/shettyprajwal_" class="btn btn--inverse">Dev logs on X</a>{:target="_blank"}
+<a href="" class="btn btn--disabled">Work in progress</a>
+
+{% include gallery id="galleryNKB" layout="half" caption="" %}
 
 ### Unreal MCP - Generative AI Support Plugin
 200+ Stars on Github! 

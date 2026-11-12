@@ -7,8 +7,11 @@ main:
   #   url: /year-archive/
   - title: "Portfolio"
     url: /portfolio
-  - title: "About"
-    url: /About-this-site
+  - title: "Say hi"
+    url: /hi/
+  # About is retired for now (2026-11): /hi/ replaces it
+  # - title: "About"
+  #   url: /About-this-site
   
     
   # - title: "Sitemap"

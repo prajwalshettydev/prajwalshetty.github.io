@@ -71,3 +71,71 @@ html {
     font-size: 18px; // change to whatever
   }
 }
+
+/* ===== warm paper skin (matches /hi/) ===== */
+$paper: #f6f3ee; $card: #ffffff; $rule: #e3ddd2; $ink: #17191d; $soft: #5f6672; $sun: #ffd84d; $sun-deep: #e0a800;
+
+html, body { background: $paper; color: $ink; }
+.masthead { background: $paper; border-bottom: 1px solid $rule; }
+.greedy-nav { background: $paper;
+  a { color: $soft; &:hover { color: $ink; } }
+  .visible-links a:before { background: $sun-deep; height: 3px; border-radius: 2px; }
+  .hidden-links { background: $card; border-color: $rule; border-radius: 10px; }
+  button, .greedy-nav__toggle, .search__toggle { background: transparent; color: $soft; }
+}
+.page__footer { background: $paper; border-top: 1px solid $rule; color: $soft; a { color: $ink; } }
+.search-content { background: $paper; }
+
+/* text */
+.page__content, .archive {
+  p, li { color: lighten($ink, 10%); }
+  a:not(.btn):not(.toc__menu a):not(.archive__item-title a) { color: $ink; text-decoration: underline; text-decoration-color: $sun-deep; text-decoration-thickness: 2px; text-underline-offset: 3px;
+    &:hover { background: rgba($sun, .45); } }
+  h2:not(.archive__item-title) { border-bottom: 0; margin-top: 2.2em; font-size: 1.5em; display: table;
+       background: linear-gradient(transparent 62%, $sun 62%); padding: 0 .15em; }
+  h3 { margin-top: 2em; font-size: 1.18em; line-height: 1.3; }
+  h4 { color: $soft; }
+}
+
+/* buttons: small white pills, one yellow */
+.btn { border-radius: 999px; padding: .5em 1.05em; font-weight: 600; border: 1px solid $rule; box-shadow: 0 1px 2px rgba(27, 31, 42, .07);
+       transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease; text-decoration: none !important; }
+.btn--inverse, .btn--inverse:visited { background: $card; color: $ink; border-color: $rule; }
+.btn--inverse:hover, .btn:hover { transform: translateY(-2px); border-color: $sun-deep; background: $card; color: $ink; box-shadow: 0 8px 18px rgba(27, 31, 42, .12); }
+.btn--primary, .btn--primary:visited { background: $sun; color: $ink; border-color: $sun-deep; }
+.btn--primary:hover { background: lighten($sun, 6%); color: $ink; }
+.btn--disabled, .btn--disabled:hover { background: transparent; color: $soft; border-style: dashed; box-shadow: none; transform: none; cursor: default; }
+
+/* pictures: soft cards that lift */
+.gallery, figure.half, figure.third { img { border-radius: 14px; border: 1px solid $rule; box-shadow: 0 1px 2px rgba(27, 31, 42, .07); transition: transform .18s ease, box-shadow .18s ease; }
+  a:hover img { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(27, 31, 42, .16); } }
+.page__content figure > img, .page__content figure > a > img, .page__content img.align-center, .page__content p > img { border-radius: 14px; border: 1px solid $rule; }
+.responsive-video-container { border-radius: 14px; overflow: hidden; border: 1px solid $rule; }
+/* the home page photo rows (their markup carries inline styles) */
+.archive div[style*="flex-wrap"] > a { text-decoration: none !important; background: none !important;
+  img { border-radius: 14px !important; box-shadow: 0 1px 2px rgba(27, 31, 42, .08); transition: transform .18s ease, box-shadow .18s ease; }
+  &:hover img { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(27, 31, 42, .18); } }
+
+/* the three write-ups on the home page: cards */
+.feature__wrapper { border-bottom: 0; margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 18px; &:after { display: none; } }
+.feature__item { float: none !important; flex: 1 1 250px; width: auto !important; margin: 0 !important; background: $card; border: 1px solid $rule; border-radius: 16px; overflow: hidden;
+  box-shadow: 0 1px 2px rgba(27, 31, 42, .07); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; font-size: 1em;
+  &:hover { transform: translateY(-4px); border-color: $sun-deep; box-shadow: 0 14px 30px rgba(27, 31, 42, .14); }
+  .archive__item { display: flex; flex-direction: column; height: 100%; }
+  .archive__item-teaser { border-radius: 0; margin: 0; img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; } }
+  .archive__item-body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
+  .archive__item-title { margin: 0 0 .35em; font-size: 1.05em; line-height: 1.3; background: none; padding: 0; display: block; a { color: $ink; text-decoration: none; } }
+  .archive__item-excerpt { margin: 0 0 .9em; font-size: .82em; color: $soft; p { color: $soft; margin: 0; } }
+  .btn { margin: auto 0 0; align-self: flex-start; font-size: .72em; }
+}
+
+/* sidebar + contents box */
+.author__avatar img { border-radius: 18px; border: 1px solid $rule; padding: 0; box-shadow: 0 6px 16px rgba(27, 31, 42, .12); }
+.author__urls a { color: $soft; text-decoration: none; &:hover { color: $ink; } }
+.sidebar .author__bio, .sidebar p { color: $soft; }
+.toc { background: $card; border: 1px solid $rule; border-radius: 14px; box-shadow: 0 1px 2px rgba(27, 31, 42, .07); overflow: hidden;
+  .nav__title { background: $sun; color: $ink; }
+  a { color: $soft; border-bottom-color: $rule; text-decoration: none !important; background: none; &:hover { color: $ink; background: rgba($sun, .25); } }
+  .active a { background: rgba($sun, .35); color: $ink; } }
+.page__content pre, .page__content div.highlighter-rouge { border-radius: 12px; }
+@media (prefers-reduced-motion: reduce) { .btn, .feature__item, .gallery img, .archive div[style*="flex-wrap"] > a img { transition: none; } }

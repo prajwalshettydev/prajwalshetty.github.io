@@ -1,0 +1,159 @@
+---
+permalink: /hi/
+layout: null
+redirect_from:
+  - /About-this-site
+  - /About-this-site/
+  - /about/
+sitemap: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hi, I'm Prajwal</title>
+<meta name="description" content="I see the world in triangles and pixels: game engines and AI by day, building things for fun the rest of the time. The game, the plugins, the dev logs and the code, in one place.">
+<link rel="canonical" href="https://prajwalshetty.com/hi/">
+<meta property="og:title" content="Hi, I'm Prajwal">
+<meta property="og:description" content="The game, the Unreal plugins, the dev logs and the code: everything I make, in one place.">
+<meta property="og:image" content="https://prajwalshetty.com/assets/hi/game.jpg">
+<meta property="og:url" content="https://prajwalshetty.com/hi/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f3ee">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/fav/favicon-16x16.png">
+<style>
+  :root { --bg: #f6f3ee; --card: #ffffff; --line: #e3ddd2; --text: #17191d; --muted: #5f6672; --accent: #e0a800; --ink: #17191d; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 56px 20px 64px; }
+  header { margin-bottom: 36px; position: relative; }
+  /* the way back to the main site: a round button level with the title, on the cards' right edge */
+  a.home { position: absolute; top: 4px; right: 0; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--card);
+           border: 1px solid var(--line); color: var(--ink); box-shadow: 0 1px 2px #1b1f2a12; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  a.home:hover, a.home:focus-visible { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 8px 18px #1b1f2a24; outline: none; }
+  a.home svg { width: 22px; height: 22px; }
+  header h1 { padding-right: 60px; }
+  .wave { display: inline-block; transform-origin: 70% 70%; animation: wave 2.4s ease-in-out 0.4s 2; }
+  @keyframes wave { 0%, 60%, 100% { transform: rotate(0); } 10%, 30% { transform: rotate(16deg); } 20%, 40% { transform: rotate(-8deg); } }
+  h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.02em; }
+  h1 em { font-style: normal; background: linear-gradient(transparent 62%, #ffd84d 62%); padding: 0 2px; }
+  header p { margin: 0; color: var(--muted); font-size: clamp(16px, 2.4vw, 19px); max-width: 660px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  a.card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+           overflow: hidden; color: inherit; text-decoration: none; box-shadow: 0 1px 2px #1b1f2a12; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  a.card:hover, a.card:focus-visible { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 14px 30px #1b1f2a24; outline: none; }
+  a.card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: #ece7de; border-bottom: 1px solid var(--line); }
+  a.card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  a.card h2 { margin: 0; font-size: 18px; line-height: 1.25; }
+  a.card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  a.card .go { margin-top: auto; padding-top: 10px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+  a.card .go b { color: var(--ink); font-weight: 700; transition: transform .18s ease; }
+  a.card:hover .go b { transform: translateX(4px); }
+  /* the game leads: full width, picture beside the words on a wide screen */
+  a.card.lead { grid-column: 1 / -1; }
+  a.card.lead h2 { font-size: clamp(22px, 3.4vw, 30px); }
+  a.card.lead p { font-size: 16px; }
+  .tag { align-self: flex-start; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #17191d;
+         background: #ffd84d; border-radius: 999px; padding: 3px 10px; margin-bottom: 6px; }
+  @media (min-width: 760px) {
+    a.card.lead { flex-direction: row; }
+    a.card.lead img { width: 58%; border-bottom: 0; border-right: 1px solid var(--line); }
+    a.card.lead .body { padding: 26px 26px 22px; justify-content: center; flex: 1; }
+    a.card.lead .go { margin-top: 18px; }
+  }
+  /* the email card has no screenshot: a drawn envelope instead */
+  .art { aspect-ratio: 16 / 10; display: grid; place-items: center; background: #ffd84d; border-bottom: 1px solid var(--line); }
+  .art svg { width: 34%; height: auto; }
+  a.card .mail { font-weight: 700; color: var(--ink); word-break: break-all; }
+  @media (prefers-reduced-motion: reduce) { .wave { animation: none; } a.card, a.card .go b, a.home { transition: none; } a.card:hover, a.home:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="home" href="/" title="prajwalshetty.com home" aria-label="Home: prajwalshetty.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg>
+    </a>
+    <h1><span class="wave">👋</span> Hi, I'm <em>Prajwal</em>.</h1>
+    <p>I see the world in triangles and pixels. Game engines and AI are the day job; after hours I build things for fun. Otherwise I'm up a mountain, in a cinema seat, or ordering the thing on the menu I can't pronounce. 🍝 ⛰️ 🍺</p>
+  </header>
+
+  <div class="grid">
+    <a class="card lead" href="https://muddyterrain.com/bengaluru">
+      <img src="/assets/hi/game.jpg" alt="Nande Kano Bengaluru: an auto rickshaw on a busy Bengaluru street" width="960" height="600">
+      <div class="body">
+        <span class="tag">The game</span>
+        <h2>Nande Kano Bengaluru</h2>
+        <p>From the meter to the top. An open-world story game on the real streets of Bengaluru, coming to PC.</p>
+        <div class="go"><span>muddyterrain.com/bengaluru</span><b>See the game →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="https://x.com/shettyprajwal_">
+      <img src="/assets/hi/x.jpg" alt="Prajwal on X" width="960" height="600" loading="lazy">
+      <div class="body">
+        <h2>Dev logs on X</h2>
+        <p>Daily progress on the game: what got built, what broke, short clips.</p>
+        <div class="go"><span>@shettyprajwal_</span><b>Follow →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="https://www.fab.com/sellers/Muddy%20Terrain%20Games">
+      <img src="/assets/hi/fab.jpg" alt="Muddy Terrain Games plugins on Fab" width="960" height="600" loading="lazy">
+      <div class="body">
+        <h2>Unreal Engine plugins</h2>
+        <p>Gen AI plugins for Unreal on Fab: chat, voices, NPCs, local models, 3D generation.</p>
+        <div class="go"><span>fab.com</span><b>Open the store →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/prajwalshettydev">
+      <img src="/assets/hi/github.jpg" alt="Prajwal's GitHub profile" width="960" height="600" loading="lazy">
+      <div class="body">
+        <h2>Code on GitHub</h2>
+        <p>Open-source bits, examples and experiments.</p>
+        <div class="go"><span>github.com/prajwalshettydev</span><b>Browse →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="/">
+      <img src="/assets/hi/site.jpg" alt="prajwalshetty.com home page" width="960" height="600" loading="lazy">
+      <div class="body">
+        <h2>Blog and portfolio</h2>
+        <p>Write-ups on Unreal, Unity and Blender, plus what I have shipped.</p>
+        <div class="go"><span>prajwalshetty.com</span><b>Read →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 120 84" fill="none" stroke="#17191d" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="6" y="6" width="108" height="72" rx="10" fill="#fffdf6"/><path d="M10 14 L60 50 L110 14"/>
+        </svg>
+      </div>
+      <div class="body">
+        <h2>Work with me</h2>
+        <p>Business, hiring, consulting or press: one email reaches me.</p>
+        <div class="go"><span class="mail">mail@prajwalshetty.com</span><b>Write →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="https://discord.gg/KBWmkCKv5U">
+      <img src="/assets/hi/discord.jpg" alt="The Muddy Terrain Discord" width="960" height="600" loading="lazy">
+      <div class="body">
+        <h2>Come say hi on Discord</h2>
+        <p>The Muddy Terrain server: talk about the game, the plugins, or game dev in general.</p>
+        <div class="go"><span>discord.gg/KBWmkCKv5U</span><b>Join →</b></div>
+      </div>
+    </a>
+  </div>
+
+</main>
+</body>
+</html>
