@@ -1,0 +1,48 @@
+{%- comment -%}
+  A small row of /hi cards for the bottom of the home page, sized like the photo row at the top.
+  Only what the page doesn't already show (no X, blog, GitHub or the game).
+  Images come from assets/hi (rendered from _banners). Styles are scoped under .hc-wrap; the theme underlines every link
+  and forces its colour with a very specific selector, so the card link resets those with !important.
+{%- endcomment -%}
+{%- assign hc_sizes = "(min-width: 900px) 200px, (min-width: 520px) 46vw, calc(50vw - 30px)" -%}
+<section class="hc-wrap" aria-label="Elsewhere">
+  <style>
+    .hc-wrap { --hc-line: #e3ddd2; --hc-muted: #5f6672; --hc-ink: #17191d; --hc-accent: #e0a800; max-width: 860px; margin: 40px auto 16px; }
+    .hc-wrap .hc-label { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--hc-muted); }
+    .hc-wrap .hc-label::after { content: ""; flex: 1; height: 1px; background: var(--hc-line); }
+    .hc-wrap .hc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (min-width: 700px) { .hc-wrap .hc-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; } }
+    .hc-wrap .hc-grid a.hc { display: flex; flex-direction: column; background: #ffffff !important; border: 1px solid var(--hc-line); border-radius: 12px; overflow: hidden;
+                             color: var(--hc-ink) !important; text-decoration: none !important; box-shadow: 0 1px 2px #1b1f2a12; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+    .hc-wrap .hc-grid a.hc:hover, .hc-wrap .hc-grid a.hc:focus-visible { transform: translateY(-4px); border-color: var(--hc-accent); box-shadow: 0 14px 28px #1b1f2a2e; outline: none; }
+    .hc-wrap .hc-grid a.hc img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; border-radius: 0; border-bottom: 1px solid var(--hc-line); }
+    .hc-wrap .hc-body { padding: 13px 14px 14px; }
+    .hc-wrap .hc-body b { font-size: .9rem; line-height: 1.25; color: inherit; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+    .hc-wrap .hc-body b i { font-style: normal; color: var(--hc-muted); transition: transform .18s ease; }
+    .hc-wrap .hc-grid a.hc:hover .hc-body b i { transform: translateX(3px); color: var(--hc-ink); }
+    .hc-wrap .hc-grid a.hc.premium { background: #17191d !important; border-color: #2c2f36; color: #ffffff !important; box-shadow: 0 8px 20px #17191d33; }
+    .hc-wrap .hc-grid a.hc.premium:hover, .hc-wrap .hc-grid a.hc.premium:focus-visible { border-color: #ffd84d; box-shadow: 0 12px 28px #ffd84d40; }
+    .hc-wrap .hc-grid a.hc.premium img { border-bottom-color: #2c2f36; }
+    .hc-wrap .hc-grid a.hc.premium .hc-body b i { color: #ffd84d; }
+    @media (prefers-reduced-motion: reduce) { .hc-wrap .hc-grid a.hc, .hc-wrap .hc-body b i { transition: none; } .hc-wrap .hc-grid a.hc:hover { transform: none; } }
+  </style>
+  <div class="hc-label">Elsewhere</div>
+  <div class="hc-grid">
+    <a class="hc premium" href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal">
+      <img src="/assets/hi/work-480.jpg" srcset="/assets/hi/work-360.jpg 360w, /assets/hi/work-480.jpg 480w, /assets/hi/work-720.jpg 720w" sizes="{{ hc_sizes }}" alt="An airmail letter addressed to mail@prajwalshetty.com" width="960" height="600" loading="lazy">
+      <div class="hc-body"><b>Work with me <i>→</i></b></div>
+    </a>
+    <a class="hc" href="https://www.fab.com/sellers/Muddy%20Terrain%20Games" target="_blank" rel="noopener">
+      <img src="/assets/hi/fab-480.jpg" srcset="/assets/hi/fab-360.jpg 360w, /assets/hi/fab-480.jpg 480w, /assets/hi/fab-720.jpg 720w" sizes="{{ hc_sizes }}" alt="Muddy Terrain Games plugins on Fab" width="960" height="600" loading="lazy">
+      <div class="hc-body"><b>Unreal plugins <i>→</i></b></div>
+    </a>
+    <a class="hc" href="https://www.imdb.com/list/ls4114178293/" target="_blank" rel="noopener">
+      <img src="/assets/hi/movies-480.jpg" srcset="/assets/hi/movies-360.jpg 360w, /assets/hi/movies-480.jpg 480w, /assets/hi/movies-720.jpg 720w" sizes="{{ hc_sizes }}" alt="A cinema ticket for Prajwal's top 20 films and series on IMDb" width="960" height="600" loading="lazy">
+      <div class="hc-body"><b>Movies <i>→</i></b></div>
+    </a>
+    <a class="hc" href="https://maps.app.goo.gl/v8ubE3oR9eVMw5K56" target="_blank" rel="noopener">
+      <img src="/assets/hi/places-480.jpg" srcset="/assets/hi/places-360.jpg 360w, /assets/hi/places-480.jpg 480w, /assets/hi/places-720.jpg 720w" sizes="{{ hc_sizes }}" alt="Passport stamps from places on the Places to visit before you die list" width="960" height="600" loading="lazy">
+      <div class="hc-body"><b>Places <i>→</i></b></div>
+    </a>
+  </div>
+</section>
