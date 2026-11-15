@@ -216,7 +216,7 @@ Welcome to my portfolio!
 
 <!-- ## External Links: -->
 
-<a href="https://res.cloudinary.com/dwfkishzf/image/upload/v1754825965/Resumes/PrajwalShetty_CV4_SeniorDev__Aug_UEUN_iuignn.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
+<a href="/assets/docs/prajwal-shetty-resume.pdf" class="btn btn--inverse">Resume</a>{:target="_blank"}
 <a href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal" class="btn btn--primary">Work with me</a>
 <!-- <a href="https://github.com/prajwalshettydev/" class="btn btn--inverse">Github</a>{:target="_blank"}
 <a href="https://www.linkedin.com/in/shettyprajwal/" class="btn btn--inverse">Linkedin</a>{:target="_blank"} -->

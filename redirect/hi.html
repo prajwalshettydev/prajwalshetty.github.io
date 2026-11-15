@@ -13,10 +13,10 @@ sitemap: true
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hi, I'm Prajwal</title>
-<meta name="description" content="I see the world in triangles and pixels: game engines and AI by day, building things for fun the rest of the time. The game, the plugins, the dev logs and the code, in one place.">
+<meta name="description" content="Game engines and AI by day. By night, Nande Kano Bengaluru, an open-world game set in Bengaluru, and AI plugins for Unreal Engine. All in one place.">
 <link rel="canonical" href="https://prajwalshetty.com/hi/">
 <meta property="og:title" content="Hi, I'm Prajwal">
-<meta property="og:description" content="I see the world in triangles and pixels. The game, the plugins, the dev logs and the code, in one place.">
+<meta property="og:description" content="Game engines and AI by day, Nande Kano Bengaluru and Unreal AI plugins by night. The game, the plugins, the dev logs and the code, in one place.">
 <meta property="og:image" content="https://prajwalshetty.com/assets/hi/share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
@@ -52,6 +52,7 @@ sitemap: true
   a.card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
            overflow: hidden; color: inherit; text-decoration: none; box-shadow: 0 1px 2px #1b1f2a12; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
   a.card:hover, a.card:focus-visible { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 14px 30px #1b1f2a24; outline: none; }
+  a.card picture { display: block; }
   a.card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: #ece7de; border-bottom: 1px solid var(--line); }
   a.card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
   a.card h2 { margin: 0; font-size: 18px; line-height: 1.25; }
@@ -75,8 +76,31 @@ sitemap: true
   .art { aspect-ratio: 16 / 10; display: grid; place-items: center; background: #ffd84d; border-bottom: 1px solid var(--line); }
   .art svg { width: 34%; height: auto; }
   a.card .mail { font-weight: 700; color: var(--ink); word-break: break-all; }
+  /* three columns: Work with me sits in the middle of the first row under the game (on phones it stays first),
+     and the last card spans two columns so the final row is full */
+  @media (min-width: 916px) {
+    .grid > a.card:nth-child(3) { order: 1; }
+    .grid > a.card.premium { order: 2; }
+    .grid > a.card:nth-child(n+4), .grid > .label { order: 3; }
+    a.card.wide { grid-column: span 2; }
+    a.card.wide img { aspect-ratio: 1240 / 376; }
+  }
+  /* a quiet divider between the work cards and the personal ones */
+  .grid > .label { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; margin: 10px 0 -4px; font-size: 12px; font-weight: 700;
+                   letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .grid > .label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  /* Work with me: the one card that should stand out */
+  a.card.premium { background: #17191d; border-color: #2c2f36; color: #f3efe6; box-shadow: 0 10px 26px #17191d33; }
+  a.card.premium:hover, a.card.premium:focus-visible { border-color: #ffd84d; box-shadow: 0 16px 36px #ffd84d40; }
+  a.card.premium .art { background: radial-gradient(circle at 30% 20%, #ffe680, #ffd84d 55%, #f2c400); border-bottom-color: #2c2f36; }
+  a.card.premium .art { position: relative; display: block; aspect-ratio: auto; border-bottom: 0; }
+  a.card.premium .art img { border-bottom-color: #2c2f36; }
+  a.card.premium .art .tag { position: absolute; top: 14px; left: 16px; margin: 0; background: #17191d; color: #ffd84d; }
+  a.card.premium h2 { color: #ffffff; } a.card.premium p { color: #b9bec8; }
+  a.card.premium .go { color: #b9bec8; } a.card.premium .go b { color: #ffd84d; } a.card.premium .mail { color: #ffffff; }
   @media (prefers-reduced-motion: reduce) { .wave { animation: none; } a.card, a.card .go b, a.home { transition: none; } a.card:hover, a.home:hover { transform: none; } }
 </style>
+{% include analytics.html %}
 </head>
 <body>
 <main>
@@ -85,12 +109,12 @@ sitemap: true
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg>
     </a>
     <h1><span class="wave">👋</span> Hi, I'm <em>Prajwal</em>.</h1>
-    <p>I see the world in triangles and pixels. Game engines and AI are the day job; after hours I build things for fun. Otherwise I'm up a mountain, in a cinema seat, or ordering the thing on the menu I can't pronounce. 🍝 ⛰️ 🍺</p>
+    <p>Game engines and AI by day; “Nande Kano Bengaluru” and Unreal AI plugins by night. Otherwise I'm up a mountain, in a cinema seat, or ordering the thing on the menu I can't pronounce. ⛰️🎬🍝</p>
   </header>
 
   <div class="grid">
-    <a class="card lead" href="https://muddyterrain.com/bengaluru">
-      <img src="/assets/hi/game.jpg" alt="Nande Kano Bengaluru: an auto rickshaw on a busy Bengaluru street" width="960" height="600">
+    <a class="card lead" href="https://muddyterrain.com/bengaluru" target="_blank" rel="noopener">
+      <img src="/assets/hi/game-960.jpg" srcset="/assets/hi/game-400.jpg 400w, /assets/hi/game-640.jpg 640w, /assets/hi/game-960.jpg 960w, /assets/hi/game-1400.jpg 1400w" sizes="(min-width: 980px) 545px, (min-width: 760px) 56vw, calc(100vw - 40px)" alt="Nande Kano Bengaluru: a sunny Bengaluru street in the game" width="960" height="600">
       <div class="body">
         <span class="tag">The game</span>
         <h2>Nande Kano Bengaluru</h2>
@@ -99,61 +123,83 @@ sitemap: true
       </div>
     </a>
 
-    <a class="card" href="https://x.com/shettyprajwal_">
-      <img src="/assets/hi/x.jpg" alt="Prajwal on X" width="960" height="600" loading="lazy">
+    <a class="card premium" href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal">
+      <div class="art">
+        <span class="tag">Business</span>
+        <img src="/assets/hi/work-720.jpg" srcset="/assets/hi/work-360.jpg 360w, /assets/hi/work-480.jpg 480w, /assets/hi/work-720.jpg 720w, /assets/hi/work-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="An airmail letter addressed to mail@prajwalshetty.com, with Prajwal's photo as the stamp" width="960" height="600">
+      </div>
+      <div class="body">
+        <h2>Work with me</h2>
+        <p>Business, consulting, hiring or press.</p>
+        <div class="go"><span class="mail">mail@prajwalshetty.com</span><b>Write →</b></div>
+      </div>
+    </a>
+
+    <a class="card" href="https://x.com/shettyprajwal_" target="_blank" rel="noopener">
+      <img src="/assets/hi/x-720.jpg" srcset="/assets/hi/x-360.jpg 360w, /assets/hi/x-480.jpg 480w, /assets/hi/x-720.jpg 720w, /assets/hi/x-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="Prajwal on X" width="960" height="600" loading="lazy">
       <div class="body">
         <h2>Dev logs on X</h2>
-        <p>Daily progress on the game: what got built, what broke, short clips.</p>
+        <p>Daily dev logs from the game.</p>
         <div class="go"><span>@shettyprajwal_</span><b>Follow →</b></div>
       </div>
     </a>
 
-    <a class="card" href="https://www.fab.com/sellers/Muddy%20Terrain%20Games">
-      <img src="/assets/hi/fab.jpg" alt="Muddy Terrain Games plugins on Fab" width="960" height="600" loading="lazy">
+    <a class="card" href="https://www.fab.com/sellers/Muddy%20Terrain%20Games" target="_blank" rel="noopener">
+      <img src="/assets/hi/fab-720.jpg" srcset="/assets/hi/fab-360.jpg 360w, /assets/hi/fab-480.jpg 480w, /assets/hi/fab-720.jpg 720w, /assets/hi/fab-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="Muddy Terrain Games plugins on Fab" width="960" height="600" loading="lazy">
       <div class="body">
         <h2>Unreal Engine plugins</h2>
-        <p>Gen AI plugins for Unreal on Fab: chat, voices, NPCs, local models, 3D generation.</p>
+        <p>Gen AI plugins for Unreal Engine.</p>
         <div class="go"><span>fab.com</span><b>Open the store →</b></div>
       </div>
     </a>
 
-    <a class="card" href="https://github.com/prajwalshettydev">
-      <img src="/assets/hi/github.jpg" alt="Prajwal's GitHub profile" width="960" height="600" loading="lazy">
+    <a class="card" href="https://github.com/prajwalshettydev" target="_blank" rel="noopener">
+      <img src="/assets/hi/github-720.jpg" srcset="/assets/hi/github-360.jpg 360w, /assets/hi/github-480.jpg 480w, /assets/hi/github-720.jpg 720w, /assets/hi/github-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="Prajwal's GitHub profile" width="960" height="600" loading="lazy">
       <div class="body">
         <h2>Code on GitHub</h2>
-        <p>Open-source bits, examples and experiments.</p>
+        <p>Open-source plugins and experiments.</p>
         <div class="go"><span>github.com/prajwalshettydev</span><b>Browse →</b></div>
       </div>
     </a>
 
     <a class="card" href="/">
-      <img src="/assets/hi/site.jpg" alt="prajwalshetty.com home page" width="960" height="600" loading="lazy">
+      <img src="/assets/hi/site-720.jpg" srcset="/assets/hi/site-360.jpg 360w, /assets/hi/site-480.jpg 480w, /assets/hi/site-720.jpg 720w, /assets/hi/site-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="Photos from travels and projects: the Dolomites, Portofino, Animalia, Become Human and Mayaverse" width="960" height="600" loading="lazy">
       <div class="body">
         <h2>Blog and portfolio</h2>
-        <p>Write-ups on Unreal, Unity and Blender, plus what I have shipped.</p>
+        <p>Unreal, Unity and Blender write-ups.</p>
         <div class="go"><span>prajwalshetty.com</span><b>Read →</b></div>
       </div>
     </a>
 
-    <a class="card" href="mailto:mail@prajwalshetty.com?subject=Hello%20Prajwal">
-      <div class="art" aria-hidden="true">
-        <svg viewBox="0 0 120 84" fill="none" stroke="#17191d" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
-          <rect x="6" y="6" width="108" height="72" rx="10" fill="#fffdf6"/><path d="M10 14 L60 50 L110 14"/>
-        </svg>
-      </div>
+    <a class="card" href="https://muddyterrain.com/t/discord" target="_blank" rel="noopener">
+      <img src="/assets/hi/discord-720.jpg" srcset="/assets/hi/discord-360.jpg 360w, /assets/hi/discord-480.jpg 480w, /assets/hi/discord-720.jpg 720w, /assets/hi/discord-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="The Muddy Terrain Discord" width="960" height="600" loading="lazy">
       <div class="body">
-        <h2>Work with me</h2>
-        <p>Business, hiring, consulting or press: one email reaches me.</p>
-        <div class="go"><span class="mail">mail@prajwalshetty.com</span><b>Write →</b></div>
+        <h2>Come say hi on Discord</h2>
+        <p>The Muddy Terrain community server.</p>
+        <div class="go"><span>muddyterrain.com/t/discord</span><b>Join →</b></div>
       </div>
     </a>
 
-    <a class="card" href="https://discord.gg/KBWmkCKv5U">
-      <img src="/assets/hi/discord.jpg" alt="The Muddy Terrain Discord" width="960" height="600" loading="lazy">
+    <div class="label">Off the clock</div>
+
+    <a class="card" href="https://www.imdb.com/list/ls4114178293/" target="_blank" rel="noopener">
+      <img src="/assets/hi/movies-720.jpg" srcset="/assets/hi/movies-360.jpg 360w, /assets/hi/movies-480.jpg 480w, /assets/hi/movies-720.jpg 720w, /assets/hi/movies-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="A cinema ticket for Prajwal's top 20 films and series on IMDb" width="960" height="600" loading="lazy">
       <div class="body">
-        <h2>Come say hi on Discord</h2>
-        <p>The Muddy Terrain server: talk about the game, the plugins, or game dev in general.</p>
-        <div class="go"><span>discord.gg/KBWmkCKv5U</span><b>Join →</b></div>
+        <h2>Movies</h2>
+        <p>My top 20 of all time on IMDb.</p>
+        <div class="go"><span>prajwalshetty.com/movies</span><b>Browse →</b></div>
+      </div>
+    </a>
+
+    <a class="card wide" href="https://maps.app.goo.gl/v8ubE3oR9eVMw5K56" target="_blank" rel="noopener">
+      <picture>
+        <source media="(min-width: 916px)" srcset="/assets/hi/places-wide-440.jpg 440w, /assets/hi/places-wide-640.jpg 640w, /assets/hi/places-wide-960.jpg 960w, /assets/hi/places-wide-1400.jpg 1400w" sizes="621px" width="1240" height="376">
+        <img src="/assets/hi/places-720.jpg" srcset="/assets/hi/places-360.jpg 360w, /assets/hi/places-480.jpg 480w, /assets/hi/places-720.jpg 720w, /assets/hi/places-1080.jpg 1080w" sizes="(min-width: 916px) 301px, (min-width: 620px) 48vw, calc(100vw - 40px)" alt="Passport stamps from places on the Places to visit before you die list" width="960" height="600" loading="lazy">
+      </picture>
+      <div class="body">
+        <h2>Places to visit before you die</h2>
+        <p>Places I've been and loved, from Soho to the Himalayas. It grows as I travel.</p>
+        <div class="go"><span>prajwalshetty.com/places</span><b>Open the map →</b></div>
       </div>
     </a>
   </div>
