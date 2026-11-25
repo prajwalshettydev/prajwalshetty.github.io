@@ -66,14 +66,22 @@ sitemap: true
   a.card .go b { color: var(--ink); font-weight: 700; transition: transform .18s ease; }
   a.card:hover .go b { transform: translateX(4px); }
   /* the game leads: full width, picture beside the words on a wide screen */
-  a.card.lead { grid-column: 1 / -1; }
+  a.card.lead { grid-column: 1 / -1; position: relative; overflow: visible; }
+  a.card.lead img { border-radius: 15px 15px 0 0; }
+  /* the auto sticker sits on the card's top-right corner and pokes out past its edge */
+  .sticker { position: absolute; top: -14px; right: -10px; z-index: 2; width: 48px; height: 48px; border-radius: 50%; background: #fff8e6;
+             border: 2.5px solid var(--ink); box-shadow: 0 2px 0 var(--ink), 0 6px 14px #1b1f2a2e; transform: rotate(-8deg); display: grid; place-items: center;
+             transition: transform .25s ease; pointer-events: none; }
+  .sticker svg { width: 35px; height: auto; margin-top: 2px; }
+  a.card.lead:hover .sticker { transform: rotate(4deg) scale(1.06); }
+  @media (min-width: 600px) { .sticker { width: 54px; height: 54px; top: -16px; right: -13px; } .sticker svg { width: 40px; } }
   a.card.lead h2 { font-size: clamp(22px, 3.4vw, 30px); }
   a.card.lead p { font-size: 16px; }
   .tag { align-self: flex-start; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #17191d;
          background: #ffd84d; border-radius: 6px; padding: 3px 9px; margin-bottom: 8px; border: 1.5px solid #17191d; box-shadow: 0 2px 0 #17191d; }
   @media (min-width: 760px) {
     a.card.lead { flex-direction: row; }
-    a.card.lead img { width: 58%; border-bottom: 0; border-right: 1px solid var(--line); }
+    a.card.lead img { width: 58%; border-bottom: 0; border-right: 1px solid var(--line); border-radius: 15px 0 0 15px; }
     a.card.lead .body { padding: 26px 26px 22px; justify-content: center; flex: 1; }
     a.card.lead .go { margin-top: 18px; }
   }
@@ -129,7 +137,8 @@ sitemap: true
 
   <div class="grid">
     <a class="card lead" href="https://muddyterrain.com/bengaluru" target="_blank" rel="noopener">
-      <img src="/assets/hi/game-960.jpg" srcset="/assets/hi/game-400.jpg 400w, /assets/hi/game-640.jpg 640w, /assets/hi/game-960.jpg 960w, /assets/hi/game-1400.jpg 1400w" sizes="(min-width: 980px) 545px, (min-width: 760px) 56vw, calc(100vw - 40px)" alt="Nande Kano Bengaluru: a busy Bengaluru street in the game, with Kannada shop signs, autos and scooters" width="960" height="600">
+      <span class="sticker" aria-hidden="true"><svg viewBox="0 0 200 130"><path d="M12 60 V33 Q12 12 35 11 H146 Q157 11 161 22 L163 31 H60 V60 Z" fill="#f3c623" stroke="#17191d" stroke-width="7" stroke-linejoin="round"/><rect x="64" y="50" width="44" height="12" rx="4" fill="#2b2b2b"/><rect x="128" y="44" width="18" height="20" rx="6" fill="#b89b5e"/><circle cx="138" cy="38" r="7" fill="#6b4a32"/><path d="M10 58 H124 V100 H81 A24 24 0 0 0 33 100 H10 Z" fill="#1f9d4a" stroke="#17191d" stroke-width="7" stroke-linejoin="round"/><path d="M150 31 L163 31 L178 58 L150 64 Z" fill="#f3c623" stroke="#17191d" stroke-width="7" stroke-linejoin="round"/><path d="M124 64 H152 L178 58 Q192 62 191 78 L188 94 Q176 86 160 94 L154 100 H124 Z" fill="#1f9d4a" stroke="#17191d" stroke-width="7" stroke-linejoin="round"/><circle cx="57" cy="106" r="18" fill="#17191d"/><circle cx="57" cy="106" r="8" fill="#d0d0d0"/><circle cx="169" cy="108" r="16" fill="#17191d"/><circle cx="169" cy="108" r="7" fill="#d0d0d0"/></svg></span>
+      <img src="/assets/hi/game-960.jpg" srcset="/assets/hi/game-400.jpg 400w, /assets/hi/game-640.jpg 640w, /assets/hi/game-960.jpg 960w, /assets/hi/game-1400.jpg 1400w" sizes="(min-width: 980px) 545px, (min-width: 760px) 56vw, calc(100vw - 40px)" alt="Nande Kano Bengaluru: an auto-rickshaw at a busy Majestic junction in the game" width="960" height="600">
       <div class="body">
         <span class="tag">The game</span>
         <h2>Nande Kano Bengaluru</h2>
