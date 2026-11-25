@@ -30,12 +30,12 @@
     'font:700 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:#ff5b4d;background:#141414;border:2px solid #3a3a3a;' +
     'border-radius:5px;padding:4px 7px;letter-spacing:.06em;box-shadow:0 2px 6px #0005;text-shadow:0 0 6px #ff5b4d88}' +
   '.meter small{color:#9aa0a6;font-weight:600;margin-left:6px;text-shadow:none;letter-spacing:0}' +
-  '.bubble{position:absolute;bottom:calc(100% + 34px);left:50%;transform:translateX(-50%) scale(.9);opacity:0;pointer-events:none;' +
+  '.bubble{position:absolute;bottom:calc(100% + 34px);left:calc(50% + var(--shift,0px));transform:translateX(-50%) scale(.9);opacity:0;pointer-events:none;' +
     'width:max-content;max-width:min(260px,70vw);background:#fff;color:#17191d;border:1px solid #e3ddd2;border-radius:14px;' +
     'padding:9px 12px;font:600 14px/1.35 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;' +
     'box-shadow:0 10px 26px #1b1f2a2e;transition:opacity .2s ease,transform .2s ease;text-align:left}' +
   '.bubble.on{opacity:1;transform:translateX(-50%) scale(1);pointer-events:auto}' +
-  '.bubble::after{content:"";position:absolute;top:100%;left:50%;margin-left:-7px;border:7px solid transparent;border-top-color:#fff}' +
+  '.bubble::after{content:"";position:absolute;top:100%;left:calc(50% - var(--shift,0px));margin-left:-7px;border:7px solid transparent;border-top-color:#fff}' +
   '.bubble em{display:block;font-style:normal;font-weight:500;font-size:12.5px;color:#5f6672;margin-top:2px}' +
   '.bubble a{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:#17191d;background:#ffd84d;border-radius:999px;padding:3px 10px;text-decoration:none}' +
   '.puff{position:absolute;bottom:12px;width:7px;height:7px;border-radius:50%;background:#d9d4ca;pointer-events:none;opacity:.55;' +
@@ -102,11 +102,12 @@
   }
 
   var lines = [
-    ['Meter mele ₹20 kodi, saar.', '₹20 over the meter, sir.'],
+    ['Meter mele ₹20 kodi, saar.', 'Twenty on top of the meter, sir.'],
     ['Ellige hogbeku?', 'Where to?'],
-    ['Return khaali barbeku, ₹50 extra.', 'I come back empty, so ₹50 extra.'],
-    ['Game nodidra? Super ide!', 'Seen the game? It’s super!', true]
+    ['Return khaali barbeku, ₹50 extra.', 'I’ll be coming back empty, so fifty extra.'],
+    ['Game nodidra? Super ide!', 'Seen the game? It’s really good!', true]
   ];
+  function arrived(f) { return ['Bande! ₹' + f + '. Change illa, saar 🙂', 'Made it! ₹' + f + ', and sorry, no change.']; }
 
   function init() {
     var style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);
@@ -148,7 +149,10 @@
     function say(main, sub, link) {
       bubble.innerHTML = main + (sub ? '<em>' + sub + '</em>' : '') +
         (link ? '<a href="' + GAME_URL + '" target="_blank" rel="noopener">Hop in → the game</a>' : '');
-      bubble.classList.add('on'); clearTimeout(bubbleTimer);
+      bubble.style.setProperty('--shift', '0px'); bubble.classList.add('on'); clearTimeout(bubbleTimer);
+      var r = bubble.getBoundingClientRect(), pad = 8, sh = 0;          // keep the bubble on screen, arrow still on the auto
+      if (r.right > innerWidth - pad) sh = innerWidth - pad - r.right; else if (r.left < pad) sh = pad - r.left;
+      bubble.style.setProperty('--shift', sh.toFixed(0) + 'px');
       bubbleTimer = setTimeout(function () { bubble.classList.remove('on'); }, link ? 6000 : 3200);
     }
 
@@ -169,7 +173,7 @@
     auto.addEventListener('click', function () {
       honk();
       art.animate && art.animate([{ translate: '0 0' }, { translate: '0 -7px' }, { translate: '0 0' }], { duration: 260, easing: 'ease-out' });
-      if (parked) { say('Bandvi! ₹' + Math.round(fare()) + '. Change illa, saar 🙂', 'We’re here! No change, sir.', true); return; }
+      if (parked) { var a = arrived(Math.round(fare())); say(a[0], a[1], true); return; }
       var l = lines[lineIx++ % lines.length]; say(l[0], l[1], l[2]);
     });
 
@@ -200,12 +204,13 @@
 
     var last = performance.now();
     (function loop(now) {
+      if (road.classList.contains('off')) { last = now; requestAnimationFrame(loop); return; }
       var dt = Math.min(0.05, (now - last) / 1000); last = now; t += dt;
       var dx = (target - x) * Math.min(1, dt * 5);          // smooth follow = accelerate and brake
       vx = dx / Math.max(dt, 0.001);
       x += dx;
       if (Math.abs(vx) > 18) face = vx > 0 ? 1 : -1;
-      km += Math.abs(dx) / Math.max(200, road.clientWidth) * 2.6;  // a full run across the screen is about 2.6 km
+      km += Math.abs(dx) / Math.max(1, span()) * 4.2;  // one full ride down the page is about 4 km on any screen
       spin += dx / 16 * (180 / Math.PI) * (face > 0 ? 1 : -1);
       for (var i = 0; i < wheels.length; i++) wheels[i].style.transform = 'rotate(' + (spin * (i ? 1.13 : 1)).toFixed(1) + 'deg)';
       var moving = Math.abs(vx) > 6;
@@ -215,7 +220,7 @@
       driver.style.transform = 'translateY(' + (moving ? Math.sin(t * 18) * 0.8 : shake * 0.6).toFixed(2) + 'px)';
       if (now - lastPuff > (moving ? 220 : 900)) { lastPuff = now; puff(); }
       var nowParked = progress() > 0.985 && !moving;
-      if (nowParked && !parked) { parked = true; say('Bandvi! ₹' + Math.round(fare()) + '. Change illa, saar 🙂', 'We’re here! No change, sir.', true); }
+      if (nowParked && !parked) { parked = true; var a2 = arrived(Math.round(fare())); say(a2[0], a2[1], true); }
       if (!nowParked && moving) parked = false;
       place(); if (moving) drawMeter();
       requestAnimationFrame(loop);
