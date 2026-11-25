@@ -18,8 +18,8 @@
   '.road.off{transform:translateY(110%)}' +
   '.road::before{content:"";position:absolute;left:0;right:0;top:-6px;height:6px;' +
     'background:repeating-linear-gradient(90deg,#ffd84d 0 22px,#17191d 22px 44px)}' +
-  '.road::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;margin-top:3px;opacity:.75;' +
-    'background:repeating-linear-gradient(90deg,#f3efe6 0 26px,transparent 26px 56px);background-position-x:var(--lane,0)}' +
+  '.lane{position:absolute;left:-56px;right:-56px;top:50%;height:3px;margin-top:3px;opacity:.75;will-change:transform;' +
+    'background:repeating-linear-gradient(90deg,#f3efe6 0 26px,transparent 26px 56px)}' +
   '.auto{position:absolute;bottom:4px;left:36px;width:132px;height:86px;pointer-events:auto;cursor:pointer;border:0;padding:0;background:none;' +
     '-webkit-tap-highlight-color:transparent;will-change:transform}' +
   '@media (max-width:600px){.auto{width:92px;height:60px}}' +
@@ -38,9 +38,14 @@
   '.bubble::after{content:"";position:absolute;top:100%;left:calc(50% - var(--shift,0px));margin-left:-7px;border:7px solid transparent;border-top-color:#fff}' +
   '.bubble em{display:block;font-style:normal;font-weight:500;font-size:12.5px;color:#5f6672;margin-top:2px}' +
   '.bubble a{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:#17191d;background:#ffd84d;border-radius:999px;padding:3px 10px;text-decoration:none}' +
-  '.puff{position:absolute;bottom:12px;width:7px;height:7px;border-radius:50%;background:#d9d4ca;pointer-events:none;opacity:.55;' +
-    'filter:blur(1.5px);animation:puff .9s ease-out forwards}' +
-  '@keyframes puff{to{transform:translate(var(--dx,-22px),-16px) scale(3);opacity:0}}' +
+  '.auto::before,.auto::after{content:"";position:absolute;left:-2px;bottom:12%;width:8px;height:8px;border-radius:50%;pointer-events:none;' +
+    'background:radial-gradient(circle,#d9d4cacc 0,#d9d4ca00 70%);opacity:0;animation:puff 1.6s ease-out infinite}' +
+  '.auto::after{animation-delay:.8s}' +
+  '.auto.moving::before,.auto.moving::after{animation-duration:.55s}' +
+  '.auto.back::before,.auto.back::after{left:auto;right:-2px;--dx:22px}' +
+  '@keyframes puff{0%{opacity:.9;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx,-22px),-14px) scale(3.2)}}' +
+  '.auto.idle svg{animation:idle .12s steps(2) infinite}' +
+  '@keyframes idle{0%{translate:0 -.4px}100%{translate:0 .4px}}' +
   '.stop{position:absolute;right:14px;bottom:8px;pointer-events:auto;display:flex;align-items:flex-end;gap:0;text-decoration:none}' +
   '.stop .pole{width:4px;height:calc(var(--road-h) + 10px);background:#9aa0a6;border-radius:2px}' +
   '.stop .sign{position:absolute;right:-6px;bottom:calc(var(--road-h) - 6px);background:#ffd84d;color:#17191d;border:2px solid #17191d;' +
@@ -56,6 +61,7 @@
   '.road-back{position:fixed;left:12px;bottom:12px;z-index:40;width:44px;height:44px;border-radius:50%;border:1px solid #e3ddd2;' +
     'background:#fff;font-size:22px;cursor:pointer;box-shadow:0 4px 12px #1b1f2a24;display:none}' +
   '.road-back.on{display:block}' +
+  '@media (prefers-reduced-motion:reduce){.auto::before,.auto::after,.auto.idle svg{animation:none}.road{transition:none}}' +
   '';
 
   // side view, facing right; wheels are separate groups so they can spin
@@ -113,7 +119,7 @@
     var style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);
     var road = document.createElement('div'); road.className = 'road';
     road.innerHTML =
-      '<button class="road-x" type="button" aria-label="Hide the auto">✕</button>' +
+      '<div class="lane" aria-hidden="true"></div><button class="road-x" type="button" aria-label="Hide the auto">✕</button>' +
       '<a class="stop" href="' + GAME_URL + '" target="_blank" rel="noopener" aria-label="Nande Kano Bengaluru, the game">' +
         '<span class="pole"></span><span class="sign"><b>Next stop</b><span class="full">Nande Kano Bengaluru</span><span class="short">NKB</span></span></a>' +
       '<button class="auto" type="button" aria-label="Honk the auto-rickshaw from Nande Kano Bengaluru">' +
@@ -136,7 +142,7 @@
     setOff(store.get('hi-auto-off') === '1');
 
     // ---- driving ----
-    var x = 0, target = 0, vx = 0, face = 1, spin = 0, km = 0, t = 0, lastPuff = 0, parked = false, bubbleTimer = 0, lineIx = 0;
+    var x = 0, target = 0, vx = 0, face = 1, spin = 0, km = 0, parked = false, bubbleTimer = 0, lineIx = 0;
     var stopSign = road.querySelector('.stop .sign');
     function span() { return Math.max(0, road.clientWidth - auto.offsetWidth - 36 - stopSign.offsetWidth - 14); }
     function progress() {
@@ -177,18 +183,12 @@
       var l = lines[lineIx++ % lines.length]; say(l[0], l[1], l[2]);
     });
 
-    function puff() {
-      var p = document.createElement('span'); p.className = 'puff';
-      var rear = 36 + (face > 0 ? x - 2 : x + auto.offsetWidth - 6);
-      p.style.left = rear + 'px'; p.style.setProperty('--dx', (face > 0 ? -26 : 26) + 'px');
-      road.appendChild(p); setTimeout(function () { p.remove(); }, 1200);
-    }
-
-    var art = auto.querySelector('svg');
+    var art = auto.querySelector('svg'), lane = road.querySelector('.lane');
     function place() {
       auto.style.transform = 'translateX(' + x.toFixed(1) + 'px)';
       art.style.transform = face < 0 ? 'scaleX(-1)' : '';
-      road.style.setProperty('--lane', (-x * 0.6).toFixed(1) + 'px');
+      auto.classList.toggle('back', face < 0);
+      lane.style.transform = 'translateX(' + (-(x * 0.6) % 56).toFixed(1) + 'px)';
     }
 
     if (reduced) {
@@ -198,14 +198,16 @@
       return;
     }
 
-    target = x = progress() * span(); place(); drawMeter();
-    addEventListener('scroll', function () { target = progress() * span(); }, { passive: true });
-    addEventListener('resize', function () { target = progress() * span(); });
-
-    var last = performance.now();
-    (function loop(now) {
-      if (road.classList.contains('off')) { last = now; requestAnimationFrame(loop); return; }
-      var dt = Math.min(0.05, (now - last) / 1000); last = now; t += dt;
+    var running = false, last = 0;
+    function settle() {                                       // nothing moving: hand over to the CSS idle animation
+      running = false; vx = 0;
+      body.style.transform = ''; driver.style.transform = '';
+      auto.classList.remove('moving'); auto.classList.add('idle'); drawMeter();
+      if (progress() > 0.985 && !parked) { parked = true; var a = arrived(Math.round(fare())); say(a[0], a[1], true); }
+    }
+    function kick() { if (!running && !road.classList.contains('off')) { running = true; last = performance.now(); requestAnimationFrame(loop); } }
+    function loop(now) {
+      var dt = Math.min(0.05, (now - last) / 1000); last = now;
       var dx = (target - x) * Math.min(1, dt * 5);          // smooth follow = accelerate and brake
       vx = dx / Math.max(dt, 0.001);
       x += dx;
@@ -213,18 +215,21 @@
       km += Math.abs(dx) / Math.max(1, span()) * 4.2;  // one full ride down the page is about 4 km on any screen
       spin += dx / 16 * (180 / Math.PI) * (face > 0 ? 1 : -1);
       for (var i = 0; i < wheels.length; i++) wheels[i].style.transform = 'rotate(' + (spin * (i ? 1.13 : 1)).toFixed(1) + 'deg)';
-      var moving = Math.abs(vx) > 6;
       var tilt = Math.max(-4, Math.min(4, -vx / 140)) * (face > 0 ? 1 : -1);
-      var shake = moving ? 0 : Math.sin(t * 55) * 0.45;          // idling engine shake
-      body.style.transform = 'translateY(' + shake.toFixed(2) + 'px) rotate(' + tilt.toFixed(2) + 'deg)';
-      driver.style.transform = 'translateY(' + (moving ? Math.sin(t * 18) * 0.8 : shake * 0.6).toFixed(2) + 'px)';
-      if (now - lastPuff > (moving ? 220 : 900)) { lastPuff = now; puff(); }
-      var nowParked = progress() > 0.985 && !moving;
-      if (nowParked && !parked) { parked = true; var a2 = arrived(Math.round(fare())); say(a2[0], a2[1], true); }
-      if (!nowParked && moving) parked = false;
-      place(); if (moving) drawMeter();
+      body.style.transform = 'rotate(' + tilt.toFixed(2) + 'deg)';
+      driver.style.transform = 'translateY(' + (Math.sin(now / 55) * 0.8).toFixed(2) + 'px)';
+      auto.classList.add('moving'); auto.classList.remove('idle');
+      if (Math.abs(vx) > 6) { parked = false; drawMeter(); }
+      place();
+      if (Math.abs(target - x) < 0.4) { x = target; place(); settle(); return; }
       requestAnimationFrame(loop);
-    })(last);
+    }
+
+    target = x = progress() * span(); place(); settle(); parked = progress() > 0.985;
+    addEventListener('scroll', function () { target = progress() * span(); kick(); }, { passive: true });
+    addEventListener('resize', function () { target = progress() * span(); kick(); });
+    road.querySelector('.road-x').addEventListener('click', function () { running = false; });
+    back.addEventListener('click', function () { setTimeout(kick, 50); });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

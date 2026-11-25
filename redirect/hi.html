@@ -95,10 +95,10 @@ sitemap: true
                    letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
   /* the divider is a lane marking, like the road the auto drives on at the bottom */
   .grid > .label::after { content: ""; flex: 1; height: 3px; border-radius: 2px; background: repeating-linear-gradient(90deg, #e6c34a 0 16px, transparent 16px 30px); opacity: .8; }
-  /* a faint street map printed behind the header, fading out as the cards begin */
+  /* a faint map of the real streets the game is built on (MG Road, Brigade Road, Cubbon Park), fading out as the cards begin */
   body { position: relative; }
   body::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 560px; z-index: -1; pointer-events: none;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 420' preserveAspectRatio='xMidYMin slice'%3E%3Cg fill='none' stroke='%23ebe2d2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke-width='14' d='M-20 330C150 300 260 360 420 300S640 220 780 260M-10 120L780 90M300-10L316 106 330 183M352 214L380 420M480-10C470 120 520 220 500 430M120-10L180 430M600-10L640 430'/%3E%3Cpath stroke-width='8' d='M-10 220C100 210 200 238 308 205M352 200C420 190 470 175 520 180M40-10L60 430M700 100L740 430M180 300L300 420'/%3E%3Ccircle cx='330' cy='205' r='24' stroke-width='9'/%3E%3C/g%3E%3Cpath d='M-10 119L316 106 330 183' fill='none' stroke='%23f2cf4a' stroke-width='3' stroke-dasharray='10 9' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E") center top / cover no-repeat;
+    background: url("/assets/hi/blr-map.svg") center top / cover no-repeat;
     -webkit-mask-image: linear-gradient(#000 35%, transparent); mask-image: linear-gradient(#000 35%, transparent); opacity: .65; }
   /* Work with me: the one card that should stand out */
   a.card.premium { background: #17191d; border-color: #2c2f36; color: #f3efe6; box-shadow: 0 10px 26px #17191d33; }
@@ -109,6 +109,8 @@ sitemap: true
   a.card.premium .art .tag { position: absolute; top: 14px; left: 16px; margin: 0; background: #17191d; color: #ffd84d; border-color: #17191d; box-shadow: 0 2px 0 #9c7d00; }
   a.card.premium h2 { color: #ffffff; } a.card.premium p { color: #b9bec8; }
   a.card.premium .go { color: #b9bec8; } a.card.premium .go b { color: #ffd84d; } a.card.premium .mail { color: #ffffff; }
+  .credit { text-align: center; font-size: 11px; color: #9a958c; margin: 4px 0 0; }
+  .credit a { color: inherit; }
   .signoff { text-align: center; font-size: 1rem; letter-spacing: .4em; margin: 34px 0 6px; }
   @media (prefers-reduced-motion: reduce) { .wave { animation: none; } a.card, a.card .go b, a.home { transition: none; } a.card:hover, a.home:hover { transform: none; } }
 </style>
@@ -220,6 +222,7 @@ sitemap: true
   </div>
 
   <div class="signoff" aria-hidden="true">🦕 ⛰️</div>
+  <p class="credit">Street map: Bengaluru, © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
   <script src="/assets/hi/auto-ride.js" defer></script>
 </main>
 </body>
